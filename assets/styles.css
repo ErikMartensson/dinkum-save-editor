@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+/* McLaren Font */
+@font-face {
+  font-family: "McLaren";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/McLaren-Regular.ttf") format("truetype");
+}
+
+/* Dinkum Theme Variables */
+:root {
+  --dinkum-primary: #d4be7d;
+  --dinkum-secondary: #ffc400;
+  --dinkum-tertiary: #392100;
+  --dinkum-accent: #7d2b0d;
+  --dinkum-beige: #fdf4e4;
+  --dinkum-gray: #e3dbcd;
+  --dinkum-orange: #efa75d;
+}
+
+/* Base Styles */
+body {
+  font-family: "McLaren", cursive, system-ui, -apple-system, sans-serif;
+  background-color: var(--dinkum-beige);
+  color: var(--dinkum-tertiary);
+}
+
+/* Dinkum Gradient */
+.fresh-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--dinkum-beige) 0%,
+    var(--dinkum-gray) 50%,
+    var(--dinkum-primary) 100%
+  );
+}
+
+/* Dinkum themed classes */
+.dinkum-bg-primary {
+  background-color: var(--dinkum-primary);
+}
+
+.dinkum-bg-secondary {
+  background-color: var(--dinkum-secondary);
+}
+
+.dinkum-bg-tertiary {
+  background-color: var(--dinkum-tertiary);
+}
+
+.dinkum-bg-accent {
+  background-color: var(--dinkum-accent);
+}
+
+.dinkum-bg-beige {
+  background-color: var(--dinkum-beige);
+}
+
+.dinkum-bg-gray {
+  background-color: var(--dinkum-gray);
+}
+
+.dinkum-bg-orange {
+  background-color: var(--dinkum-orange);
+}
+
+.dinkum-text-primary {
+  color: var(--dinkum-primary);
+}
+
+.dinkum-text-secondary {
+  color: var(--dinkum-secondary);
+}
+
+.dinkum-text-tertiary {
+  color: var(--dinkum-tertiary);
+}
+
+.dinkum-text-accent {
+  color: var(--dinkum-accent);
+}
+
+.dinkum-text-orange {
+  color: var(--dinkum-orange);
+}
+
+.dinkum-border-primary {
+  border-color: var(--dinkum-primary);
+}
+
+.dinkum-border-secondary {
+  border-color: var(--dinkum-secondary);
+}
+
+.dinkum-border-accent {
+  border-color: var(--dinkum-accent);
+}
+
+/* Link Styles */
+a {
+  color: var(--dinkum-accent);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--dinkum-orange);
+  text-decoration: underline;
+}
+
+/* Button Styles */
+button, .button {
+  font-family: "McLaren", cursive;
+  background-color: var(--dinkum-tertiary);
+  color: var(--dinkum-secondary);
+  transition: all 0.2s ease;
+}
+
+button:hover, .button:hover {
+  background-color: var(--dinkum-accent);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(57, 33, 0, 0.15);
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--dinkum-gray);
+  border: 2px solid var(--dinkum-primary);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(57, 33, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(57, 33, 0, 0.15);
+}
+
+/* Input Styles */
+input, textarea, select {
+  font-family: "McLaren", cursive;
+  background-color: var(--dinkum-beige);
+  border: 2px solid var(--dinkum-primary);
+  color: var(--dinkum-tertiary);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--dinkum-secondary);
+  box-shadow: 0 0 0 3px rgba(255, 196, 0, 0.2);
+}
