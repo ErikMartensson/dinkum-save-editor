@@ -1,6 +1,6 @@
 import { useComputed, useSignal } from "@preact/signals";
 import type { DinkumSaveData, QuickEditFields } from "../utils/types.ts";
-import { saveData } from "../routes/index.tsx";
+import { filename, saveData } from "../routes/index.tsx";
 
 export default function QuickEdit() {
   const isDirty = useSignal(false);
@@ -89,23 +89,34 @@ export default function QuickEdit() {
   };
 
   if (!fields.value) {
-    return (
-      <div class="bg-dinkum-gray rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
-        <h2 class="text-xl font-bold mb-4 text-dinkum-tertiary font-mclaren">
-          Quick Edit
-        </h2>
-        <p class="text-dinkum-accent font-mclaren">
-          Upload a save file to start editing
-        </p>
-      </div>
-    );
+    return;
   }
 
   return (
     <div class="bg-dinkum-gray rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
-      <h2 class="text-xl font-bold mb-4 text-dinkum-tertiary font-mclaren">
-        Quick Edit
-      </h2>
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-bold text-dinkum-tertiary font-mclaren">
+          Player Quick Edit
+        </h2>
+        <div class="flex items-center gap-2 bg-dinkum-beige px-3 py-1 rounded-md border border-dinkum-primary">
+          <svg
+            class="w-4 h-4 text-dinkum-accent"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            />
+          </svg>
+          <span class="text-sm font-medium text-dinkum-tertiary font-mclaren">
+            {filename.value}
+          </span>
+        </div>
+      </div>
 
       <div class="space-y-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">

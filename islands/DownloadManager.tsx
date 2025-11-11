@@ -46,7 +46,8 @@ export default function DownloadManager() {
 
       const a = document.createElement("a");
       a.href = url;
-      a.download = fname;
+      // Ensure the file has .es3 extension for encrypted files
+      a.download = fname.replace(/\.(json|es3)$/, ".es3");
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -77,14 +78,7 @@ export default function DownloadManager() {
   const hasContainerSave = containerData.value && containerFilename.value;
 
   if (!hasPlayerSave && !hasContainerSave) {
-    return (
-      <div class="bg-dinkum-gray rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
-        <h2 class="text-xl font-bold mb-4 text-dinkum-tertiary font-mclaren">
-          Download
-        </h2>
-        <p class="text-dinkum-accent font-mclaren">No save file loaded</p>
-      </div>
-    );
+    return;
   }
 
   return (

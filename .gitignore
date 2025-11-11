@@ -13,4 +13,5 @@ vendor/
 
 log/
 encrypted-saves/
+selected-saves/
 .roo/

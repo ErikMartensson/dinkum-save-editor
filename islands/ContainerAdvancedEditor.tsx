@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { filename, saveData } from "../routes/index.tsx";
+import { containerData, containerFilename } from "../routes/index.tsx";
 
 interface JsonNodeProps {
   data: unknown;
@@ -153,16 +153,16 @@ function JsonNode({ data, path, depth, onEdit }: JsonNodeProps) {
   );
 }
 
-export default function AdvancedEditor() {
+export default function ContainerAdvancedEditor() {
   const isExpanded = useSignal(false);
   const searchQuery = useSignal("");
   const hasChanges = useSignal(false);
 
   const handleEdit = (path: string, value: unknown) => {
-    if (!saveData.value) return;
+    if (!containerData.value) return;
 
-    // Create a deep copy of the save data
-    const newData = JSON.parse(JSON.stringify(saveData.value));
+    // Create a deep copy of the container data
+    const newData = JSON.parse(JSON.stringify(containerData.value));
 
     // Navigate to the path and update the value
     const parts = path.split(".").slice(1); // Remove "root"
@@ -176,13 +176,11 @@ export default function AdvancedEditor() {
     current[parts[parts.length - 1]] = value;
 
     // Update the signal
-    saveData.value = newData;
+    containerData.value = newData;
     hasChanges.value = true;
   };
 
   const handleExpandAll = () => {
-    // This would require a more complex state management
-    // For now, just toggle the main expansion
     isExpanded.value = true;
   };
 
@@ -190,7 +188,7 @@ export default function AdvancedEditor() {
     isExpanded.value = false;
   };
 
-  if (!saveData.value) {
+  if (!containerData.value) {
     return null;
   }
 
@@ -199,7 +197,7 @@ export default function AdvancedEditor() {
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center gap-3">
           <h2 class="text-2xl font-bold text-dinkum-tertiary font-mclaren">
-            Player Advanced Editor
+            Container Advanced Editor
           </h2>
           <div class="flex items-center gap-2 bg-dinkum-beige px-3 py-1 rounded-md border border-dinkum-primary">
             <svg
@@ -216,7 +214,7 @@ export default function AdvancedEditor() {
               />
             </svg>
             <span class="text-sm font-medium text-dinkum-tertiary font-mclaren">
-              {filename.value}
+              {containerFilename.value}
             </span>
           </div>
         </div>
@@ -264,7 +262,7 @@ export default function AdvancedEditor() {
 
       <div class="bg-dinkum-beige rounded-lg p-4 max-h-[600px] overflow-y-auto font-mono text-sm">
         <JsonNode
-          data={saveData.value}
+          data={containerData.value}
           path="root"
           depth={0}
           onEdit={handleEdit}
@@ -274,7 +272,8 @@ export default function AdvancedEditor() {
       <div class="mt-4 text-xs text-dinkum-tertiary font-mclaren">
         <p>
           💡 Tip: Click on any primitive value (strings, numbers, booleans) to
-          edit it. Changes are applied immediately to the in-memory save data.
+          edit it. Changes are applied immediately to the in-memory container
+          data.
         </p>
       </div>
     </div>

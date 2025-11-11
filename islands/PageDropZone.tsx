@@ -1,6 +1,14 @@
 import { useSignal } from "@preact/signals";
 import { ComponentChildren } from "preact";
-import { error, filename, fileSize, saveData } from "../routes/index.tsx";
+import {
+  containerData,
+  containerFilename,
+  containerFileSize,
+  error,
+  filename,
+  fileSize,
+  saveData,
+} from "../routes/index.tsx";
 
 interface PageDropZoneProps {
   children: ComponentChildren;
@@ -11,32 +19,93 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
   const isProcessing = useSignal(false);
 
   const handleFile = async (file: File) => {
-    if (!file.name.endsWith(".es3")) {
-      error.value = "Please upload a .es3 file";
+    const isES3 = file.name.endsWith(".es3");
+    const isJSON = file.name.endsWith(".json");
+
+    if (!isES3 && !isJSON) {
+      error.value = "Please select a .es3 or .json file";
       return;
     }
 
     isProcessing.value = true;
 
     try {
-      const arrayBuffer = await file.arrayBuffer();
-      const uint8Array = new Uint8Array(arrayBuffer);
+      let decryptedJson: string;
 
-      // Import crypto utilities dynamically for client-side use
-      const { decryptES3 } = await import("../utils/crypto.ts");
-      const decryptedJson = await decryptES3(uint8Array);
+      if (isES3) {
+        // Decrypt .es3 files
+        const arrayBuffer = await file.arrayBuffer();
+        const uint8Array = new Uint8Array(arrayBuffer);
+
+        // Import crypto utilities dynamically for client-side use
+        const { decryptES3 } = await import("../utils/crypto.ts");
+        decryptedJson = await decryptES3(uint8Array);
+      } else {
+        // Read .json files directly
+        decryptedJson = await file.text();
+      }
 
       // Parse and store the data
       const parsed = JSON.parse(decryptedJson);
-      saveData.value = parsed;
-      filename.value = file.name;
-      fileSize.value = decryptedJson.length;
+
+      // Determine file type and store appropriately
+      if (file.name.toLowerCase().includes("player")) {
+        saveData.value = parsed;
+        filename.value = file.name;
+        fileSize.value = decryptedJson.length;
+      } else if (file.name.toLowerCase().includes("container")) {
+        containerData.value = parsed;
+        containerFilename.value = file.name;
+        containerFileSize.value = decryptedJson.length;
+      } else {
+        // Default to player save if name doesn't match
+        saveData.value = parsed;
+        filename.value = file.name;
+        fileSize.value = decryptedJson.length;
+      }
+
       error.value = null;
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
       error.value = `Failed to decrypt file: ${message}`;
     } finally {
       isProcessing.value = false;
+    }
+  };
+
+  const handleMultipleFiles = async (files: FileList) => {
+    // Track which file types we've seen
+    let hasPlayer = false;
+    let hasContainer = false;
+    const warnings: string[] = [];
+
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      const isPlayer = file.name.toLowerCase().includes("player");
+      const isContainer = file.name.toLowerCase().includes("container");
+
+      // Check for duplicates
+      if (isPlayer && hasPlayer) {
+        warnings.push(`Skipped duplicate Player save: ${file.name}`);
+        continue;
+      }
+      if (isContainer && hasContainer) {
+        warnings.push(`Skipped duplicate Container save: ${file.name}`);
+        continue;
+      }
+
+      // Process the file
+      await handleFile(file);
+
+      // Mark as seen
+      if (isPlayer) hasPlayer = true;
+      if (isContainer) hasContainer = true;
+    }
+
+    // Show warnings if any files were skipped
+    if (warnings.length > 0) {
+      error.value = warnings.join("\n") +
+        "\n\nOnly one Player save and one Container save can be loaded at a time.";
     }
   };
 
@@ -47,7 +116,7 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
 
     const files = e.dataTransfer?.files;
     if (files && files.length > 0) {
-      handleFile(files[0]);
+      handleMultipleFiles(files);
     }
   };
 
@@ -60,8 +129,16 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
   const handleDragLeave = (e: DragEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    // Only hide overlay if leaving the window
-    if (e.clientX === 0 && e.clientY === 0) {
+    // Check if we're leaving the window/document
+    const target = e.target as HTMLElement;
+    const relatedTarget = e.relatedTarget as HTMLElement;
+
+    // If relatedTarget is null, we're leaving the window
+    // If target is the document or body, we're at the top level
+    if (
+      !relatedTarget || target === document.documentElement ||
+      target === document.body
+    ) {
       isDragging.value = false;
     }
   };
@@ -94,7 +171,10 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
               />
             </svg>
             <p class="text-3xl font-bold text-dinkum-tertiary font-mclaren text-center">
-              Drop your .es3 file here
+              Drop your save file here
+            </p>
+            <p class="text-lg text-dinkum-accent font-mclaren text-center mt-2">
+              .es3 or .json files
             </p>
           </div>
         </div>
@@ -107,7 +187,7 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
             <div class="animate-spin rounded-full h-16 w-16 border-b-4 border-dinkum-secondary mx-auto mb-4">
             </div>
             <p class="text-2xl font-bold text-dinkum-tertiary font-mclaren text-center">
-              Decrypting save file...
+              Processing save file...
             </p>
           </div>
         </div>

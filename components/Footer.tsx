@@ -1,8 +1,6 @@
-import type { ComponentChildren } from "preact";
-
 export function Footer() {
   return (
-    <footer class="bg-dinkum-gray border-t-2 border-dinkum-primary mt-12">
+    <footer class="bg-dinkum-gray footer-border mt-12">
       <div class="container mx-auto px-4 py-8">
         <div class="max-w-4xl mx-auto">
           {/* Main Footer Content */}
@@ -20,7 +18,7 @@ export function Footer() {
               {/* Encryption Password Callout */}
               <div class="bg-dinkum-primary/20 border-2 border-dinkum-accent rounded-lg p-4 mb-4">
                 <h4 class="text-sm font-bold text-dinkum-accent font-mclaren mb-2">
-                  🔓 Encryption Password
+                  🐨 Fun Trivia
                 </h4>
                 <p class="text-sm text-dinkum-tertiary font-mclaren mb-2">
                   Dinkum save files use AES encryption with the password:

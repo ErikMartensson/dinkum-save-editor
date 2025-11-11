@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { JSX } from "preact";
+import { TargetedEvent } from "preact";
 import {
   containerData,
   containerFilename,
@@ -10,25 +10,36 @@ import {
   saveData,
 } from "../routes/index.tsx";
 
-export default function FileUpload() {
+export default function FileSelect() {
   const isDragging = useSignal(false);
   const isProcessing = useSignal(false);
 
   const handleFile = async (file: File) => {
-    if (!file.name.endsWith(".es3")) {
-      error.value = "Please upload a .es3 file";
+    const isES3 = file.name.endsWith(".es3");
+    const isJSON = file.name.endsWith(".json");
+
+    if (!isES3 && !isJSON) {
+      error.value = "Please select a .es3 or .json file";
       return;
     }
 
     isProcessing.value = true;
 
     try {
-      const arrayBuffer = await file.arrayBuffer();
-      const uint8Array = new Uint8Array(arrayBuffer);
+      let decryptedJson: string;
 
-      // Import crypto utilities dynamically for client-side use
-      const { decryptES3 } = await import("../utils/crypto.ts");
-      const decryptedJson = await decryptES3(uint8Array);
+      if (isES3) {
+        // Decrypt .es3 files
+        const arrayBuffer = await file.arrayBuffer();
+        const uint8Array = new Uint8Array(arrayBuffer);
+
+        // Import crypto utilities dynamically for client-side use
+        const { decryptES3 } = await import("../utils/crypto.ts");
+        decryptedJson = await decryptES3(uint8Array);
+      } else {
+        // Read .json files directly
+        decryptedJson = await file.text();
+      }
 
       // Parse and store the data
       const parsed = JSON.parse(decryptedJson);
@@ -59,8 +70,38 @@ export default function FileUpload() {
   };
 
   const handleMultipleFiles = async (files: FileList) => {
+    // Track which file types we've seen
+    let hasPlayer = false;
+    let hasContainer = false;
+    const warnings: string[] = [];
+
     for (let i = 0; i < files.length; i++) {
-      await handleFile(files[i]);
+      const file = files[i];
+      const isPlayer = file.name.toLowerCase().includes("player");
+      const isContainer = file.name.toLowerCase().includes("container");
+
+      // Check for duplicates
+      if (isPlayer && hasPlayer) {
+        warnings.push(`Skipped duplicate Player save: ${file.name}`);
+        continue;
+      }
+      if (isContainer && hasContainer) {
+        warnings.push(`Skipped duplicate Container save: ${file.name}`);
+        continue;
+      }
+
+      // Process the file
+      await handleFile(file);
+
+      // Mark as seen
+      if (isPlayer) hasPlayer = true;
+      if (isContainer) hasContainer = true;
+    }
+
+    // Show warnings if any files were skipped
+    if (warnings.length > 0) {
+      error.value = warnings.join("\n") +
+        "\n\nOnly one Player save and one Container save can be loaded at a time.";
     }
   };
 
@@ -94,7 +135,7 @@ export default function FileUpload() {
     }
   };
 
-  const handleFileInput = (e: JSX.TargetedEvent<HTMLInputElement>) => {
+  const handleFileInput = (e: TargetedEvent<HTMLInputElement>) => {
     const files = (e.target as HTMLInputElement).files;
     if (files && files.length > 0) {
       handleMultipleFiles(files);
@@ -141,15 +182,15 @@ export default function FileUpload() {
               </svg>
               <div class="mt-4">
                 <label
-                  for="file-upload"
+                  for="file-select"
                   class="cursor-pointer rounded-md font-bold text-dinkum-secondary hover:text-dinkum-orange hover:underline focus-within:outline-none font-mclaren text-lg transition-colors"
                 >
-                  <span>Upload a file</span>
+                  <span>Select a file</span>
                   <input
-                    id="file-upload"
-                    name="file-upload"
+                    id="file-select"
+                    name="file-select"
                     type="file"
-                    accept=".es3"
+                    accept=".es3,.json"
                     multiple
                     class="sr-only"
                     onInput={handleFileInput}
@@ -160,7 +201,7 @@ export default function FileUpload() {
                 </p>
               </div>
               <p class="text-xs text-dinkum-accent mt-2 font-mclaren">
-                .es3 save files (Player.es3, Container.es3)
+                .es3 or .json files - Select Player and/or Container saves
               </p>
             </>
           )}

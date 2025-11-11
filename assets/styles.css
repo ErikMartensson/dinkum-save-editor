@@ -148,3 +148,8 @@ input:focus, textarea:focus, select:focus {
   border-color: var(--dinkum-secondary);
   box-shadow: 0 0 0 3px rgba(255, 196, 0, 0.2);
 }
+
+/* Footer Styles */
+.footer-border {
+  border-top: 3px dashed var(--dinkum-orange);
+}

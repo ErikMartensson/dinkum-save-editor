@@ -158,7 +158,7 @@ def main():
         print("  python find_password.py /mnt/d/SteamLibrary/steamapps/common/Dinkum")
         print("\nCommon locations:")
         print("  Windows: C:\\Program Files (x86)\\Steam\\steamapps\\common\\Dinkum")
-        print("  Linux:   ~/.steam/steam/steamapps/common/Dinkum")
+        print("  Linux:   ~/.local/share/Steam/steamapps/common/Dinkum")
         print("  WSL:     /mnt/c/Program Files (x86)/Steam/steamapps/common/Dinkum")
         sys.exit(1)
 

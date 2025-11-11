@@ -1,13 +1,17 @@
 import { signal } from "@preact/signals";
 import { Head } from "fresh/runtime";
 import { define } from "../utils.ts";
-import FileUpload from "../islands/FileUpload.tsx";
+import FileSelect from "../islands/FileSelect.tsx";
 import QuickEdit from "../islands/QuickEdit.tsx";
 import AdvancedEditor from "../islands/AdvancedEditor.tsx";
+import ContainerEditor from "../islands/ContainerEditor.tsx";
+import ContainerAdvancedEditor from "../islands/ContainerAdvancedEditor.tsx";
 import DownloadManager from "../islands/DownloadManager.tsx";
 import PageDropZone from "../islands/PageDropZone.tsx";
 import ErrorDismiss from "../islands/ErrorDismiss.tsx";
+import DevAutoLoader from "../islands/DevAutoLoader.tsx";
 import SaveFileCard from "../components/SaveFileCard.tsx";
+import { SaveFileLocation } from "../components/SaveFileLocation.tsx";
 import { Footer } from "../components/Footer.tsx";
 import type { ContainerSaveData, DinkumSaveData } from "../utils/types.ts";
 
@@ -20,13 +24,44 @@ export const fileSize = signal<number>(0);
 export const containerFileSize = signal<number>(0);
 export const error = signal<string | null>(null);
 
-export default define.page(function Home() {
+/**
+ * Check if there are dev save files to load (SSR only, dev mode only)
+ */
+async function checkDevSaveFiles(): Promise<string[]> {
+  // Only check in development mode
+  if (Deno.env.get("DENO_DEPLOYMENT_ID") !== undefined) {
+    return [];
+  }
+
+  try {
+    const files: string[] = [];
+    for await (const entry of Deno.readDir("./selected-saves")) {
+      if (
+        entry.isFile &&
+        (entry.name.endsWith(".es3") || entry.name.endsWith(".json"))
+      ) {
+        files.push(entry.name);
+      }
+    }
+    return files;
+  } catch {
+    // Directory doesn't exist or can't be read
+    return [];
+  }
+}
+
+export default define.page(async function Home() {
+  // Check for dev save files during SSR
+  const devSaveFiles = await checkDevSaveFiles();
+  const hasDevSaveFiles = devSaveFiles.length > 0;
   return (
     <>
       <Head>
         <title>Dinkum Save Editor</title>
       </Head>
       <PageDropZone>
+        {/* Only include DevAutoLoader if there are files to load */}
+        {hasDevSaveFiles && <DevAutoLoader />}
         <div class="min-h-screen bg-dinkum-beige">
           <div class="container mx-auto px-4 py-8">
             {/* Header */}
@@ -35,8 +70,10 @@ export default define.page(function Home() {
                 Dinkum Save Editor
               </h1>
               <p class="text-dinkum-accent text-lg font-mclaren">
-                Save editor for Dinkum v1.0.0 and later (encrypted saves
-                supported)
+                Save editor for Dinkum v1.0 and later
+              </p>
+              <p class="text-dinkum-accent text-md font-mclaren">
+                Encrypted (.es3) or decrypted (.json) save files
               </p>
             </div>
 
@@ -45,8 +82,8 @@ export default define.page(function Home() {
 
             {/* Main Content */}
             <div class="max-w-4xl mx-auto space-y-6">
-              {/* File Upload */}
-              <FileUpload />
+              {/* File Select */}
+              <FileSelect />
 
               {/* Loaded File Info */}
               {saveData.value && filename.value && (
@@ -97,14 +134,23 @@ export default define.page(function Home() {
                 </div>
               )}
 
-              {/* Quick Edit */}
+              {/* Player Quick Edit */}
               <QuickEdit />
 
-              {/* Advanced Editor */}
+              {/* Player Advanced Editor */}
               <AdvancedEditor />
+
+              {/* Container Editor */}
+              <ContainerEditor />
+
+              {/* Container Advanced Editor */}
+              <ContainerAdvancedEditor />
 
               {/* Download Manager */}
               <DownloadManager />
+
+              {/* Save File Location Info */}
+              <SaveFileLocation />
             </div>
           </div>
 

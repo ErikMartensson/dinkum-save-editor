@@ -88,6 +88,16 @@ This project is built with:
 - `deno task check` - Run formatting, linting, and type checking
 - `deno task update` - Update Fresh framework
 
+### Development Auto-Load Feature
+
+For faster development, the app can automatically load save files on startup:
+
+1. Create a `selected-saves/` directory in the project root
+2. Place your test `.es3` or `.json` files in this directory
+3. Start the dev server - files will auto-load after each hot-reload
+
+This feature is **development-only** and disabled in production.
+
 ### Project Structure
 
 ```
@@ -106,8 +116,8 @@ dinkum-save-editor/
 Dinkum save files are typically located at:
 
 - **Windows**: `%USERPROFILE%\AppData\LocalLow\James Bendon\Dinkum\`
-- **Linux**: `~/.config/unity3d/James Bendon/Dinkum/`
-- **macOS**: `~/Library/Application Support/James Bendon/Dinkum/`
+- **Linux / Steam Deck**:
+  `~/.local/share/Steam/steamapps/compatdata/1062520/pfx/drive_c/users/steamuser/AppData/LocalLow/James Bendon/Dinkum`
 
 Common save files:
 

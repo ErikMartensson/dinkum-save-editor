@@ -42,7 +42,7 @@ python find_password.py "/mnt/d/SteamLibrary/steamapps/common/Dinkum"
 Linux:
 
 ```bash
-python find_password.py "$HOME/.steam/steam/steamapps/common/Dinkum"
+python find_password.py "$HOME/.local/share/Steam/steamapps/common/Dinkum"
 ```
 
 Windows (native):
@@ -54,7 +54,7 @@ python find_password.py "D:\SteamLibrary\steamapps\common\Dinkum"
 **Common installation locations:**
 
 - **Windows**: `C:\Program Files (x86)\Steam\steamapps\common\Dinkum`
-- **Linux**: `~/.steam/steam/steamapps/common/Dinkum`
+- **Linux**: `~/.local/share/Steam/steamapps/common/Dinkum`
 - **WSL**: `/mnt/c/Program Files (x86)/Steam/steamapps/common/Dinkum`
 
 ## How It Works
@@ -178,7 +178,8 @@ encryption. The discovery process involved:
 
 - **Save files**: Located in your user profile's save directory
   - Windows: `%USERPROFILE%\AppData\LocalLow\James Bendon\Dinkum\`
-  - Linux: `~/.config/unity3d/James Bendon/Dinkum/`
+  - Linux / Steam Deck:
+    `~/.local/share/Steam/steamapps/compatdata/1062520/pfx/drive_c/users/steamuser/AppData/LocalLow/James Bendon/Dinkum`
 - **File types**:
   - `Player.es3` - Player data (encrypted)
   - `Container.es3` - Chest/container data (encrypted)
