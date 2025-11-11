@@ -1,15 +1,50 @@
 import { useSignal } from "@preact/signals";
 import { filename, saveData } from "../routes/index.tsx";
+import { useJsonSearch } from "../hooks/useJsonSearch.ts";
+import { useDebouncedValue } from "../hooks/useDebouncedValue.ts";
 
 interface JsonNodeProps {
   data: unknown;
   path: string;
   depth: number;
   onEdit: (path: string, value: unknown) => void;
+  searchQuery: string;
+  isMatchingPath: boolean;
+  shouldAutoExpand: boolean;
 }
 
-function JsonNode({ data, path, depth, onEdit }: JsonNodeProps) {
-  const isExpanded = useSignal(depth < 2); // Auto-expand first 2 levels
+// Helper function to check if a subtree contains any matches
+function hasMatchInSubtree(obj: unknown, query: string): boolean {
+  if (!query || !obj) return false;
+
+  const lowerQuery = query.toLowerCase();
+
+  if (typeof obj !== "object" || obj === null) {
+    return String(obj).toLowerCase().includes(lowerQuery);
+  }
+
+  const entries = Array.isArray(obj)
+    ? (obj as unknown[]).map((v, i) => [String(i), v] as [string, unknown])
+    : Object.entries(obj as Record<string, unknown>);
+
+  for (const [key, value] of entries) {
+    if (key.toLowerCase().includes(lowerQuery)) return true;
+    if (hasMatchInSubtree(value, query)) return true;
+  }
+
+  return false;
+}
+
+function JsonNode(
+  { data, path, depth, onEdit, searchQuery, isMatchingPath, shouldAutoExpand }:
+    JsonNodeProps,
+) {
+  const isExpanded = useSignal(shouldAutoExpand || depth < 2); // Auto-expand if search match or first 2 levels
+
+  // Update expansion when shouldAutoExpand changes
+  if (shouldAutoExpand && !isExpanded.value) {
+    isExpanded.value = true;
+  }
   const isEditing = useSignal(false);
   const editValue = useSignal("");
 
@@ -45,6 +80,26 @@ function JsonNode({ data, path, depth, onEdit }: JsonNodeProps) {
 
   const handleCancel = () => {
     isEditing.value = false;
+  };
+
+  const highlightText = (text: string) => {
+    if (!searchQuery || !text) return text;
+
+    const lowerText = text.toLowerCase();
+    const lowerQuery = searchQuery.toLowerCase();
+    const index = lowerText.indexOf(lowerQuery);
+
+    if (index === -1) return text;
+
+    return (
+      <>
+        {text.substring(0, index)}
+        <mark class="bg-yellow-300 font-bold">
+          {text.substring(index, index + searchQuery.length)}
+        </mark>
+        {text.substring(index + searchQuery.length)}
+      </>
+    );
   };
 
   const renderPrimitive = () => {
@@ -98,16 +153,17 @@ function JsonNode({ data, path, depth, onEdit }: JsonNodeProps) {
         onClick={handleEdit}
         title="Click to edit"
       >
-        {displayValue}
+        {isMatchingPath ? highlightText(displayValue) : displayValue}
       </span>
     );
   };
 
   if (isPrimitive) {
+    const keyName = path.split(".").pop() || "";
     return (
       <div class="ml-4">
         <span class="text-dinkum-accent font-mono">
-          {path.split(".").pop()}:
+          {isMatchingPath ? highlightText(keyName) : keyName}:
         </span>
         {renderPrimitive()}
       </div>
@@ -118,6 +174,8 @@ function JsonNode({ data, path, depth, onEdit }: JsonNodeProps) {
   const displayType = isArray
     ? `Array[${keys.length}]`
     : `Object{${keys.length}}`;
+
+  const keyName = path.split(".").pop() || "";
 
   return (
     <div class="ml-4">
@@ -130,7 +188,7 @@ function JsonNode({ data, path, depth, onEdit }: JsonNodeProps) {
           {isExpanded.value ? "▼" : "▶"}
         </button>
         <span class="text-dinkum-accent font-mono font-bold">
-          {path.split(".").pop()}
+          {isMatchingPath ? highlightText(keyName) : keyName}
         </span>
         <span class="text-dinkum-tertiary text-sm font-mono">
           {displayType}
@@ -138,15 +196,36 @@ function JsonNode({ data, path, depth, onEdit }: JsonNodeProps) {
       </div>
       {isExpanded.value && (
         <div class="border-l-2 border-dinkum-gray ml-2 pl-2">
-          {keys.map((key) => (
-            <JsonNode
-              key={`${path}.${key}`}
-              data={(data as Record<string, unknown>)[key]}
-              path={`${path}.${key}`}
-              depth={depth + 1}
-              onEdit={onEdit}
-            />
-          ))}
+          {keys.map((key) => {
+            const childPath = `${path}.${key}`;
+            const childValue = (data as Record<string, unknown>)[key];
+            const isMatching = searchQuery.length > 0 && (
+              key.toLowerCase().includes(searchQuery.toLowerCase()) ||
+              (typeof childValue !== "object" &&
+                childValue !== null &&
+                String(childValue).toLowerCase().includes(
+                  searchQuery.toLowerCase(),
+                ))
+            );
+
+            // Check if this node or any of its descendants have matches
+            const hasDescendantMatch = searchQuery.length > 0 && (
+              isMatching || hasMatchInSubtree(childValue, searchQuery)
+            );
+
+            return (
+              <JsonNode
+                key={childPath}
+                data={childValue}
+                path={childPath}
+                depth={depth + 1}
+                onEdit={onEdit}
+                searchQuery={searchQuery}
+                isMatchingPath={isMatching}
+                shouldAutoExpand={hasDescendantMatch}
+              />
+            );
+          })}
         </div>
       )}
     </div>
@@ -156,7 +235,11 @@ function JsonNode({ data, path, depth, onEdit }: JsonNodeProps) {
 export default function AdvancedEditor() {
   const isExpanded = useSignal(false);
   const searchQuery = useSignal("");
+  const debouncedSearchQuery = useDebouncedValue(searchQuery, 300);
   const hasChanges = useSignal(false);
+  const currentMatchIndex = useSignal(0);
+
+  const searchResult = useJsonSearch(saveData, debouncedSearchQuery);
 
   const handleEdit = (path: string, value: unknown) => {
     if (!saveData.value) return;
@@ -189,6 +272,68 @@ export default function AdvancedEditor() {
   const handleCollapseAll = () => {
     isExpanded.value = false;
   };
+
+  const handleClearSearch = () => {
+    searchQuery.value = "";
+    currentMatchIndex.value = 0;
+  };
+
+  const handleNextMatch = () => {
+    if (searchResult.value.matches.length > 0) {
+      currentMatchIndex.value = (currentMatchIndex.value + 1) %
+        searchResult.value.matches.length;
+      scrollToMatch(currentMatchIndex.value);
+    }
+  };
+
+  const handlePreviousMatch = () => {
+    if (searchResult.value.matches.length > 0) {
+      currentMatchIndex.value = currentMatchIndex.value === 0
+        ? searchResult.value.matches.length - 1
+        : currentMatchIndex.value - 1;
+      scrollToMatch(currentMatchIndex.value);
+    }
+  };
+
+  const scrollToMatch = (index: number) => {
+    const match = searchResult.value.matches[index];
+    if (match) {
+      // Find all highlighted elements
+      const highlights = document.querySelectorAll("mark.bg-yellow-300");
+      if (highlights[index]) {
+        // Remove previous active highlight
+        highlights.forEach((h) =>
+          h.classList.remove("ring-2", "ring-blue-500")
+        );
+        // Add active highlight to current match
+        highlights[index].classList.add("ring-2", "ring-blue-500");
+        // Scroll into view
+        highlights[index].scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
+    }
+  };
+
+  const handleKeyDown = (e: KeyboardEvent) => {
+    if (e.key === "Enter" && searchQuery.value) {
+      e.preventDefault();
+      if (e.shiftKey) {
+        handlePreviousMatch();
+      } else {
+        handleNextMatch();
+      }
+    }
+  };
+
+  // Reset match index when search query changes
+  if (
+    searchResult.value.matches.length > 0 &&
+    currentMatchIndex.value >= searchResult.value.matches.length
+  ) {
+    currentMatchIndex.value = 0;
+  }
 
   if (!saveData.value) {
     return null;
@@ -242,15 +387,58 @@ export default function AdvancedEditor() {
         <p class="text-sm text-dinkum-accent mb-2 font-mclaren">
           ⚠️ Advanced users only! Click any value to edit it directly.
         </p>
-        <input
-          type="text"
-          placeholder="Search fields... (coming soon)"
-          value={searchQuery.value}
-          onInput={(e) =>
-            searchQuery.value = (e.target as HTMLInputElement).value}
-          class="w-full px-4 py-2 border-2 border-dinkum-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-dinkum-secondary font-mclaren"
-          disabled
-        />
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Search fields and values... (Enter: next, Shift+Enter: previous)"
+            value={searchQuery.value}
+            onInput={(e) =>
+              searchQuery.value = (e.target as HTMLInputElement).value}
+            onKeyDown={handleKeyDown}
+            class="w-full px-4 py-2 border-2 border-dinkum-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-dinkum-secondary font-mclaren pr-20"
+          />
+          {searchQuery.value && (
+            <div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-2">
+              {searchResult.value.matches.length > 0 && (
+                <>
+                  <span class="text-xs text-dinkum-tertiary font-mclaren">
+                    {currentMatchIndex.value + 1} /{" "}
+                    {searchResult.value.matches.length}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={handlePreviousMatch}
+                    class="px-2 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded text-xs hover:bg-dinkum-accent transition-colors"
+                    title="Previous match (Shift+Enter)"
+                  >
+                    ↑
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleNextMatch}
+                    class="px-2 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded text-xs hover:bg-dinkum-accent transition-colors"
+                    title="Next match (Enter)"
+                  >
+                    ↓
+                  </button>
+                </>
+              )}
+              {searchResult.value.matches.length === 0 &&
+                debouncedSearchQuery.value && (
+                <span class="text-xs text-red-600 font-mclaren">
+                  No matches
+                </span>
+              )}
+              <button
+                type="button"
+                onClick={handleClearSearch}
+                class="px-2 py-1 bg-dinkum-gray text-dinkum-tertiary rounded text-xs hover:bg-dinkum-accent hover:text-dinkum-secondary transition-colors"
+              >
+                Clear
+              </button>
+            </div>
+          )}
+        </div>
       </div>
 
       {hasChanges.value && (
@@ -268,6 +456,9 @@ export default function AdvancedEditor() {
           path="root"
           depth={0}
           onEdit={handleEdit}
+          searchQuery={searchQuery.value}
+          isMatchingPath={searchResult.value.matchingPaths.has("root")}
+          shouldAutoExpand={searchResult.value.shouldExpand("root")}
         />
       </div>
 

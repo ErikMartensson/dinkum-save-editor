@@ -3,7 +3,6 @@ import {
   containerData,
   containerFilename,
   containerFileSize,
-  error,
   filename,
   fileSize,
   saveData,

@@ -62,6 +62,7 @@ export function SaveFileLocation() {
                 %USERPROFILE%\AppData\LocalLow\James Bendon\Dinkum\
               </code>
               <button
+                type="button"
                 onClick={() =>
                   copyToClipboard(
                     "%USERPROFILE%\\AppData\\LocalLow\\James Bendon\\Dinkum\\",
@@ -115,6 +116,7 @@ export function SaveFileLocation() {
                 Bendon/Dinkum
               </code>
               <button
+                type="button"
                 onClick={() =>
                   copyToClipboard(
                     "~/.local/share/Steam/steamapps/compatdata/1062520/pfx/drive_c/users/steamuser/AppData/LocalLow/James Bendon/Dinkum",

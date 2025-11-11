@@ -11,7 +11,7 @@ import PageDropZone from "../islands/PageDropZone.tsx";
 import ErrorDismiss from "../islands/ErrorDismiss.tsx";
 import DevAutoLoader from "../islands/DevAutoLoader.tsx";
 import SaveFileCard from "../components/SaveFileCard.tsx";
-import { SaveFileLocation } from "../components/SaveFileLocation.tsx";
+import SaveFileLocation from "../islands/SaveFileLocation.tsx";
 import { Footer } from "../components/Footer.tsx";
 import type { ContainerSaveData, DinkumSaveData } from "../utils/types.ts";
 
