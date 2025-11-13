@@ -7,7 +7,7 @@ export default function ErrorDismiss() {
     <div class="max-w-4xl mx-auto mb-6">
       <div class="bg-dinkum-orange/20 border-2 border-dinkum-accent rounded-lg p-4 flex items-start gap-3">
         <svg
-          class="w-5 h-5 text-dinkum-accent flex-shrink-0 mt-0.5"
+          class="w-5 h-5 text-dinkum-accent shrink-0 mt-0.5"
           fill="currentColor"
           viewBox="0 0 20 20"
         >

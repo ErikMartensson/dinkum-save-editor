@@ -68,7 +68,7 @@ export function SaveFileLocation() {
                     "%USERPROFILE%\\AppData\\LocalLow\\James Bendon\\Dinkum\\",
                     "Windows",
                   )}
-                class="flex-shrink-0 px-3 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded hover:bg-dinkum-accent transition-colors text-xs font-mclaren"
+                class="shrink-0 px-3 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded hover:bg-dinkum-accent transition-colors text-xs font-mclaren"
                 title="Copy to clipboard"
               >
                 📋 Copy
@@ -122,7 +122,7 @@ export function SaveFileLocation() {
                     "~/.local/share/Steam/steamapps/compatdata/1062520/pfx/drive_c/users/steamuser/AppData/LocalLow/James Bendon/Dinkum",
                     "Linux / Steam Deck",
                   )}
-                class="flex-shrink-0 px-3 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded hover:bg-dinkum-accent transition-colors text-xs font-mclaren"
+                class="shrink-0 px-3 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded hover:bg-dinkum-accent transition-colors text-xs font-mclaren"
                 title="Copy to clipboard"
               >
                 📋 Copy
