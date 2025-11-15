@@ -162,7 +162,7 @@ export default function SaveFileLocation() {
               </li>
             </ol>
 
-            <div class="bg-dinkum-gray border-2 border-dinkum-primary rounded-lg p-3 mb-2">
+            <div class="bg-dinkum-gray border-2 border-dinkum-border-primary rounded-lg p-3 mb-2">
               <div class="flex items-center justify-between gap-2">
                 <code class="text-sm font-mono text-dinkum-tertiary break-all select-all">
                   %USERPROFILE%\AppData\LocalLow\James Bendon\Dinkum\
@@ -207,7 +207,7 @@ export default function SaveFileLocation() {
               Save files are in the Proton compatibility folder:
             </p>
 
-            <div class="bg-dinkum-gray border-2 border-dinkum-primary rounded-lg p-3 mb-2">
+            <div class="bg-dinkum-gray border-2 border-dinkum-border-primary rounded-lg p-3 mb-2">
               <div class="flex items-center justify-between gap-2">
                 <code class="text-xs font-mono text-dinkum-tertiary break-all select-all">
                   ~/.local/share/Steam/steamapps/compatdata/1062520/pfx/drive_c/users/steamuser/AppData/LocalLow/James

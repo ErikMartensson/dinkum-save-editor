@@ -1,7 +1,7 @@
 import { signal } from "@preact/signals";
 import { Head } from "fresh/runtime";
 import { define } from "../utils.ts";
-import FileSelect from "../islands/FileSelect.tsx";
+import FileSelectWrapper from "../islands/FileSelectWrapper.tsx";
 import QuickEdit from "../islands/QuickEdit.tsx";
 import AdvancedEditor from "../islands/AdvancedEditor.tsx";
 import ContainerEditor from "../islands/ContainerEditor.tsx";
@@ -82,8 +82,8 @@ export default define.page(async function Home() {
 
             {/* Main Content */}
             <div class="max-w-4xl mx-auto space-y-6">
-              {/* File Select */}
-              <FileSelect />
+              {/* Show FileSelect and FeaturesList only if no files are selected */}
+              <FileSelectWrapper />
 
               {/* Loaded File Info */}
               {saveData.value && filename.value && (

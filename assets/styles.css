@@ -86,16 +86,33 @@ body {
   color: var(--dinkum-orange);
 }
 
-.dinkum-border-primary {
-  border-color: var(--dinkum-primary);
+/* Border Color Classes */
+.border-dinkum-primary {
+  border-color: var(--dinkum-primary) !important;
 }
 
-.dinkum-border-secondary {
-  border-color: var(--dinkum-secondary);
+.border-dinkum-secondary {
+  border-color: var(--dinkum-secondary) !important;
 }
 
-.dinkum-border-accent {
-  border-color: var(--dinkum-accent);
+.border-dinkum-tertiary {
+  border-color: var(--dinkum-tertiary) !important;
+}
+
+.border-dinkum-accent {
+  border-color: var(--dinkum-accent) !important;
+}
+
+.border-dinkum-beige {
+  border-color: var(--dinkum-beige) !important;
+}
+
+.border-dinkum-gray {
+  border-color: var(--dinkum-gray) !important;
+}
+
+.border-dinkum-orange {
+  border-color: var(--dinkum-orange) !important;
 }
 
 /* Link Styles */

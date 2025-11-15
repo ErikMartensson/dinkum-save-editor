@@ -145,10 +145,10 @@ export default function FileSelect() {
   return (
     <div class="w-full">
       <div
-        class={`border-2 border-dashed rounded-lg p-8 text-center transition-all duration-200 ${
+        class={`border-4 border-dashed rounded-lg p-8 text-center transition-all duration-200 ${
           isDragging.value
             ? "border-dinkum-secondary bg-dinkum-secondary/30 scale-105 shadow-lg"
-            : "border-dinkum-primary bg-dinkum-gray hover:border-dinkum-orange"
+            : "border-dinkum-accent bg-dinkum-gray hover:border-dinkum-orange"
         } ${isProcessing.value ? "opacity-50 pointer-events-none" : ""}`}
         onDrop={handleDrop}
         onDragOver={handleDragOver}

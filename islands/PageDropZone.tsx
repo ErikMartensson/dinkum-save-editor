@@ -155,9 +155,9 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
       {/* Full-page drop overlay */}
       {isDragging.value && !isProcessing.value && (
         <div class="fixed inset-0 z-50 bg-dinkum-secondary/40 backdrop-blur-sm flex items-center justify-center pointer-events-none">
-          <div class="bg-dinkum-beige border-4 border-dashed border-dinkum-secondary rounded-2xl p-12 shadow-2xl">
+          <div class="bg-dinkum-beige border-4 border-dashed border-dinkum-accent rounded-2xl p-12 shadow-2xl">
             <svg
-              class="mx-auto h-24 w-24 text-dinkum-secondary mb-4"
+              class="mx-auto h-24 w-24 text-dinkum-accent mb-4"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 48 48"
