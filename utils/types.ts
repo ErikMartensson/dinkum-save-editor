@@ -232,7 +232,8 @@ export interface DinkumSaveData {
     __type: string;
     value: PermissionsData;
   };
-  stash_1: {
+  // Dynamic stash properties (stash_0, stash_1, stash_2, etc.)
+  [key: `stash_${number}`]: {
     __type: string;
     value: ChestSave;
   };
