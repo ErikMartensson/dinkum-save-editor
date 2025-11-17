@@ -94,6 +94,24 @@ export interface ChestSave {
   houseY: number;
 }
 
+export interface PermissionEntry {
+  playerName: string;
+  islandId: number;
+  isHost: boolean;
+  canTerraform: boolean;
+  canDamageTiles: boolean;
+  canOpenChests: boolean;
+  canPickup: boolean;
+  canInteractWithVehicles: boolean;
+  canEditHouse: boolean;
+  canFarmAnimal: boolean;
+  canCreative: boolean;
+}
+
+export interface PermissionsData {
+  allPermissions: PermissionEntry[];
+}
+
 /**
  * Root save file structure
  */
@@ -212,11 +230,7 @@ export interface DinkumSaveData {
   };
   permissions: {
     __type: string;
-    value: unknown;
-  };
-  stash_0: {
-    __type: string;
-    value: ChestSave;
+    value: PermissionsData;
   };
   stash_1: {
     __type: string;

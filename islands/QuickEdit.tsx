@@ -30,6 +30,9 @@ export default function QuickEdit() {
   const handleSave = () => {
     if (!saveData.value || !fields.value) return;
 
+    const newPlayerName =
+      (document.getElementById("playerName") as HTMLInputElement).value;
+
     // Create updated save data
     const updated: DinkumSaveData = {
       ...saveData.value,
@@ -37,9 +40,7 @@ export default function QuickEdit() {
         ...saveData.value.playerInfo,
         value: {
           ...saveData.value.playerInfo.value,
-          playerName:
-            (document.getElementById("playerName") as HTMLInputElement)
-              .value,
+          playerName: newPlayerName,
           islandName:
             (document.getElementById("islandName") as HTMLInputElement)
               .value,
@@ -79,6 +80,28 @@ export default function QuickEdit() {
         },
       },
     };
+
+    // Update player name in permissions if it exists
+    if (updated.permissions?.value?.allPermissions) {
+      updated.permissions = {
+        ...updated.permissions,
+        value: {
+          ...updated.permissions.value,
+          allPermissions: updated.permissions.value.allPermissions.map(
+            (permission) => {
+              // Update the host player's name
+              if (permission.isHost) {
+                return {
+                  ...permission,
+                  playerName: newPlayerName,
+                };
+              }
+              return permission;
+            },
+          ),
+        },
+      };
+    }
 
     saveData.value = updated;
     isDirty.value = false;
