@@ -88,8 +88,8 @@ This project builds upon the work of others in the Dinkum modding community:
 
 ## License
 
-This project is open source. See individual component licenses in the credits
-section above.
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
+See the LICENSE file for details.
 
 ## Contributing
 
