@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://dinkum-save-editor.acidworks.deno.net/sitemap.xml

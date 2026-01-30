@@ -8,17 +8,19 @@ export default define.page(function App({ Component }) {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-          Dinkum Save Editor – Edit Encrypted .es3 Files, Player Data &
-          Inventory
+          Dinkum Save Editor — Edit Encrypted .es3 Save Files
         </title>
         <meta
           name="description"
-          content="Edit your encrypted Dinkum .es3 save files securely in your browser—no uploads required. This offline-first editor supports the latest Dinkum save format, letting you modify player data, inventory, currency, and more, even when other editors no longer work."
+          content="Edit encrypted Dinkum .es3 save files securely in your browser — no uploads required. Modify player data, inventory, currency, and more with this free browser-based save editor."
         />
-        <meta property="og:title" content="Dinkum Save Editor" />
+        <meta
+          property="og:title"
+          content="Dinkum Save Editor — Edit Encrypted .es3 Save Files"
+        />
         <meta
           property="og:description"
-          content="Edit your encrypted Dinkum .es3 save files securely in your browser—no uploads required. This offline-first editor supports the latest Dinkum save format, letting you modify player data, inventory, currency, and more, even when other editors no longer work."
+          content="Edit encrypted Dinkum .es3 save files securely in your browser — no uploads required. Modify player data, inventory, currency, and more with this free browser-based save editor."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -27,10 +29,13 @@ export default define.page(function App({ Component }) {
         />
         <meta property="og:image" content="/assets/editor-preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Dinkum Save Editor" />
+        <meta
+          name="twitter:title"
+          content="Dinkum Save Editor — Edit Encrypted .es3 Save Files"
+        />
         <meta
           name="twitter:description"
-          content="Edit your encrypted Dinkum .es3 save files securely in your browser—no uploads required. This offline-first editor supports the latest Dinkum save format, letting you modify player data, inventory, currency, and more, even when other editors no longer work."
+          content="Edit encrypted Dinkum .es3 save files securely in your browser — no uploads required. Modify player data, inventory, currency, and more with this free browser-based save editor."
         />
         <meta name="twitter:image" content="/assets/editor-preview.png" />
         <link rel="shortcut icon" href="/favicon.ico" />
