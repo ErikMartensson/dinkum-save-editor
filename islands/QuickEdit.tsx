@@ -293,7 +293,7 @@ export default function QuickEdit() {
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-          <div class="flex items-center">
+          <div class="flex items-center self-start">
             <input
               type="checkbox"
               id="isCreative"
@@ -309,27 +309,26 @@ export default function QuickEdit() {
             </label>
           </div>
 
-          <div class="flex items-center">
-            <input
-              type="checkbox"
-              id="hasBeenCreative"
-              defaultChecked={fields.value.hasBeenCreative}
-              onChange={handleChange}
-              class="h-4 w-4 text-dinkum-secondary focus:ring-dinkum-secondary border-dinkum-primary rounded"
-            />
-            <label
-              for="hasBeenCreative"
-              class="ml-2 block text-sm text-dinkum-tertiary font-mclaren"
-              title="When enabled, Steam achievements are disabled for this save"
-            >
-              Has Been Creative
-              <span
-                class="ml-1 text-dinkum-accent cursor-help"
-                title="When enabled, Steam achievements are disabled for this save"
+          <div>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="hasBeenCreative"
+                defaultChecked={fields.value.hasBeenCreative}
+                onChange={handleChange}
+                class="h-4 w-4 text-dinkum-secondary focus:ring-dinkum-secondary border-dinkum-primary rounded"
+              />
+              <label
+                for="hasBeenCreative"
+                class="ml-2 block text-sm text-dinkum-tertiary font-mclaren"
               >
-                ⓘ
-              </span>
-            </label>
+                Steam Achievements Blocked
+              </label>
+            </div>
+            <p class="text-xs text-dinkum-accent font-mclaren mt-1 ml-6">
+              Using creative mode sets this flag, which permanently blocks Steam
+              achievements for this save. Uncheck it to re-enable them.
+            </p>
           </div>
         </div>
 

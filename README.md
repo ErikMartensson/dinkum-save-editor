@@ -160,6 +160,7 @@ dinkum-save-editor/
 ├── routes/              # Fresh routes (pages)
 ├── islands/             # Interactive Preact components
 ├── components/          # Static Preact components
+├── hooks/               # Custom Preact hooks
 ├── utils/               # Utility functions (crypto, types)
 ├── static/              # Static assets (fonts, icons)
 ├── finding-the-password/ # Python script to find encryption password

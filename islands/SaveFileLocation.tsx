@@ -243,9 +243,9 @@ export default function SaveFileLocation() {
             <code class="px-1 bg-dinkum-gray rounded text-xs font-mono">
               Slot2
             </code>, etc. Each folder contains the save files for one game save
-            slot. The main save file is named{" "}
+            slot. The main save file is{" "}
             <code class="px-1 bg-dinkum-gray rounded text-xs font-mono">
-              PlayerData
+              Player.es3
             </code>.
           </p>
         </div>

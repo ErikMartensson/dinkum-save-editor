@@ -20,7 +20,7 @@ export default function FeaturesList() {
     },
     {
       emoji: "🎮",
-      title: "Re-enable Achievements",
+      title: "Re-enable Steam Achievements",
       desc: "Remove the creative mode block on Steam achievements",
       borderStyle: "border-dotted border-purple-500",
     },
