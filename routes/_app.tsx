@@ -1,5 +1,6 @@
 import { define } from "../utils.ts";
 import "../assets/styles.css";
+import SwRegistration from "../islands/SwRegistration.tsx";
 
 export default define.page(function App({ Component }) {
   return (
@@ -60,6 +61,7 @@ export default define.page(function App({ Component }) {
       </head>
       <body>
         <Component />
+        <SwRegistration />
       </body>
     </html>
   );
