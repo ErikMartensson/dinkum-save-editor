@@ -8,16 +8,15 @@ Try it out here: https://dinkum-save-editor.acidworks.deno.net/
 
 ## Features
 
-- ⛓️‍💥 **Offline First**: All processing happens in your browser - your save files
+- 🌐 **Browser-Based**: All processing happens in your browser — your save files
   never leave your device
-- 🪙 **Edit Dinks**: Modify your in-game currency
-- ❤️ **Health & Stamina**: Edit current and maximum health and stamina values
-- 👤 **Player Info**: Change player name and world name
-- 🎮 **Re-enable Steam achievements**: Allows for disabling the "has been
-  creative" flag which is required in order to get Steam achievements after
-  having entered creative mode
-- 📦 **Quick Edit Mode**: Fast access to common edits
-- 🔧 **Advanced Editor**: Full JSON editing capabilities for power users
+- 🪙 **Edit Currency**: Set your wallet and bank balance
+- ❤️ **Health & Stamina**: Set current and maximum health and stamina values
+- 👤 **Player & World Names**: Change player name and world name
+- 🎮 **Re-enable Steam Achievements**: Remove the creative mode flag that blocks
+  Steam achievements on your save
+- 📦 **Quick Edit**: Fast access to common changes
+- 🔧 **Advanced Editor**: Full JSON editing for power users
 
 ## Preview
 
