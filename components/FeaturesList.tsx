@@ -26,8 +26,8 @@ export default function FeaturesList() {
     },
     {
       emoji: "📦",
-      title: "Quick Edit",
-      desc: "Fast access to common changes",
+      title: "Inventory & Containers",
+      desc: "Edit player inventory, stashes, and chest contents",
       borderStyle: "border-dotted border-green-500",
     },
     {

@@ -15,7 +15,8 @@ Try it out here: https://dinkum-save-editor.acidworks.deno.net/
 - 👤 **Player & World Names**: Change player name and world name
 - 🎮 **Re-enable Steam Achievements**: Remove the creative mode flag that blocks
   Steam achievements on your save
-- 📦 **Quick Edit**: Fast access to common changes
+- 📦 **Inventory & Containers**: Edit player inventory, stashes, and chest
+  contents with a visual grid editor
 - 🔧 **Advanced Editor**: Full JSON editing for power users
 
 ## Preview
