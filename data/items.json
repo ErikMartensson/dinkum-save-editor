@@ -1,0 +1,8199 @@
+{
+  "meta": {
+    "extractedAt": "2026-01-30T23:42:55.084691+00:00",
+    "totalItems": 2025,
+    "totalItemsWithDurability": 89,
+    "scriptVersion": "1.1.0"
+  },
+  "items": {
+    "0": {
+      "name": "Basic Axe",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "1": {
+      "name": "Megaphone",
+      "maxStack": 0
+    },
+    "2": {
+      "name": "Bug Net",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "3": {
+      "name": "Chainsaw",
+      "maxStack": 2500,
+      "maxDurability": 2500
+    },
+    "4": {
+      "name": "Fishing Rod",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "5": {
+      "name": "Shovel of Dirt",
+      "maxStack": 600,
+      "maxDurability": 600
+    },
+    "6": {
+      "name": "Shovel",
+      "maxStack": 600,
+      "maxDurability": 600
+    },
+    "7": {
+      "name": "Hoe",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "8": {
+      "name": "Basic Pickaxe",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "9": {
+      "name": "Torch",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "10": {
+      "name": "Watering Can",
+      "maxStack": 0,
+      "maxDurability": 20
+    },
+    "11": {
+      "name": "Wooden Bat",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "12": {
+      "name": "Bag of Cement",
+      "maxStack": 0
+    },
+    "13": {
+      "name": "BBQ",
+      "maxStack": 0
+    },
+    "14": {
+      "name": "Bone",
+      "maxStack": 0
+    },
+    "15": {
+      "name": "Brick Path",
+      "maxStack": 0
+    },
+    "16": {
+      "name": "Brick Steps",
+      "maxStack": 0
+    },
+    "17": {
+      "name": "Bush Lime",
+      "maxStack": 0
+    },
+    "18": {
+      "name": "Camp Fire",
+      "maxStack": 0
+    },
+    "19": {
+      "name": "Cooked Meat",
+      "maxStack": 0
+    },
+    "20": {
+      "name": "Funnel Web Spider",
+      "maxStack": 0
+    },
+    "21": {
+      "name": "Raw Meat",
+      "maxStack": 0
+    },
+    "22": {
+      "name": "Nails",
+      "maxStack": 0
+    },
+    "23": {
+      "name": "Shiny Stone",
+      "maxStack": 0
+    },
+    "24": {
+      "name": "Cooking Kettle",
+      "maxStack": 0
+    },
+    "25": {
+      "name": "Garden Light",
+      "maxStack": 0
+    },
+    "26": {
+      "name": "Stone",
+      "maxStack": 0
+    },
+    "27": {
+      "name": "Stone Grinder",
+      "maxStack": 0
+    },
+    "28": {
+      "name": "Sugar Cane",
+      "maxStack": 0
+    },
+    "29": {
+      "name": "Ulysses Butterfly",
+      "maxStack": 0
+    },
+    "30": {
+      "name": "Wooden Crate",
+      "maxStack": 0
+    },
+    "31": {
+      "name": "Corner Ramp",
+      "maxStack": 0
+    },
+    "32": {
+      "name": "Palm Wood Fence",
+      "maxStack": 0
+    },
+    "33": {
+      "name": "Gum Log",
+      "maxStack": 0
+    },
+    "34": {
+      "name": "Wooden Torch",
+      "maxStack": 0
+    },
+    "35": {
+      "name": "Crafting Lab Deed",
+      "maxStack": 0
+    },
+    "36": {
+      "name": "Your House Deed",
+      "maxStack": 0
+    },
+    "37": {
+      "name": "Post Office Deed",
+      "maxStack": 0
+    },
+    "38": {
+      "name": "PowerLine",
+      "maxStack": 0
+    },
+    "39": {
+      "name": "Shop Deed",
+      "maxStack": 0
+    },
+    "40": {
+      "name": "Aussie Hat",
+      "maxStack": 0
+    },
+    "41": {
+      "name": "Black Boots",
+      "maxStack": 0
+    },
+    "42": {
+      "name": "Blue Jeans",
+      "maxStack": 0
+    },
+    "43": {
+      "name": "Tradie Boots",
+      "maxStack": 0
+    },
+    "44": {
+      "name": "Tradie Pants",
+      "maxStack": 0
+    },
+    "45": {
+      "name": "Dark Shorts",
+      "maxStack": 0
+    },
+    "46": {
+      "name": "Purple Shirt",
+      "maxStack": 0
+    },
+    "47": {
+      "name": "Red Flanney",
+      "maxStack": 0
+    },
+    "48": {
+      "name": "Barcoo Grunter",
+      "maxStack": 0
+    },
+    "49": {
+      "name": "Barramundi",
+      "maxStack": 0
+    },
+    "50": {
+      "name": "River Bass",
+      "maxStack": 0
+    },
+    "51": {
+      "name": "Hand Bell",
+      "maxStack": 0
+    },
+    "52": {
+      "name": "Jungle Perch",
+      "maxStack": 0
+    },
+    "53": {
+      "name": "Purple Seat",
+      "maxStack": 0
+    },
+    "54": {
+      "name": "Wooden Double Bed",
+      "maxStack": 0
+    },
+    "55": {
+      "name": "Coffee Table",
+      "maxStack": 0
+    },
+    "56": {
+      "name": "Wooden Seat",
+      "maxStack": 0
+    },
+    "57": {
+      "name": "Wooden Couch",
+      "maxStack": 0
+    },
+    "58": {
+      "name": "Small Round Table",
+      "maxStack": 0
+    },
+    "59": {
+      "name": "Dark Wooden Cabinet",
+      "maxStack": 0
+    },
+    "60": {
+      "name": "Sugar Cane Seeds",
+      "maxStack": 0
+    },
+    "61": {
+      "name": "Dog Hat",
+      "maxStack": 0
+    },
+    "62": {
+      "name": "Holiday Hat",
+      "maxStack": 0
+    },
+    "63": {
+      "name": "Blue Beanie",
+      "maxStack": 0
+    },
+    "64": {
+      "name": "Top Hat",
+      "maxStack": 0
+    },
+    "65": {
+      "name": "Red Baseball Cap",
+      "maxStack": 0
+    },
+    "66": {
+      "name": "Yellow Bucket Hat",
+      "maxStack": 0
+    },
+    "67": {
+      "name": "Welcome Sign",
+      "maxStack": 0
+    },
+    "68": {
+      "name": "Business Pants",
+      "maxStack": 0
+    },
+    "69": {
+      "name": "Business Shirt",
+      "maxStack": 0
+    },
+    "70": {
+      "name": "Business Shoes",
+      "maxStack": 0
+    },
+    "71": {
+      "name": "Green Pants",
+      "maxStack": 0
+    },
+    "72": {
+      "name": "Green Sweater",
+      "maxStack": 0
+    },
+    "73": {
+      "name": "Green Shoes",
+      "maxStack": 0
+    },
+    "74": {
+      "name": "Blue Holiday Shirt",
+      "maxStack": 0
+    },
+    "75": {
+      "name": "Thongs",
+      "maxStack": 0
+    },
+    "76": {
+      "name": "Blue Holiday Shorts",
+      "maxStack": 0
+    },
+    "77": {
+      "name": "Tradie Shirt",
+      "maxStack": 0
+    },
+    "78": {
+      "name": "Khaki Boots",
+      "maxStack": 0
+    },
+    "79": {
+      "name": "Khaki Shorts",
+      "maxStack": 0
+    },
+    "80": {
+      "name": "Khaki Shirt",
+      "maxStack": 0
+    },
+    "81": {
+      "name": "Clothing Shop Deed",
+      "maxStack": 0
+    },
+    "82": {
+      "name": "Blue Shorts",
+      "maxStack": 0
+    },
+    "83": {
+      "name": "Blue and Yellow Shirt",
+      "maxStack": 0
+    },
+    "84": {
+      "name": "Red Sneakers",
+      "maxStack": 0
+    },
+    "85": {
+      "name": "Blue Dress",
+      "maxStack": 0
+    },
+    "86": {
+      "name": "Fairest Dress",
+      "maxStack": 0
+    },
+    "87": {
+      "name": "White Flats",
+      "maxStack": 0
+    },
+    "88": {
+      "name": "Mustard Coat",
+      "maxStack": 0
+    },
+    "89": {
+      "name": "White Sneakers",
+      "maxStack": 0
+    },
+    "90": {
+      "name": "Ripped Jeans",
+      "maxStack": 0
+    },
+    "91": {
+      "name": "White Dress",
+      "maxStack": 0
+    },
+    "92": {
+      "name": "White Flats",
+      "maxStack": 0
+    },
+    "93": {
+      "name": "Red Dress",
+      "maxStack": 0
+    },
+    "94": {
+      "name": "Red Flats",
+      "maxStack": 0
+    },
+    "95": {
+      "name": "Pinstripe Jacket",
+      "maxStack": 0
+    },
+    "96": {
+      "name": "Pinstripe Pants",
+      "maxStack": 0
+    },
+    "97": {
+      "name": "Grasshopper",
+      "maxStack": 0
+    },
+    "98": {
+      "name": "Common Blue Tail",
+      "maxStack": 0
+    },
+    "99": {
+      "name": "Pontoon Bridge",
+      "maxStack": 0
+    },
+    "100": {
+      "name": "Fly",
+      "maxStack": 0
+    },
+    "101": {
+      "name": "Cockroach",
+      "maxStack": 0
+    },
+    "102": {
+      "name": "Yellow Wattle Flower",
+      "maxStack": 0
+    },
+    "103": {
+      "name": "Metal Detector",
+      "maxStack": 750,
+      "maxDurability": 750
+    },
+    "104": {
+      "name": "Opal",
+      "maxStack": 0
+    },
+    "105": {
+      "name": "Copper Ore",
+      "maxStack": 0
+    },
+    "106": {
+      "name": "Iron Ore",
+      "maxStack": 0
+    },
+    "107": {
+      "name": "Quartz Crystal",
+      "maxStack": 0
+    },
+    "108": {
+      "name": "Peacock Spider",
+      "maxStack": 0
+    },
+    "109": {
+      "name": "Trogid",
+      "maxStack": 0
+    },
+    "110": {
+      "name": "Street Lamp",
+      "maxStack": 0
+    },
+    "111": {
+      "name": "Cabbage",
+      "maxStack": 0
+    },
+    "112": {
+      "name": "Cabbage Seeds",
+      "maxStack": 0
+    },
+    "113": {
+      "name": "Iron Bar",
+      "maxStack": 0
+    },
+    "114": {
+      "name": "Copper Bar",
+      "maxStack": 0
+    },
+    "115": {
+      "name": "Furnace",
+      "maxStack": 0
+    },
+    "116": {
+      "name": "Carrot",
+      "maxStack": 0
+    },
+    "117": {
+      "name": "Carrot Seeds",
+      "maxStack": 0
+    },
+    "118": {
+      "name": "Thunder Box",
+      "maxStack": 0
+    },
+    "119": {
+      "name": "First Aid Kit",
+      "maxStack": 3,
+      "maxDurability": 3
+    },
+    "120": {
+      "name": "Green Beanie",
+      "maxStack": 0
+    },
+    "121": {
+      "name": "Red Beanie",
+      "maxStack": 0
+    },
+    "122": {
+      "name": "Blue Bucket Hat",
+      "maxStack": 0
+    },
+    "123": {
+      "name": "Corn",
+      "maxStack": 0
+    },
+    "124": {
+      "name": "Corn Seeds",
+      "maxStack": 0
+    },
+    "125": {
+      "name": "Plant Shop Deed",
+      "maxStack": 0
+    },
+    "126": {
+      "name": "A.D.M",
+      "maxStack": 0
+    },
+    "127": {
+      "name": "Dark Wooden Single Bed",
+      "maxStack": 0
+    },
+    "128": {
+      "name": "Watering Can",
+      "maxStack": 0
+    },
+    "129": {
+      "name": "Mine Deed",
+      "maxStack": 0
+    },
+    "130": {
+      "name": "Miners Helmet",
+      "maxStack": 1200,
+      "maxDurability": 1200
+    },
+    "131": {
+      "name": "Wooden Chair",
+      "maxStack": 0
+    },
+    "132": {
+      "name": "Wooden Table",
+      "maxStack": 0
+    },
+    "133": {
+      "name": "Wooden Bedside Table",
+      "maxStack": 0
+    },
+    "134": {
+      "name": "Wooden Chest Of Drawers",
+      "maxStack": 0
+    },
+    "135": {
+      "name": "Wooden Cabinet",
+      "maxStack": 0
+    },
+    "136": {
+      "name": "Wooden Single Bed",
+      "maxStack": 0
+    },
+    "137": {
+      "name": "Stylish ArmChair",
+      "maxStack": 0
+    },
+    "138": {
+      "name": "Stylish Sofa",
+      "maxStack": 0
+    },
+    "139": {
+      "name": "Dark Wooden Chair",
+      "maxStack": 0
+    },
+    "140": {
+      "name": "Purple Couch",
+      "maxStack": 0
+    },
+    "141": {
+      "name": "White Chair",
+      "maxStack": 0
+    },
+    "142": {
+      "name": "White Coffee Table",
+      "maxStack": 0
+    },
+    "143": {
+      "name": "White Dinner Table",
+      "maxStack": 0
+    },
+    "144": {
+      "name": "White Long Coffee Table",
+      "maxStack": 0
+    },
+    "145": {
+      "name": "White Sofa",
+      "maxStack": 0
+    },
+    "146": {
+      "name": "Stylish Bed",
+      "maxStack": 0
+    },
+    "147": {
+      "name": "Stylish Bedside Table",
+      "maxStack": 0
+    },
+    "148": {
+      "name": "Stylish Drawers",
+      "maxStack": 0
+    },
+    "149": {
+      "name": "Stylish Dresser",
+      "maxStack": 0
+    },
+    "150": {
+      "name": "Furniture Shop Deed",
+      "maxStack": 0
+    },
+    "151": {
+      "name": "Dainty Bed",
+      "maxStack": 0
+    },
+    "152": {
+      "name": "Dainty Bedside Table",
+      "maxStack": 0
+    },
+    "153": {
+      "name": "Dainty Chair",
+      "maxStack": 0
+    },
+    "154": {
+      "name": "Dainty Coffee Table",
+      "maxStack": 0
+    },
+    "155": {
+      "name": "Dainty Drawers",
+      "maxStack": 0
+    },
+    "156": {
+      "name": "Dainty Kitchen Table",
+      "maxStack": 0
+    },
+    "157": {
+      "name": "Dainty Lamp",
+      "maxStack": 0
+    },
+    "158": {
+      "name": "Dainty Ottoman",
+      "maxStack": 0
+    },
+    "159": {
+      "name": "Dainty Sofa",
+      "maxStack": 0
+    },
+    "160": {
+      "name": "White Armchair",
+      "maxStack": 0
+    },
+    "161": {
+      "name": "White Ottoman",
+      "maxStack": 0
+    },
+    "162": {
+      "name": "White Bed",
+      "maxStack": 0
+    },
+    "163": {
+      "name": "White Bedside Table.",
+      "maxStack": 0
+    },
+    "164": {
+      "name": "White Chest of Drawers",
+      "maxStack": 0
+    },
+    "165": {
+      "name": "Fern Vase",
+      "maxStack": 0
+    },
+    "166": {
+      "name": "Purple Vase",
+      "maxStack": 0
+    },
+    "167": {
+      "name": "Yellow Wattle Vase",
+      "maxStack": 0
+    },
+    "168": {
+      "name": "Kitchen Cabinet",
+      "maxStack": 0
+    },
+    "169": {
+      "name": "Kitchen Oven",
+      "maxStack": 0
+    },
+    "170": {
+      "name": "Kitchen Sink",
+      "maxStack": 0
+    },
+    "171": {
+      "name": "Stylish Chair",
+      "maxStack": 0
+    },
+    "172": {
+      "name": "Stylish Table",
+      "maxStack": 0
+    },
+    "173": {
+      "name": "Stylish Lamp",
+      "maxStack": 0
+    },
+    "174": {
+      "name": "Regal ArmChair",
+      "maxStack": 0
+    },
+    "175": {
+      "name": "Regal Bed",
+      "maxStack": 0
+    },
+    "176": {
+      "name": "Regal Bedside Table",
+      "maxStack": 0
+    },
+    "177": {
+      "name": "Regal Chair",
+      "maxStack": 0
+    },
+    "178": {
+      "name": "Regal Lamp",
+      "maxStack": 0
+    },
+    "179": {
+      "name": "Regal Sofa",
+      "maxStack": 0
+    },
+    "180": {
+      "name": "Regal Table",
+      "maxStack": 0
+    },
+    "181": {
+      "name": "Regal Drawers",
+      "maxStack": 0
+    },
+    "182": {
+      "name": "Feather",
+      "maxStack": 0
+    },
+    "183": {
+      "name": "Copper Pickaxe",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "184": {
+      "name": "Iron Pickaxe",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "185": {
+      "name": "Space Helmet",
+      "maxStack": 0
+    },
+    "186": {
+      "name": "Space Suit Pants",
+      "maxStack": 0
+    },
+    "187": {
+      "name": "Space Suit Shirt",
+      "maxStack": 0
+    },
+    "188": {
+      "name": "Space Suit Shoes",
+      "maxStack": 0
+    },
+    "189": {
+      "name": "Pink Baseball Cap",
+      "maxStack": 0
+    },
+    "190": {
+      "name": "Black Pants",
+      "maxStack": 0
+    },
+    "191": {
+      "name": "Black Shirt",
+      "maxStack": 0
+    },
+    "192": {
+      "name": "Black Sneakers",
+      "maxStack": 0
+    },
+    "193": {
+      "name": "Daisy Shorts",
+      "maxStack": 0
+    },
+    "194": {
+      "name": "Pink Gown",
+      "maxStack": 0
+    },
+    "195": {
+      "name": "Strapped Sandals",
+      "maxStack": 0
+    },
+    "196": {
+      "name": "Green Baseball Cap",
+      "maxStack": 0
+    },
+    "197": {
+      "name": "Nautilus Shell",
+      "maxStack": 0
+    },
+    "198": {
+      "name": "Scallop Shell",
+      "maxStack": 0
+    },
+    "199": {
+      "name": "Syrinx Shell",
+      "maxStack": 0
+    },
+    "200": {
+      "name": "Banded Morwong",
+      "maxStack": 0
+    },
+    "201": {
+      "name": "Bluefish",
+      "maxStack": 0
+    },
+    "202": {
+      "name": "Garfish",
+      "maxStack": 0
+    },
+    "203": {
+      "name": "Golden Perch",
+      "maxStack": 0
+    },
+    "204": {
+      "name": "Mangrove Jack",
+      "maxStack": 0
+    },
+    "205": {
+      "name": "Luderick",
+      "maxStack": 0
+    },
+    "206": {
+      "name": "Blue Spot Flathead",
+      "maxStack": 0
+    },
+    "207": {
+      "name": "Travalla",
+      "maxStack": 0
+    },
+    "208": {
+      "name": "Yellowfin Tuna",
+      "maxStack": 0
+    },
+    "209": {
+      "name": "Pirate Coat",
+      "maxStack": 0
+    },
+    "210": {
+      "name": "Spinifex Tuft",
+      "maxStack": 0
+    },
+    "211": {
+      "name": "Hot Air Balloon",
+      "maxStack": 0
+    },
+    "212": {
+      "name": "Spinifex Resin",
+      "maxStack": 0
+    },
+    "213": {
+      "name": "Palm Wood Log",
+      "maxStack": 0
+    },
+    "214": {
+      "name": "Prickly Pear Flesh",
+      "maxStack": 0
+    },
+    "215": {
+      "name": "Cactus Figs",
+      "maxStack": 0
+    },
+    "216": {
+      "name": "Copper Axe",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "217": {
+      "name": "Iron Axe",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "218": {
+      "name": "Jump Charm",
+      "maxStack": 0
+    },
+    "219": {
+      "name": "Swim Charm",
+      "maxStack": 0
+    },
+    "220": {
+      "name": "Run Charm",
+      "maxStack": 0
+    },
+    "221": {
+      "name": "White Collar Dress",
+      "maxStack": 0
+    },
+    "222": {
+      "name": "Dark Blue Button Dress",
+      "maxStack": 0
+    },
+    "223": {
+      "name": "Crab Pot",
+      "maxStack": 0
+    },
+    "224": {
+      "name": "Mud Crab",
+      "maxStack": 0
+    },
+    "225": {
+      "name": "Honey",
+      "maxStack": 0
+    },
+    "226": {
+      "name": "Bee House",
+      "maxStack": 0
+    },
+    "227": {
+      "name": "Bee",
+      "maxStack": 0
+    },
+    "228": {
+      "name": "Queen Bee",
+      "maxStack": 0
+    },
+    "229": {
+      "name": "Red Back Spider",
+      "maxStack": 0
+    },
+    "230": {
+      "name": "Desert Scorpion",
+      "maxStack": 0
+    },
+    "231": {
+      "name": "Stink Bug",
+      "maxStack": 0
+    },
+    "232": {
+      "name": "Paper Wasp",
+      "maxStack": 0
+    },
+    "233": {
+      "name": "Birdwing Butterfly",
+      "maxStack": 0
+    },
+    "234": {
+      "name": "Swallow-tail Butterfly",
+      "maxStack": 0
+    },
+    "235": {
+      "name": "Harlequin Butterfly",
+      "maxStack": 0
+    },
+    "236": {
+      "name": "Slingshot",
+      "maxStack": 200,
+      "maxDurability": 200
+    },
+    "237": {
+      "name": "Yabbie",
+      "maxStack": 0
+    },
+    "238": {
+      "name": "Pink Shorts",
+      "maxStack": 0
+    },
+    "239": {
+      "name": "Pink Sneakers",
+      "maxStack": 0
+    },
+    "240": {
+      "name": "Pink T-Shirt",
+      "maxStack": 0
+    },
+    "241": {
+      "name": "Blue Sneakers",
+      "maxStack": 0
+    },
+    "242": {
+      "name": "Blue T-Shirt",
+      "maxStack": 0
+    },
+    "243": {
+      "name": "Purple Dress",
+      "maxStack": 0
+    },
+    "244": {
+      "name": "Purple Flats",
+      "maxStack": 0
+    },
+    "245": {
+      "name": "Purple Pants",
+      "maxStack": 0
+    },
+    "246": {
+      "name": "Crocodile Tooth",
+      "maxStack": 0
+    },
+    "247": {
+      "name": "Glowing Mushroom",
+      "maxStack": 0
+    },
+    "248": {
+      "name": "Firefly",
+      "maxStack": 0
+    },
+    "249": {
+      "name": "Cricket",
+      "maxStack": 0
+    },
+    "250": {
+      "name": "Cement Path",
+      "maxStack": 0
+    },
+    "251": {
+      "name": "Brick Fence",
+      "maxStack": 0
+    },
+    "252": {
+      "name": "Ute",
+      "maxStack": 0
+    },
+    "253": {
+      "name": "Green Boots",
+      "maxStack": 0
+    },
+    "254": {
+      "name": "Brown Pants",
+      "maxStack": 0
+    },
+    "255": {
+      "name": "Blue Flannelette Shirt",
+      "maxStack": 0
+    },
+    "256": {
+      "name": "Black Striped Pants",
+      "maxStack": 0
+    },
+    "257": {
+      "name": "Green Jacket",
+      "maxStack": 0
+    },
+    "258": {
+      "name": "Maroon Pants",
+      "maxStack": 0
+    },
+    "259": {
+      "name": "Adventure Hood",
+      "maxStack": 0
+    },
+    "260": {
+      "name": "Red Strapped Shoes",
+      "maxStack": 0
+    },
+    "261": {
+      "name": "Overall Dress",
+      "maxStack": 0
+    },
+    "262": {
+      "name": "Striped Tights",
+      "maxStack": 0
+    },
+    "263": {
+      "name": "Chef Hat",
+      "maxStack": 0
+    },
+    "264": {
+      "name": "Cement Steps",
+      "maxStack": 0
+    },
+    "265": {
+      "name": "Water Tank Plan",
+      "maxStack": 0
+    },
+    "266": {
+      "name": "Chef Jacket",
+      "maxStack": 0
+    },
+    "267": {
+      "name": "Chef Pants",
+      "maxStack": 0
+    },
+    "268": {
+      "name": "Orange Shorts",
+      "maxStack": 0
+    },
+    "269": {
+      "name": "Orange T-Shirt",
+      "maxStack": 0
+    },
+    "270": {
+      "name": "Brown Sandals",
+      "maxStack": 0
+    },
+    "271": {
+      "name": "Hedge",
+      "maxStack": 0
+    },
+    "272": {
+      "name": "Roo Poo",
+      "maxStack": 0
+    },
+    "273": {
+      "name": "Wooden Lamp Post",
+      "maxStack": 0
+    },
+    "274": {
+      "name": "Palm Wood Gate",
+      "maxStack": 0
+    },
+    "275": {
+      "name": "Fertiliser",
+      "maxStack": 0
+    },
+    "276": {
+      "name": "Wood Bridge Rail",
+      "maxStack": 0
+    },
+    "277": {
+      "name": "Bomb",
+      "maxStack": 0
+    },
+    "278": {
+      "name": "Sprinkler",
+      "maxStack": 0
+    },
+    "279": {
+      "name": "Aviator Sunglasses",
+      "maxStack": 0
+    },
+    "280": {
+      "name": "Eye Patch",
+      "maxStack": 0
+    },
+    "281": {
+      "name": "Fake Mustache",
+      "maxStack": 0
+    },
+    "282": {
+      "name": "Modern Glasses",
+      "maxStack": 0
+    },
+    "283": {
+      "name": "Modern Sunglasses",
+      "maxStack": 0
+    },
+    "284": {
+      "name": "Monocle",
+      "maxStack": 0
+    },
+    "285": {
+      "name": "Old School Glasses",
+      "maxStack": 0
+    },
+    "286": {
+      "name": "Round Glasses",
+      "maxStack": 0
+    },
+    "287": {
+      "name": "Round Sunglasses",
+      "maxStack": 0
+    },
+    "288": {
+      "name": "Small Glasses",
+      "maxStack": 0
+    },
+    "289": {
+      "name": "Small Sunglasses",
+      "maxStack": 0
+    },
+    "290": {
+      "name": "Square Glasses",
+      "maxStack": 0
+    },
+    "291": {
+      "name": "Square Sunglasses",
+      "maxStack": 0
+    },
+    "292": {
+      "name": "Jolly Beard",
+      "maxStack": 0
+    },
+    "293": {
+      "name": "Jolly Hat",
+      "maxStack": 0
+    },
+    "294": {
+      "name": "Jolly Pants",
+      "maxStack": 0
+    },
+    "295": {
+      "name": "Jolly Shirt",
+      "maxStack": 0
+    },
+    "296": {
+      "name": "Jolly Shoes",
+      "maxStack": 0
+    },
+    "297": {
+      "name": "Bananas",
+      "maxStack": 0
+    },
+    "298": {
+      "name": "Termite Nest",
+      "maxStack": 0
+    },
+    "299": {
+      "name": "Dink",
+      "maxStack": 0
+    },
+    "300": {
+      "name": "Apple",
+      "maxStack": 0
+    },
+    "301": {
+      "name": "Hard Wood Log",
+      "maxStack": 0
+    },
+    "302": {
+      "name": "Animal Trap",
+      "maxStack": 0
+    },
+    "303": {
+      "name": "Scythe",
+      "maxStack": 1000,
+      "maxDurability": 1000
+    },
+    "304": {
+      "name": "Table Saw",
+      "maxStack": 0
+    },
+    "305": {
+      "name": "Gum Wood Plank",
+      "maxStack": 0
+    },
+    "306": {
+      "name": "Palm Wood Plank",
+      "maxStack": 0
+    },
+    "307": {
+      "name": "Hard Wood Plank",
+      "maxStack": 0
+    },
+    "308": {
+      "name": "Raw Drumstick",
+      "maxStack": 0
+    },
+    "309": {
+      "name": "Pearl",
+      "maxStack": 0
+    },
+    "310": {
+      "name": "Cooked Drumstick",
+      "maxStack": 0
+    },
+    "311": {
+      "name": "Magic Tome",
+      "maxStack": 0
+    },
+    "312": {
+      "name": "Magic Shovel of Dirt",
+      "maxStack": 0
+    },
+    "313": {
+      "name": "Grass Seed",
+      "maxStack": 0
+    },
+    "314": {
+      "name": "Palm Wood Path",
+      "maxStack": 0
+    },
+    "315": {
+      "name": "Palm Wood Steps",
+      "maxStack": 0
+    },
+    "316": {
+      "name": "Gum Nut",
+      "maxStack": 0
+    },
+    "317": {
+      "name": "Pine Cone",
+      "maxStack": 0
+    },
+    "318": {
+      "name": "Palm Tree Seed",
+      "maxStack": 0
+    },
+    "319": {
+      "name": "Sleeping Bag",
+      "maxStack": 0
+    },
+    "320": {
+      "name": "Kale",
+      "maxStack": 0
+    },
+    "321": {
+      "name": "Kale Seeds",
+      "maxStack": 0
+    },
+    "322": {
+      "name": "Potato",
+      "maxStack": 0
+    },
+    "323": {
+      "name": "Potato Seeds",
+      "maxStack": 0
+    },
+    "324": {
+      "name": "Wheat",
+      "maxStack": 0
+    },
+    "325": {
+      "name": "Wheat Seeds",
+      "maxStack": 0
+    },
+    "326": {
+      "name": "Watermelon Seeds",
+      "maxStack": 0
+    },
+    "327": {
+      "name": "Watermelon",
+      "maxStack": 0
+    },
+    "328": {
+      "name": "Pumpkin",
+      "maxStack": 0
+    },
+    "329": {
+      "name": "Pumpkin Seeds",
+      "maxStack": 0
+    },
+    "330": {
+      "name": "Onion",
+      "maxStack": 0
+    },
+    "331": {
+      "name": "Onion Seeds",
+      "maxStack": 0
+    },
+    "332": {
+      "name": "Visiting Site Deed",
+      "maxStack": 0
+    },
+    "333": {
+      "name": "Carp",
+      "maxStack": 0
+    },
+    "334": {
+      "name": "Eyestripe Surgeonfish",
+      "maxStack": 0
+    },
+    "335": {
+      "name": "Black & White Snapper",
+      "maxStack": 0
+    },
+    "336": {
+      "name": "Boofhead Catfish",
+      "maxStack": 0
+    },
+    "337": {
+      "name": "Murray Cod",
+      "maxStack": 0
+    },
+    "338": {
+      "name": "Eel Tailed Catfish",
+      "maxStack": 0
+    },
+    "339": {
+      "name": "Stingray",
+      "maxStack": 0
+    },
+    "340": {
+      "name": "MotorBike",
+      "maxStack": 0
+    },
+    "341": {
+      "name": "Bird Coop",
+      "maxStack": 0
+    },
+    "342": {
+      "name": "Animal Shop Deed",
+      "maxStack": 0
+    },
+    "343": {
+      "name": "Animal Feeder",
+      "maxStack": 0
+    },
+    "344": {
+      "name": "Animal Food",
+      "maxStack": 0
+    },
+    "345": {
+      "name": "Chicken Egg",
+      "maxStack": 0
+    },
+    "346": {
+      "name": "Rock Path",
+      "maxStack": 0
+    },
+    "347": {
+      "name": "Animal Stall",
+      "maxStack": 0
+    },
+    "348": {
+      "name": "Vombat Whistle",
+      "maxStack": 0
+    },
+    "349": {
+      "name": "Milking Bucket",
+      "maxStack": 0
+    },
+    "350": {
+      "name": "Milk",
+      "maxStack": 0
+    },
+    "351": {
+      "name": "Wooden Flower Bed",
+      "maxStack": 0
+    },
+    "352": {
+      "name": "Hedge Arch",
+      "maxStack": 0
+    },
+    "353": {
+      "name": "Diving Knife",
+      "maxStack": 0
+    },
+    "354": {
+      "name": "Flapper Hat",
+      "maxStack": 0
+    },
+    "355": {
+      "name": "Sun Hat",
+      "maxStack": 0
+    },
+    "356": {
+      "name": "Gangsta Hat",
+      "maxStack": 0
+    },
+    "357": {
+      "name": "Mu Mount",
+      "maxStack": 0
+    },
+    "358": {
+      "name": "Brick Fountain",
+      "maxStack": 0
+    },
+    "359": {
+      "name": "Cooking Table",
+      "maxStack": 0
+    },
+    "360": {
+      "name": "Lamington",
+      "maxStack": 0
+    },
+    "361": {
+      "name": "Fish and Chips",
+      "maxStack": 0
+    },
+    "362": {
+      "name": "Fruit Salad",
+      "maxStack": 0
+    },
+    "363": {
+      "name": "Garden Salad",
+      "maxStack": 0
+    },
+    "364": {
+      "name": "Hearty Stew",
+      "maxStack": 0
+    },
+    "365": {
+      "name": "Desert Rose Pot",
+      "maxStack": 0
+    },
+    "366": {
+      "name": "Fruit Bowl",
+      "maxStack": 0
+    },
+    "367": {
+      "name": "Alarm Clock",
+      "maxStack": 0
+    },
+    "368": {
+      "name": "Regal Clock",
+      "maxStack": 0
+    },
+    "369": {
+      "name": "Red Lava Lamp",
+      "maxStack": 0
+    },
+    "370": {
+      "name": "Roo Plush",
+      "maxStack": 0
+    },
+    "371": {
+      "name": "Basic Wooden Floor",
+      "maxStack": 0
+    },
+    "372": {
+      "name": "Basic Wooden Wall",
+      "maxStack": 0
+    },
+    "373": {
+      "name": "Dainty Floor",
+      "maxStack": 0
+    },
+    "374": {
+      "name": "Regal Rug",
+      "maxStack": 0
+    },
+    "375": {
+      "name": "Dainty Wall",
+      "maxStack": 0
+    },
+    "376": {
+      "name": "Checkered Floor",
+      "maxStack": 0
+    },
+    "377": {
+      "name": "Basic White Wall",
+      "maxStack": 0
+    },
+    "378": {
+      "name": "Light Blue Wall",
+      "maxStack": 0
+    },
+    "379": {
+      "name": "Checkered Wall",
+      "maxStack": 0
+    },
+    "380": {
+      "name": "Museum Deed",
+      "maxStack": 0
+    },
+    "381": {
+      "name": "Chequer Vest",
+      "maxStack": 0
+    },
+    "382": {
+      "name": "Old Key",
+      "maxStack": 0
+    },
+    "383": {
+      "name": "Quarry",
+      "maxStack": 0
+    },
+    "384": {
+      "name": "Old Gear",
+      "maxStack": 0
+    },
+    "385": {
+      "name": "Hang Glider",
+      "maxStack": 0
+    },
+    "386": {
+      "name": "Candle hat",
+      "maxStack": 0
+    },
+    "387": {
+      "name": "Basic Spear",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "388": {
+      "name": "Chicken Whistle",
+      "maxStack": 0
+    },
+    "389": {
+      "name": "Basic Hammer",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "390": {
+      "name": "Toad Skin",
+      "maxStack": 0
+    },
+    "391": {
+      "name": "Bulletin Board",
+      "maxStack": 0
+    },
+    "392": {
+      "name": "Keg",
+      "maxStack": 0
+    },
+    "393": {
+      "name": "Wattle Brew",
+      "maxStack": 0
+    },
+    "394": {
+      "name": "Camera",
+      "maxStack": 0
+    },
+    "395": {
+      "name": "Animal Collection Point",
+      "maxStack": 0
+    },
+    "396": {
+      "name": "Desert Rose",
+      "maxStack": 0
+    },
+    "397": {
+      "name": "Billy Button",
+      "maxStack": 0
+    },
+    "398": {
+      "name": "Royal Bluebell",
+      "maxStack": 0
+    },
+    "399": {
+      "name": "Desert Pea",
+      "maxStack": 0
+    },
+    "400": {
+      "name": "Common Heath",
+      "maxStack": 0
+    },
+    "401": {
+      "name": "Town Hall",
+      "maxStack": 0
+    },
+    "402": {
+      "name": "Shears",
+      "maxStack": 0
+    },
+    "403": {
+      "name": "Wool",
+      "maxStack": 0
+    },
+    "404": {
+      "name": "Animal Den",
+      "maxStack": 0
+    },
+    "405": {
+      "name": "Blueprint",
+      "maxStack": 0
+    },
+    "406": {
+      "name": "Pink Polka Dot Pants",
+      "maxStack": 0
+    },
+    "407": {
+      "name": "Pink Polka Dot Shirt",
+      "maxStack": 0
+    },
+    "408": {
+      "name": "Pink Polka dot Shoes",
+      "maxStack": 0
+    },
+    "409": {
+      "name": "Pink Polka Dot Dress",
+      "maxStack": 0
+    },
+    "410": {
+      "name": "Orange Dino Shirt",
+      "maxStack": 0
+    },
+    "411": {
+      "name": "Skull Shirt",
+      "maxStack": 0
+    },
+    "412": {
+      "name": "Feather Shirt",
+      "maxStack": 0
+    },
+    "413": {
+      "name": "Black Baseball Cap",
+      "maxStack": 0
+    },
+    "414": {
+      "name": "White Baseball Cap",
+      "maxStack": 0
+    },
+    "415": {
+      "name": "White Sweatpants",
+      "maxStack": 0
+    },
+    "416": {
+      "name": "Brown Sand Shoes",
+      "maxStack": 0
+    },
+    "417": {
+      "name": "Camo Cap",
+      "maxStack": 0
+    },
+    "418": {
+      "name": "Camo Dress",
+      "maxStack": 0
+    },
+    "419": {
+      "name": "Camo Pants",
+      "maxStack": 0
+    },
+    "420": {
+      "name": "Camo Shirt",
+      "maxStack": 0
+    },
+    "421": {
+      "name": "Camo Boots",
+      "maxStack": 0
+    },
+    "422": {
+      "name": "Cargo Pants",
+      "maxStack": 0
+    },
+    "423": {
+      "name": "Blue Stripe Shirt.",
+      "maxStack": 0
+    },
+    "424": {
+      "name": "Green Sand Shoes",
+      "maxStack": 0
+    },
+    "425": {
+      "name": "Orange Cargo Pants",
+      "maxStack": 0
+    },
+    "426": {
+      "name": "Orange Sand Shoes",
+      "maxStack": 0
+    },
+    "427": {
+      "name": "Orange Stripe Shirt.",
+      "maxStack": 0
+    },
+    "428": {
+      "name": "Straw Sun Hat",
+      "maxStack": 0
+    },
+    "429": {
+      "name": "Red Puffy Jacket",
+      "maxStack": 0
+    },
+    "430": {
+      "name": "Blue Puffy Jacket",
+      "maxStack": 0
+    },
+    "431": {
+      "name": "Green Puffy Jacket",
+      "maxStack": 0
+    },
+    "432": {
+      "name": "Purple Puffy Jacket",
+      "maxStack": 0
+    },
+    "433": {
+      "name": "Blue Ugly Sweater",
+      "maxStack": 0
+    },
+    "434": {
+      "name": "Blue Cuffed Pants",
+      "maxStack": 0
+    },
+    "435": {
+      "name": "Green Cuffed Pants",
+      "maxStack": 0
+    },
+    "436": {
+      "name": "Purple Cuffed Pants",
+      "maxStack": 0
+    },
+    "437": {
+      "name": "Red Cuffed Pants",
+      "maxStack": 0
+    },
+    "438": {
+      "name": "Pink Singlet",
+      "maxStack": 0
+    },
+    "439": {
+      "name": "Red Singlet",
+      "maxStack": 0
+    },
+    "440": {
+      "name": "Red Shorts",
+      "maxStack": 0
+    },
+    "441": {
+      "name": "Black Singlet",
+      "maxStack": 0
+    },
+    "442": {
+      "name": "Black Shorts",
+      "maxStack": 0
+    },
+    "443": {
+      "name": "Swimming Goggles",
+      "maxStack": 0
+    },
+    "444": {
+      "name": "Punk Goggles",
+      "maxStack": 0
+    },
+    "445": {
+      "name": "Yellow Gumboots",
+      "maxStack": 0
+    },
+    "446": {
+      "name": "Rain Coat",
+      "maxStack": 0
+    },
+    "447": {
+      "name": "Rain Hat",
+      "maxStack": 0
+    },
+    "448": {
+      "name": "Blue Stripe Dress",
+      "maxStack": 0
+    },
+    "449": {
+      "name": "Orange Stripe Dress",
+      "maxStack": 0
+    },
+    "450": {
+      "name": "Gacha Machine",
+      "maxStack": 0
+    },
+    "451": {
+      "name": "Basic Bench",
+      "maxStack": 0
+    },
+    "452": {
+      "name": "Scarecrow",
+      "maxStack": 0
+    },
+    "453": {
+      "name": "Brick Flower Bed",
+      "maxStack": 0
+    },
+    "454": {
+      "name": "Recycling Bin",
+      "maxStack": 0
+    },
+    "455": {
+      "name": "Small Rock",
+      "maxStack": 0
+    },
+    "456": {
+      "name": "Tin Ore",
+      "maxStack": 0
+    },
+    "457": {
+      "name": "Crude Axe",
+      "maxStack": 0
+    },
+    "458": {
+      "name": "Crude Furnace",
+      "maxStack": 0
+    },
+    "459": {
+      "name": "Tent",
+      "maxStack": 0
+    },
+    "460": {
+      "name": "Tin Bar",
+      "maxStack": 0
+    },
+    "461": {
+      "name": "Flagpole",
+      "maxStack": 0
+    },
+    "462": {
+      "name": "Base Tent",
+      "maxStack": 0
+    },
+    "463": {
+      "name": "Picket Fence",
+      "maxStack": 0
+    },
+    "464": {
+      "name": "Picket Gate",
+      "maxStack": 0
+    },
+    "465": {
+      "name": "Skull Mask",
+      "maxStack": 0
+    },
+    "466": {
+      "name": "Tin Sheet",
+      "maxStack": 0
+    },
+    "467": {
+      "name": "Dog Kennel",
+      "maxStack": 0
+    },
+    "468": {
+      "name": "Dog Whistle",
+      "maxStack": 0
+    },
+    "469": {
+      "name": "Green Pattern Wall",
+      "maxStack": 0
+    },
+    "470": {
+      "name": "Blue Pattern Wall",
+      "maxStack": 0
+    },
+    "471": {
+      "name": "Red Pattern Wall",
+      "maxStack": 0
+    },
+    "472": {
+      "name": "Pink Pattern Wall",
+      "maxStack": 0
+    },
+    "473": {
+      "name": "Dark Wooden Wall",
+      "maxStack": 0
+    },
+    "474": {
+      "name": "Dark Wooden Floor",
+      "maxStack": 0
+    },
+    "475": {
+      "name": "Pink Carpet",
+      "maxStack": 0
+    },
+    "476": {
+      "name": "Basic Blue Wallpaper",
+      "maxStack": 0
+    },
+    "477": {
+      "name": "Basic Green Wallpaper",
+      "maxStack": 0
+    },
+    "478": {
+      "name": "Basic Pink Wallpaper",
+      "maxStack": 0
+    },
+    "479": {
+      "name": "Basic Red Wall",
+      "maxStack": 0
+    },
+    "480": {
+      "name": "Bank Deed",
+      "maxStack": 0
+    },
+    "481": {
+      "name": "Crafting Table",
+      "maxStack": 0
+    },
+    "482": {
+      "name": "Tiki Torch",
+      "maxStack": 0
+    },
+    "483": {
+      "name": "Crude Fence",
+      "maxStack": 0
+    },
+    "484": {
+      "name": "Bonytongue",
+      "maxStack": 0
+    },
+    "485": {
+      "name": "Green Flat Cap",
+      "maxStack": 0
+    },
+    "486": {
+      "name": "Pirate Pants",
+      "maxStack": 0
+    },
+    "487": {
+      "name": "Pirate Boots",
+      "maxStack": 0
+    },
+    "488": {
+      "name": "Pirate Hat",
+      "maxStack": 0
+    },
+    "489": {
+      "name": "Ninja Hood",
+      "maxStack": 0
+    },
+    "490": {
+      "name": "Ninja Boots",
+      "maxStack": 0
+    },
+    "491": {
+      "name": "Ninja Pants",
+      "maxStack": 0
+    },
+    "492": {
+      "name": "Ninja Shirt",
+      "maxStack": 0
+    },
+    "493": {
+      "name": "Yellow Polka Dot Dress",
+      "maxStack": 0
+    },
+    "494": {
+      "name": "Yellow Plaid Dress",
+      "maxStack": 0
+    },
+    "495": {
+      "name": "Blue Plaid Dress",
+      "maxStack": 0
+    },
+    "496": {
+      "name": "Brown Overall Dress",
+      "maxStack": 0
+    },
+    "497": {
+      "name": "Green Overall Dress",
+      "maxStack": 0
+    },
+    "498": {
+      "name": "Green Cardigan Dress",
+      "maxStack": 0
+    },
+    "499": {
+      "name": "Pink Cardigan Dress",
+      "maxStack": 0
+    },
+    "500": {
+      "name": "Green Bow Hat",
+      "maxStack": 0
+    },
+    "501": {
+      "name": "Old Straw Hat",
+      "maxStack": 0
+    },
+    "502": {
+      "name": "Donation Box",
+      "maxStack": 0
+    },
+    "503": {
+      "name": "Weather Station",
+      "maxStack": 0
+    },
+    "504": {
+      "name": "Green Flannelette Shirt",
+      "maxStack": 0
+    },
+    "505": {
+      "name": "Green Plaid Pants",
+      "maxStack": 0
+    },
+    "506": {
+      "name": "Blue Plaid Pants",
+      "maxStack": 0
+    },
+    "507": {
+      "name": "Orange Flanney Shirt",
+      "maxStack": 0
+    },
+    "508": {
+      "name": "Orange Plaid Pants",
+      "maxStack": 0
+    },
+    "509": {
+      "name": "Red Plaid Pants",
+      "maxStack": 0
+    },
+    "510": {
+      "name": "Orange Flat Cap",
+      "maxStack": 0
+    },
+    "511": {
+      "name": "Red Flat Cap",
+      "maxStack": 0
+    },
+    "512": {
+      "name": "Blue Flat Cap",
+      "maxStack": 0
+    },
+    "513": {
+      "name": "Blue Flanney Dress",
+      "maxStack": 0
+    },
+    "514": {
+      "name": "Green Flannelette Dress",
+      "maxStack": 0
+    },
+    "515": {
+      "name": "Orange Flanney Dress",
+      "maxStack": 0
+    },
+    "516": {
+      "name": "Red Flanney Dress",
+      "maxStack": 0
+    },
+    "517": {
+      "name": "Guitar",
+      "maxStack": 0
+    },
+    "518": {
+      "name": "House Deed",
+      "maxStack": 0
+    },
+    "519": {
+      "name": "House Deed",
+      "maxStack": 0
+    },
+    "520": {
+      "name": "House Deed",
+      "maxStack": 0
+    },
+    "521": {
+      "name": "House Deed",
+      "maxStack": 0
+    },
+    "522": {
+      "name": "Eastern Chair",
+      "maxStack": 0
+    },
+    "523": {
+      "name": "Eastern Seat",
+      "maxStack": 0
+    },
+    "524": {
+      "name": "Eastern Bed",
+      "maxStack": 0
+    },
+    "525": {
+      "name": "Eastern Bedside Table",
+      "maxStack": 0
+    },
+    "526": {
+      "name": "Eastern Bookshelf",
+      "maxStack": 0
+    },
+    "527": {
+      "name": "Eastern Wardrobe",
+      "maxStack": 0
+    },
+    "528": {
+      "name": "Eastern Coffee Table",
+      "maxStack": 0
+    },
+    "529": {
+      "name": "Eastern Couch",
+      "maxStack": 0
+    },
+    "530": {
+      "name": "Eastern Table",
+      "maxStack": 0
+    },
+    "531": {
+      "name": "Eastern Lamp",
+      "maxStack": 0
+    },
+    "532": {
+      "name": "Eastern Floor",
+      "maxStack": 0
+    },
+    "533": {
+      "name": "Eastern Wall",
+      "maxStack": 0
+    },
+    "534": {
+      "name": "Red Wood Floor",
+      "maxStack": 0
+    },
+    "535": {
+      "name": "Small Stack of Books",
+      "maxStack": 0
+    },
+    "536": {
+      "name": "Wombie Bank",
+      "maxStack": 0
+    },
+    "537": {
+      "name": "Billy Button Pot",
+      "maxStack": 0
+    },
+    "538": {
+      "name": "Royal Bluebell Pot",
+      "maxStack": 0
+    },
+    "539": {
+      "name": "Rattan Bed",
+      "maxStack": 0
+    },
+    "540": {
+      "name": "Rattan Bookshelf",
+      "maxStack": 0
+    },
+    "541": {
+      "name": "Rattan Cabinet",
+      "maxStack": 0
+    },
+    "542": {
+      "name": "Rattan Chair",
+      "maxStack": 0
+    },
+    "543": {
+      "name": "Rattan Coffee Table",
+      "maxStack": 0
+    },
+    "544": {
+      "name": "Rattan Couch",
+      "maxStack": 0
+    },
+    "545": {
+      "name": "Rattan Table",
+      "maxStack": 0
+    },
+    "546": {
+      "name": "Rattan Floor",
+      "maxStack": 0
+    },
+    "547": {
+      "name": "Rattan Lamp",
+      "maxStack": 0
+    },
+    "548": {
+      "name": "Rattan Seat",
+      "maxStack": 0
+    },
+    "549": {
+      "name": "Rattan Bedside Table",
+      "maxStack": 0
+    },
+    "550": {
+      "name": "Rattan Wall",
+      "maxStack": 0
+    },
+    "551": {
+      "name": "Nordic Bed",
+      "maxStack": 0
+    },
+    "552": {
+      "name": "Nordic Bedside Table",
+      "maxStack": 0
+    },
+    "553": {
+      "name": "Nordic Bookshelf",
+      "maxStack": 0
+    },
+    "554": {
+      "name": "Nordic Cabinet",
+      "maxStack": 0
+    },
+    "555": {
+      "name": "Nordic Chair",
+      "maxStack": 0
+    },
+    "556": {
+      "name": "Nordic Coffee Table",
+      "maxStack": 0
+    },
+    "557": {
+      "name": "Nordic Couch",
+      "maxStack": 0
+    },
+    "558": {
+      "name": "Nordic Table",
+      "maxStack": 0
+    },
+    "559": {
+      "name": "Nordic Floor",
+      "maxStack": 0
+    },
+    "560": {
+      "name": "Nordic Lamp",
+      "maxStack": 0
+    },
+    "561": {
+      "name": "Nordic Seat",
+      "maxStack": 0
+    },
+    "562": {
+      "name": "Nordic Wall",
+      "maxStack": 0
+    },
+    "563": {
+      "name": "Pink Bed",
+      "maxStack": 0
+    },
+    "564": {
+      "name": "Pink Bedside Table",
+      "maxStack": 0
+    },
+    "565": {
+      "name": "Pink Bookshelf",
+      "maxStack": 0
+    },
+    "566": {
+      "name": "Pink Cabinet",
+      "maxStack": 0
+    },
+    "567": {
+      "name": "Pink Chair",
+      "maxStack": 0
+    },
+    "568": {
+      "name": "Pink Coffee Table",
+      "maxStack": 0
+    },
+    "569": {
+      "name": "Pink Couch",
+      "maxStack": 0
+    },
+    "570": {
+      "name": "Pink Table",
+      "maxStack": 0
+    },
+    "571": {
+      "name": "Pink Lamp",
+      "maxStack": 0
+    },
+    "572": {
+      "name": "Pink Seat",
+      "maxStack": 0
+    },
+    "573": {
+      "name": "Cube Floor",
+      "maxStack": 0
+    },
+    "574": {
+      "name": "Cube Wall",
+      "maxStack": 0
+    },
+    "575": {
+      "name": "Cooked Apple",
+      "maxStack": 0
+    },
+    "576": {
+      "name": "Cooked Banana",
+      "maxStack": 0
+    },
+    "577": {
+      "name": "Cooked Bush Lime",
+      "maxStack": 0
+    },
+    "578": {
+      "name": "Palm Wood Bridge",
+      "maxStack": 0
+    },
+    "579": {
+      "name": "Meadow Katydid",
+      "maxStack": 0
+    },
+    "580": {
+      "name": "Rhinoceros Beetle",
+      "maxStack": 0
+    },
+    "581": {
+      "name": "Goliath stick",
+      "maxStack": 0
+    },
+    "582": {
+      "name": "Bogong Moth",
+      "maxStack": 0
+    },
+    "583": {
+      "name": "Scarlet Jezebel Butterfly",
+      "maxStack": 0
+    },
+    "584": {
+      "name": "Raw Giant Drumstick",
+      "maxStack": 0
+    },
+    "585": {
+      "name": "Hot Cylinder",
+      "maxStack": 0
+    },
+    "586": {
+      "name": "Green Board",
+      "maxStack": 0
+    },
+    "587": {
+      "name": "Old Wheel",
+      "maxStack": 0
+    },
+    "588": {
+      "name": "Shiny Disc",
+      "maxStack": 0
+    },
+    "589": {
+      "name": "North Tele-Tower",
+      "maxStack": 0
+    },
+    "590": {
+      "name": "East Tele-Tower",
+      "maxStack": 0
+    },
+    "591": {
+      "name": "South Tele-Tower",
+      "maxStack": 0
+    },
+    "592": {
+      "name": "West Tele-Tower",
+      "maxStack": 0
+    },
+    "593": {
+      "name": "Copper Spear",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "594": {
+      "name": "Iron Spear",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "595": {
+      "name": "Copper Hammer",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "596": {
+      "name": "Iron Hammer",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "597": {
+      "name": "Island Map",
+      "maxStack": 0
+    },
+    "598": {
+      "name": "Adventurer's Journal",
+      "maxStack": 0
+    },
+    "599": {
+      "name": "Jack Hammer",
+      "maxStack": 2500,
+      "maxDurability": 2500
+    },
+    "600": {
+      "name": "Jet Ski",
+      "maxStack": 0
+    },
+    "601": {
+      "name": "Glass Bulb",
+      "maxStack": 0
+    },
+    "602": {
+      "name": "Smooth Slate",
+      "maxStack": 0
+    },
+    "603": {
+      "name": "Big Chicken Egg",
+      "maxStack": 0
+    },
+    "604": {
+      "name": "Row Boat",
+      "maxStack": 0
+    },
+    "605": {
+      "name": "Blackfish",
+      "maxStack": 0
+    },
+    "606": {
+      "name": "Galaxias",
+      "maxStack": 0
+    },
+    "607": {
+      "name": "Silver Perch",
+      "maxStack": 0
+    },
+    "608": {
+      "name": "Anchovy",
+      "maxStack": 0
+    },
+    "609": {
+      "name": "Goat Fish",
+      "maxStack": 0
+    },
+    "610": {
+      "name": "Barracuda",
+      "maxStack": 0
+    },
+    "611": {
+      "name": "Blob Fish",
+      "maxStack": 0
+    },
+    "612": {
+      "name": "Saratoga",
+      "maxStack": 0
+    },
+    "613": {
+      "name": "Tarpon",
+      "maxStack": 0
+    },
+    "614": {
+      "name": "Black Cricket",
+      "maxStack": 0
+    },
+    "615": {
+      "name": "Monarch Butterfly",
+      "maxStack": 0
+    },
+    "616": {
+      "name": "Lacewing",
+      "maxStack": 0
+    },
+    "617": {
+      "name": "Emperor DragonFly",
+      "maxStack": 0
+    },
+    "618": {
+      "name": "Pygmyfly",
+      "maxStack": 0
+    },
+    "619": {
+      "name": "Tau Emerald Dragonfly",
+      "maxStack": 0
+    },
+    "620": {
+      "name": "Ladybird",
+      "maxStack": 0
+    },
+    "621": {
+      "name": "Tiger Moth",
+      "maxStack": 0
+    },
+    "622": {
+      "name": "Duskhawker Dragonfly",
+      "maxStack": 0
+    },
+    "623": {
+      "name": "Largidae",
+      "maxStack": 0
+    },
+    "624": {
+      "name": "Huntsman",
+      "maxStack": 0
+    },
+    "625": {
+      "name": "Blue Moon Butterfly",
+      "maxStack": 0
+    },
+    "626": {
+      "name": "Fiddler Beetle",
+      "maxStack": 0
+    },
+    "627": {
+      "name": "Stag Beetle",
+      "maxStack": 0
+    },
+    "628": {
+      "name": "Marlin",
+      "maxStack": 0
+    },
+    "629": {
+      "name": "Grayling",
+      "maxStack": 0
+    },
+    "630": {
+      "name": "Hercules Moth",
+      "maxStack": 0
+    },
+    "631": {
+      "name": "Centipede",
+      "maxStack": 0
+    },
+    "632": {
+      "name": "Short Finned Eel",
+      "maxStack": 0
+    },
+    "633": {
+      "name": "Spinning Wheel",
+      "maxStack": 0
+    },
+    "634": {
+      "name": "Cloth",
+      "maxStack": 0
+    },
+    "635": {
+      "name": "Cheese Maker",
+      "maxStack": 0
+    },
+    "636": {
+      "name": "Cheese",
+      "maxStack": 0
+    },
+    "637": {
+      "name": "High Quality Milk",
+      "maxStack": 0
+    },
+    "638": {
+      "name": "High Quality Cheese",
+      "maxStack": 0
+    },
+    "639": {
+      "name": "Old Spring",
+      "maxStack": 0
+    },
+    "640": {
+      "name": "Sliding Handle",
+      "maxStack": 0
+    },
+    "641": {
+      "name": "Button Board",
+      "maxStack": 0
+    },
+    "642": {
+      "name": "Bright Wire",
+      "maxStack": 0
+    },
+    "643": {
+      "name": "Old Toy",
+      "maxStack": 0
+    },
+    "644": {
+      "name": "Ear Hats",
+      "maxStack": 0
+    },
+    "645": {
+      "name": "Old Contraption",
+      "maxStack": 0
+    },
+    "646": {
+      "name": "Cooked Giant Drumstick",
+      "maxStack": 0
+    },
+    "647": {
+      "name": "Cooked Croco Meat",
+      "maxStack": 0
+    },
+    "648": {
+      "name": "Croco Meat",
+      "maxStack": 0
+    },
+    "649": {
+      "name": "Mangrove Stick",
+      "maxStack": 0
+    },
+    "650": {
+      "name": "Bottle Tree Wood",
+      "maxStack": 0
+    },
+    "651": {
+      "name": "Red Hooded Cap",
+      "maxStack": 0
+    },
+    "652": {
+      "name": "Pilot Goggles",
+      "maxStack": 0
+    },
+    "653": {
+      "name": "Googly Eyes",
+      "maxStack": 0
+    },
+    "654": {
+      "name": "Hero Mask",
+      "maxStack": 0
+    },
+    "655": {
+      "name": "Bunny Hood",
+      "maxStack": 0
+    },
+    "656": {
+      "name": "Yellow Sweats",
+      "maxStack": 0
+    },
+    "657": {
+      "name": "Yellow Sneakers",
+      "maxStack": 0
+    },
+    "658": {
+      "name": "Yellow B Shirt",
+      "maxStack": 0
+    },
+    "659": {
+      "name": "Mine Pass",
+      "maxStack": 0
+    },
+    "660": {
+      "name": "Fern Seed",
+      "maxStack": 0
+    },
+    "661": {
+      "name": "Bush Seed",
+      "maxStack": 0
+    },
+    "662": {
+      "name": "Base Tent Deed",
+      "maxStack": 0
+    },
+    "663": {
+      "name": "Visiting Site Deed",
+      "maxStack": 0
+    },
+    "664": {
+      "name": "Flame Sac",
+      "maxStack": 0
+    },
+    "665": {
+      "name": "Basic Green Rug",
+      "maxStack": 0
+    },
+    "666": {
+      "name": "Basic Red Rug",
+      "maxStack": 0
+    },
+    "667": {
+      "name": "Bank Wall",
+      "maxStack": 0
+    },
+    "668": {
+      "name": "Grass Floor",
+      "maxStack": 0
+    },
+    "669": {
+      "name": "Cooked Cactus Fig",
+      "maxStack": 0
+    },
+    "670": {
+      "name": "Item Sign",
+      "maxStack": 0
+    },
+    "671": {
+      "name": "Cloud Wall",
+      "maxStack": 0
+    },
+    "672": {
+      "name": "Retro Flower Wall",
+      "maxStack": 0
+    },
+    "673": {
+      "name": "Retro Floor",
+      "maxStack": 0
+    },
+    "674": {
+      "name": "Basic Blue Rug",
+      "maxStack": 0
+    },
+    "675": {
+      "name": "Basic Pink Rug",
+      "maxStack": 0
+    },
+    "676": {
+      "name": "Basic Purple Rug",
+      "maxStack": 0
+    },
+    "677": {
+      "name": "Basic Orange Rug",
+      "maxStack": 0
+    },
+    "678": {
+      "name": "Marble Floor",
+      "maxStack": 0
+    },
+    "679": {
+      "name": "Bug Book",
+      "maxStack": 0
+    },
+    "680": {
+      "name": "Fish Book",
+      "maxStack": 0
+    },
+    "681": {
+      "name": "Plant Book",
+      "maxStack": 0
+    },
+    "682": {
+      "name": "Compactor",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "683": {
+      "name": "Jackaroo Hood",
+      "maxStack": 0
+    },
+    "684": {
+      "name": "Helicopter",
+      "maxStack": 0
+    },
+    "685": {
+      "name": "Meat Pie",
+      "maxStack": 0
+    },
+    "686": {
+      "name": "Pavlova",
+      "maxStack": 0
+    },
+    "687": {
+      "name": "Dagwood Dog",
+      "maxStack": 0
+    },
+    "688": {
+      "name": "Croc Teeth Bat",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "689": {
+      "name": "Flaming Bat",
+      "maxStack": 300,
+      "maxDurability": 300
+    },
+    "690": {
+      "name": "Quiche",
+      "maxStack": 0
+    },
+    "691": {
+      "name": "Meat on a stick.",
+      "maxStack": 0
+    },
+    "692": {
+      "name": "Water Tank",
+      "maxStack": 0
+    },
+    "693": {
+      "name": "Silo",
+      "maxStack": 0
+    },
+    "694": {
+      "name": "Blackwood Seed",
+      "maxStack": 0
+    },
+    "695": {
+      "name": "Fake Beard",
+      "maxStack": 0
+    },
+    "696": {
+      "name": "Cement Fence",
+      "maxStack": 0
+    },
+    "697": {
+      "name": "Simple Animal Trap",
+      "maxStack": 0
+    },
+    "698": {
+      "name": "Bottle Brush",
+      "maxStack": 0
+    },
+    "699": {
+      "name": "Copper Watering Can",
+      "maxStack": 0,
+      "maxDurability": 60
+    },
+    "700": {
+      "name": "Copper Watering Can",
+      "maxStack": 0
+    },
+    "701": {
+      "name": "Iron Watering Can",
+      "maxStack": 0,
+      "maxDurability": 120
+    },
+    "702": {
+      "name": "Iron Watering Can",
+      "maxStack": 0
+    },
+    "703": {
+      "name": "Compost Bin",
+      "maxStack": 0
+    },
+    "704": {
+      "name": "Shovel of Sand",
+      "maxStack": 600,
+      "maxDurability": 600
+    },
+    "705": {
+      "name": "Shovel of Mud",
+      "maxStack": 600,
+      "maxDurability": 600
+    },
+    "706": {
+      "name": "Shovel of Red Sand",
+      "maxStack": 600,
+      "maxDurability": 600
+    },
+    "707": {
+      "name": "Fir Grass Seeds",
+      "maxStack": 0
+    },
+    "708": {
+      "name": "Tropical Grass Seeds",
+      "maxStack": 0
+    },
+    "709": {
+      "name": "Long Shoes",
+      "maxStack": 0
+    },
+    "710": {
+      "name": "Tele Pad",
+      "maxStack": 0
+    },
+    "711": {
+      "name": "Tele Caller",
+      "maxStack": 0,
+      "maxDurability": 15
+    },
+    "712": {
+      "name": "Black Jacket",
+      "maxStack": 0
+    },
+    "713": {
+      "name": "Black Jeans",
+      "maxStack": 0
+    },
+    "714": {
+      "name": "White Pants",
+      "maxStack": 0
+    },
+    "715": {
+      "name": "White T-Shirt",
+      "maxStack": 0
+    },
+    "716": {
+      "name": "Black Flat Cap",
+      "maxStack": 0
+    },
+    "717": {
+      "name": "Black Flanney Shirt",
+      "maxStack": 0
+    },
+    "718": {
+      "name": "Black Plaid Pants",
+      "maxStack": 0
+    },
+    "719": {
+      "name": "Yellow Shorts",
+      "maxStack": 0
+    },
+    "720": {
+      "name": "Yellow T-Shirt",
+      "maxStack": 0
+    },
+    "721": {
+      "name": "Yellow Boots",
+      "maxStack": 0
+    },
+    "722": {
+      "name": "White Boots",
+      "maxStack": 0
+    },
+    "723": {
+      "name": "Face Bandana Green",
+      "maxStack": 0
+    },
+    "724": {
+      "name": "Face Bandana Black",
+      "maxStack": 0
+    },
+    "725": {
+      "name": "Face Bandana Blue",
+      "maxStack": 0
+    },
+    "726": {
+      "name": "Face Bandana Orange",
+      "maxStack": 0
+    },
+    "727": {
+      "name": "Face Bandana Red",
+      "maxStack": 0
+    },
+    "728": {
+      "name": "Large Round Glasses",
+      "maxStack": 0
+    },
+    "729": {
+      "name": "Retro Point Glasses",
+      "maxStack": 0
+    },
+    "730": {
+      "name": "Retro Point Sun Glasses",
+      "maxStack": 0
+    },
+    "731": {
+      "name": "Triangle Glasses",
+      "maxStack": 0
+    },
+    "732": {
+      "name": "Shutter Shades",
+      "maxStack": 0
+    },
+    "733": {
+      "name": "Round Horned Glasses",
+      "maxStack": 0
+    },
+    "734": {
+      "name": "Round Horned Sun Glasses",
+      "maxStack": 0
+    },
+    "735": {
+      "name": "Yellow Dress",
+      "maxStack": 0
+    },
+    "736": {
+      "name": "Rainbow Dress",
+      "maxStack": 0
+    },
+    "737": {
+      "name": "Black Plaid Dress",
+      "maxStack": 0
+    },
+    "738": {
+      "name": "Rainbow T-Shirt",
+      "maxStack": 0
+    },
+    "739": {
+      "name": "Rainbow Pants",
+      "maxStack": 0
+    },
+    "740": {
+      "name": "Rainbow Sneakers",
+      "maxStack": 0
+    },
+    "741": {
+      "name": "Red Nose",
+      "maxStack": 0
+    },
+    "742": {
+      "name": "Beak",
+      "maxStack": 0
+    },
+    "743": {
+      "name": "Black Coat",
+      "maxStack": 0
+    },
+    "744": {
+      "name": "Black Ripped Jeans",
+      "maxStack": 0
+    },
+    "745": {
+      "name": "House Move Deed",
+      "maxStack": 0
+    },
+    "746": {
+      "name": "Jelly",
+      "maxStack": 0
+    },
+    "747": {
+      "name": "Jelly Brew",
+      "maxStack": 0
+    },
+    "748": {
+      "name": "Bottle Brush Brew",
+      "maxStack": 0
+    },
+    "749": {
+      "name": "Advanced Sprinkler",
+      "maxStack": 0
+    },
+    "750": {
+      "name": "Vombat Poo",
+      "maxStack": 0
+    },
+    "751": {
+      "name": "White Mask",
+      "maxStack": 0
+    },
+    "752": {
+      "name": "Black Mask",
+      "maxStack": 0
+    },
+    "753": {
+      "name": "Windmill",
+      "maxStack": 0
+    },
+    "754": {
+      "name": "Flower Pot",
+      "maxStack": 0
+    },
+    "755": {
+      "name": "Gum Wood Path",
+      "maxStack": 0
+    },
+    "756": {
+      "name": "Hard Wood Path",
+      "maxStack": 0
+    },
+    "757": {
+      "name": "Hard Wood Bridge",
+      "maxStack": 0
+    },
+    "758": {
+      "name": "Gum Wood Bridge",
+      "maxStack": 0
+    },
+    "759": {
+      "name": "Brick Bridge",
+      "maxStack": 0
+    },
+    "760": {
+      "name": "Gum Wood Fence",
+      "maxStack": 0
+    },
+    "761": {
+      "name": "Hard Wood Fence",
+      "maxStack": 0
+    },
+    "762": {
+      "name": "Tin Fence",
+      "maxStack": 0
+    },
+    "763": {
+      "name": "Big Fried Egg",
+      "maxStack": 0
+    },
+    "764": {
+      "name": "Fried Egg",
+      "maxStack": 0
+    },
+    "765": {
+      "name": "Gum Wood Gate",
+      "maxStack": 0
+    },
+    "766": {
+      "name": "Hard Wood Gate",
+      "maxStack": 0
+    },
+    "767": {
+      "name": "Tin Gate",
+      "maxStack": 0
+    },
+    "768": {
+      "name": "Copper Hoe",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "769": {
+      "name": "Brick Well",
+      "maxStack": 0
+    },
+    "770": {
+      "name": "Quandong",
+      "maxStack": 0
+    },
+    "771": {
+      "name": "Cooked Quandong",
+      "maxStack": 0
+    },
+    "772": {
+      "name": "Flake",
+      "maxStack": 0
+    },
+    "773": {
+      "name": "Cooked Flake",
+      "maxStack": 0
+    },
+    "774": {
+      "name": "Wheelbarrow",
+      "maxStack": 0
+    },
+    "775": {
+      "name": "Iron Path",
+      "maxStack": 0
+    },
+    "776": {
+      "name": "Bottle Brush Seed",
+      "maxStack": 0
+    },
+    "777": {
+      "name": "Wattle Seed",
+      "maxStack": 0
+    },
+    "778": {
+      "name": "Copper Fishing Rod",
+      "maxStack": 350,
+      "maxDurability": 350
+    },
+    "779": {
+      "name": "Iron Fishing Rod",
+      "maxStack": 650,
+      "maxDurability": 650
+    },
+    "780": {
+      "name": "Chicken Hood",
+      "maxStack": 0
+    },
+    "781": {
+      "name": "Wizard Hat",
+      "maxStack": 0
+    },
+    "782": {
+      "name": "Wizard Robe",
+      "maxStack": 0
+    },
+    "783": {
+      "name": "Witch Hat",
+      "maxStack": 0
+    },
+    "784": {
+      "name": "Witch Robe",
+      "maxStack": 0
+    },
+    "785": {
+      "name": "Green Chair",
+      "maxStack": 0
+    },
+    "786": {
+      "name": "Green Seat",
+      "maxStack": 0
+    },
+    "787": {
+      "name": "Green Bed",
+      "maxStack": 0
+    },
+    "788": {
+      "name": "Green Bedside Table",
+      "maxStack": 0
+    },
+    "789": {
+      "name": "Green Bookshelf",
+      "maxStack": 0
+    },
+    "790": {
+      "name": "Green Cabinet",
+      "maxStack": 0
+    },
+    "791": {
+      "name": "Green Couch",
+      "maxStack": 0
+    },
+    "792": {
+      "name": "Green Coffee Table",
+      "maxStack": 0
+    },
+    "793": {
+      "name": "Green Table",
+      "maxStack": 0
+    },
+    "794": {
+      "name": "Green Lamp",
+      "maxStack": 0
+    },
+    "795": {
+      "name": "Town Hall Base Tent Upgrade",
+      "maxStack": 0
+    },
+    "796": {
+      "name": "Town Hall Deed",
+      "maxStack": 0
+    },
+    "797": {
+      "name": "Storage Barrel",
+      "maxStack": 0
+    },
+    "798": {
+      "name": "Lawn Mower",
+      "maxStack": 0
+    },
+    "799": {
+      "name": "Coconut",
+      "maxStack": 0
+    },
+    "800": {
+      "name": "Boogie Board",
+      "maxStack": 0
+    },
+    "801": {
+      "name": "Tractor",
+      "maxStack": 0
+    },
+    "802": {
+      "name": "Blue Paint",
+      "maxStack": 0
+    },
+    "803": {
+      "name": "Paint Remover",
+      "maxStack": 0
+    },
+    "804": {
+      "name": "Black Paint",
+      "maxStack": 0
+    },
+    "805": {
+      "name": "Green Paint",
+      "maxStack": 0
+    },
+    "806": {
+      "name": "Orange Paint",
+      "maxStack": 0
+    },
+    "807": {
+      "name": "Pink Paint",
+      "maxStack": 0
+    },
+    "808": {
+      "name": "Purple Paint",
+      "maxStack": 0
+    },
+    "809": {
+      "name": "Red Paint",
+      "maxStack": 0
+    },
+    "810": {
+      "name": "White Paint",
+      "maxStack": 0
+    },
+    "811": {
+      "name": "Yellow Paint",
+      "maxStack": 0
+    },
+    "812": {
+      "name": "Chrome Paint",
+      "maxStack": 0
+    },
+    "813": {
+      "name": "Gold Paint",
+      "maxStack": 0
+    },
+    "814": {
+      "name": "Buccinidae Shell",
+      "maxStack": 0
+    },
+    "815": {
+      "name": "Cassidae Shell",
+      "maxStack": 0
+    },
+    "816": {
+      "name": "Sand Dollar",
+      "maxStack": 0
+    },
+    "817": {
+      "name": "Tonnidae Shell",
+      "maxStack": 0
+    },
+    "818": {
+      "name": "Biscuit Sea Star",
+      "maxStack": 0
+    },
+    "819": {
+      "name": "Eleven-armed Sea Star",
+      "maxStack": 0
+    },
+    "820": {
+      "name": "Black Sea Cucumber",
+      "maxStack": 0
+    },
+    "821": {
+      "name": "Spiny Sea Urchin",
+      "maxStack": 0
+    },
+    "822": {
+      "name": "Pink Sea Urchin",
+      "maxStack": 0
+    },
+    "823": {
+      "name": "Purple Sea Urchin",
+      "maxStack": 0
+    },
+    "824": {
+      "name": "King Prawn",
+      "maxStack": 0
+    },
+    "825": {
+      "name": "Tiger Prawn",
+      "maxStack": 0
+    },
+    "826": {
+      "name": "Bay Bug",
+      "maxStack": 0
+    },
+    "827": {
+      "name": "Fresh Water Mussel",
+      "maxStack": 0
+    },
+    "828": {
+      "name": "Fresh Water Prawn",
+      "maxStack": 0
+    },
+    "829": {
+      "name": "Inland Crab",
+      "maxStack": 0
+    },
+    "830": {
+      "name": "Purple Mottled Crab",
+      "maxStack": 0
+    },
+    "831": {
+      "name": "Blue Mussel",
+      "maxStack": 0
+    },
+    "832": {
+      "name": "Cushion Sea Star",
+      "maxStack": 0
+    },
+    "833": {
+      "name": "White Yabbie",
+      "maxStack": 0
+    },
+    "834": {
+      "name": "Blue Sea Slug",
+      "maxStack": 0
+    },
+    "835": {
+      "name": "Croco Berley Box",
+      "maxStack": 0
+    },
+    "836": {
+      "name": "Devil Berley Box",
+      "maxStack": 0
+    },
+    "837": {
+      "name": "Shark Berley Box",
+      "maxStack": 0
+    },
+    "838": {
+      "name": "Battle Shovel",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "839": {
+      "name": "Bone Bow",
+      "maxStack": 200,
+      "maxDurability": 200
+    },
+    "840": {
+      "name": "Bone Arrow",
+      "maxStack": 0
+    },
+    "841": {
+      "name": "Gold Pocket Watch",
+      "maxStack": 0
+    },
+    "842": {
+      "name": "Boom Box",
+      "maxStack": 0
+    },
+    "843": {
+      "name": "Tomato",
+      "maxStack": 0
+    },
+    "844": {
+      "name": "Tomato Seeds",
+      "maxStack": 0
+    },
+    "845": {
+      "name": "Green Bean",
+      "maxStack": 0
+    },
+    "846": {
+      "name": "Green Bean Seeds",
+      "maxStack": 0
+    },
+    "847": {
+      "name": "Empty Miners Helmet",
+      "maxStack": 180,
+      "maxDurability": 180
+    },
+    "848": {
+      "name": "Wooden Chest",
+      "maxStack": 0
+    },
+    "849": {
+      "name": "Doggo Collar",
+      "maxStack": 0
+    },
+    "850": {
+      "name": "Mu Saddle",
+      "maxStack": 0
+    },
+    "851": {
+      "name": "Copper Bulb Lamp",
+      "maxStack": 0
+    },
+    "852": {
+      "name": "Cooked Prime Meat",
+      "maxStack": 0
+    },
+    "853": {
+      "name": "Raw Prime Meat",
+      "maxStack": 0
+    },
+    "854": {
+      "name": "Repair Table",
+      "maxStack": 0
+    },
+    "855": {
+      "name": "Repair Kit",
+      "maxStack": 0
+    },
+    "856": {
+      "name": "Charging Station",
+      "maxStack": 0
+    },
+    "857": {
+      "name": "Old Sign",
+      "maxStack": 0
+    },
+    "858": {
+      "name": "Iron Hoe",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "859": {
+      "name": "Bat Wing",
+      "maxStack": 0
+    },
+    "860": {
+      "name": "Grain Mill",
+      "maxStack": 0
+    },
+    "861": {
+      "name": "Flour",
+      "maxStack": 0
+    },
+    "862": {
+      "name": "Sugar",
+      "maxStack": 0
+    },
+    "863": {
+      "name": "Worm Farm",
+      "maxStack": 0
+    },
+    "864": {
+      "name": "Machine Manual",
+      "maxStack": 0
+    },
+    "865": {
+      "name": "Warm Nordic Bed",
+      "maxStack": 0
+    },
+    "866": {
+      "name": "Warm Nordic Bedside Table",
+      "maxStack": 0
+    },
+    "867": {
+      "name": "Warm Nordic Bookshelf",
+      "maxStack": 0
+    },
+    "868": {
+      "name": "Warm Nordic Cabinet",
+      "maxStack": 0
+    },
+    "869": {
+      "name": "Warm Nordic Chair",
+      "maxStack": 0
+    },
+    "870": {
+      "name": "Warm Nordic Coffee Table",
+      "maxStack": 0
+    },
+    "871": {
+      "name": "Warm Nordic Couch",
+      "maxStack": 0
+    },
+    "872": {
+      "name": "Warm Nordic Table",
+      "maxStack": 0
+    },
+    "873": {
+      "name": "Tall Bookshelf",
+      "maxStack": 0
+    },
+    "874": {
+      "name": "Warm Nordic Lamp",
+      "maxStack": 0
+    },
+    "875": {
+      "name": "Warm Nordic Seat",
+      "maxStack": 0
+    },
+    "876": {
+      "name": "Red Hang Glider",
+      "maxStack": 0
+    },
+    "877": {
+      "name": "Butter Glider",
+      "maxStack": 0
+    },
+    "878": {
+      "name": "Dark Wooden Table",
+      "maxStack": 0
+    },
+    "879": {
+      "name": "Dark Wooden Seat",
+      "maxStack": 0
+    },
+    "880": {
+      "name": "Dark Wooden Couch",
+      "maxStack": 0
+    },
+    "881": {
+      "name": "Dark Wooden Bedside Table",
+      "maxStack": 0
+    },
+    "882": {
+      "name": "Tea Pot",
+      "maxStack": 0
+    },
+    "883": {
+      "name": "Small Pot",
+      "maxStack": 0
+    },
+    "884": {
+      "name": "Rattan Basket",
+      "maxStack": 0
+    },
+    "885": {
+      "name": "Palm Wood Bench",
+      "maxStack": 0
+    },
+    "886": {
+      "name": "Hard Wood Bench",
+      "maxStack": 0
+    },
+    "887": {
+      "name": "Gum Wood Bench",
+      "maxStack": 0
+    },
+    "888": {
+      "name": "Iron Wood Bench",
+      "maxStack": 0
+    },
+    "889": {
+      "name": "Festoon Lights",
+      "maxStack": 0
+    },
+    "890": {
+      "name": "Mushroom Lamp",
+      "maxStack": 0
+    },
+    "891": {
+      "name": "Jackaroo Statue",
+      "maxStack": 0
+    },
+    "892": {
+      "name": "Bush Devil Statue",
+      "maxStack": 0
+    },
+    "893": {
+      "name": "Bread",
+      "maxStack": 0
+    },
+    "894": {
+      "name": "Fairy Bread",
+      "maxStack": 0
+    },
+    "895": {
+      "name": "Pastie",
+      "maxStack": 0
+    },
+    "896": {
+      "name": "Damper",
+      "maxStack": 0
+    },
+    "897": {
+      "name": "Sausage Roll",
+      "maxStack": 0
+    },
+    "898": {
+      "name": "Prime Roast",
+      "maxStack": 0
+    },
+    "899": {
+      "name": "Golden Jackaroo Statue",
+      "maxStack": 0
+    },
+    "900": {
+      "name": "Golden Bush Devil Statue",
+      "maxStack": 0
+    },
+    "901": {
+      "name": "Iron Cement Fence",
+      "maxStack": 0
+    },
+    "902": {
+      "name": "Copper Top Fence",
+      "maxStack": 0
+    },
+    "903": {
+      "name": "Umbrella",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "904": {
+      "name": "Bulletin Board",
+      "maxStack": 0
+    },
+    "905": {
+      "name": "Thunder Sac",
+      "maxStack": 0
+    },
+    "906": {
+      "name": "Bat Zapper",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "907": {
+      "name": "Gum Wood Steps",
+      "maxStack": 0
+    },
+    "908": {
+      "name": "Hard Wood Steps",
+      "maxStack": 0
+    },
+    "909": {
+      "name": "Gum Wood Lamp Post",
+      "maxStack": 0
+    },
+    "910": {
+      "name": "Hard Wood Lamp Post",
+      "maxStack": 0
+    },
+    "911": {
+      "name": "Copper Scythe",
+      "maxStack": 1000,
+      "maxDurability": 1000
+    },
+    "912": {
+      "name": "Iron Scythe",
+      "maxStack": 1000,
+      "maxDurability": 1000
+    },
+    "913": {
+      "name": "Cement Bird Bath",
+      "maxStack": 0
+    },
+    "914": {
+      "name": "Hardwood Crude Fence",
+      "maxStack": 0
+    },
+    "915": {
+      "name": "Froggy Hood",
+      "maxStack": 0
+    },
+    "916": {
+      "name": "Cat Hood",
+      "maxStack": 0
+    },
+    "917": {
+      "name": "Yellow Print Dress",
+      "maxStack": 0
+    },
+    "918": {
+      "name": "Yellow Print Pants",
+      "maxStack": 0
+    },
+    "919": {
+      "name": "Brown Boat Shoes",
+      "maxStack": 0
+    },
+    "920": {
+      "name": "Floppy Straw Hat",
+      "maxStack": 0
+    },
+    "921": {
+      "name": "Bunting Festoon",
+      "maxStack": 0
+    },
+    "922": {
+      "name": "House Customisation Kit",
+      "maxStack": 0
+    },
+    "923": {
+      "name": "Gum Wood Flag Post",
+      "maxStack": 0
+    },
+    "924": {
+      "name": "Palm Wood Flag Post",
+      "maxStack": 0
+    },
+    "925": {
+      "name": "Dirt Printer",
+      "maxStack": 100,
+      "maxDurability": 100
+    },
+    "926": {
+      "name": "Mighty Seeds",
+      "maxStack": 0
+    },
+    "927": {
+      "name": "Mighty Spread",
+      "maxStack": 0
+    },
+    "928": {
+      "name": "Hard Wood Flag Post",
+      "maxStack": 0
+    },
+    "929": {
+      "name": "Black Wooden Crate",
+      "maxStack": 0
+    },
+    "930": {
+      "name": "Blue Wooden Crate",
+      "maxStack": 0
+    },
+    "931": {
+      "name": "Chrome Wooden Crate",
+      "maxStack": 0
+    },
+    "932": {
+      "name": "Gold Wooden Crate",
+      "maxStack": 0
+    },
+    "933": {
+      "name": "Green Wooden Crate",
+      "maxStack": 0
+    },
+    "934": {
+      "name": "Orange Wooden Crate",
+      "maxStack": 0
+    },
+    "935": {
+      "name": "Pink Wooden Crate",
+      "maxStack": 0
+    },
+    "936": {
+      "name": "Purple Wooden Crate",
+      "maxStack": 0
+    },
+    "937": {
+      "name": "Red Wooden Crate",
+      "maxStack": 0
+    },
+    "938": {
+      "name": "White Wooden Crate",
+      "maxStack": 0
+    },
+    "939": {
+      "name": "Yellow Wooden Crate",
+      "maxStack": 0
+    },
+    "940": {
+      "name": "Black Wooden Chest",
+      "maxStack": 0
+    },
+    "941": {
+      "name": "Blue Wooden Chest",
+      "maxStack": 0
+    },
+    "942": {
+      "name": "Chrome Wooden Chest",
+      "maxStack": 0
+    },
+    "943": {
+      "name": "Gold Wooden Chest",
+      "maxStack": 0
+    },
+    "944": {
+      "name": "Green Wooden Chest",
+      "maxStack": 0
+    },
+    "945": {
+      "name": "Orange Wooden Chest",
+      "maxStack": 0
+    },
+    "946": {
+      "name": "Pink Wooden Chest",
+      "maxStack": 0
+    },
+    "947": {
+      "name": "Purple Wooden Chest",
+      "maxStack": 0
+    },
+    "948": {
+      "name": "Red Wooden Chest",
+      "maxStack": 0
+    },
+    "949": {
+      "name": "White Wooden Chest",
+      "maxStack": 0
+    },
+    "950": {
+      "name": "Yellow Wooden Chest",
+      "maxStack": 0
+    },
+    "951": {
+      "name": "Salon Deed",
+      "maxStack": 0
+    },
+    "952": {
+      "name": "Butterfly Orchid",
+      "maxStack": 0
+    },
+    "953": {
+      "name": "Glow Bug",
+      "maxStack": 0
+    },
+    "954": {
+      "name": "Deep Fish",
+      "maxStack": 0
+    },
+    "955": {
+      "name": "Bat Glider",
+      "maxStack": 0
+    },
+    "956": {
+      "name": "Alpha Hammer",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "957": {
+      "name": "Alpha Antler",
+      "maxStack": 0
+    },
+    "958": {
+      "name": "Alpha Scale",
+      "maxStack": 0
+    },
+    "959": {
+      "name": "Alpha Spear",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "960": {
+      "name": "Alpha Bat",
+      "maxStack": 300,
+      "maxDurability": 300
+    },
+    "961": {
+      "name": "Pattern Stone Path",
+      "maxStack": 0
+    },
+    "962": {
+      "name": "Panda Hood",
+      "maxStack": 0
+    },
+    "963": {
+      "name": "Alpha Eye",
+      "maxStack": 0
+    },
+    "964": {
+      "name": "Cobblestone Path",
+      "maxStack": 0
+    },
+    "965": {
+      "name": "Cobblestone Fence",
+      "maxStack": 0
+    },
+    "966": {
+      "name": "Rock Edge Path",
+      "maxStack": 0
+    },
+    "967": {
+      "name": "Cobblestone Road",
+      "maxStack": 0
+    },
+    "968": {
+      "name": "Cobblestone Road Lines",
+      "maxStack": 0
+    },
+    "969": {
+      "name": "Cooked Freshwater Fish",
+      "maxStack": 0
+    },
+    "970": {
+      "name": "Cooked Saltwater Fish",
+      "maxStack": 0
+    },
+    "971": {
+      "name": "Detective Pants",
+      "maxStack": 0
+    },
+    "972": {
+      "name": "Trench Coat",
+      "maxStack": 0
+    },
+    "973": {
+      "name": "Black Boat Shoes",
+      "maxStack": 0
+    },
+    "974": {
+      "name": "P.I Hat",
+      "maxStack": 0
+    },
+    "975": {
+      "name": "Dark Detective Pants",
+      "maxStack": 0
+    },
+    "976": {
+      "name": "Dark Trench Coat",
+      "maxStack": 0
+    },
+    "977": {
+      "name": "Dark P.I Hat",
+      "maxStack": 0
+    },
+    "978": {
+      "name": "Blue Summer Dress",
+      "maxStack": 0
+    },
+    "979": {
+      "name": "Green Summer Dress",
+      "maxStack": 0
+    },
+    "980": {
+      "name": "Minimalist Bed",
+      "maxStack": 0
+    },
+    "981": {
+      "name": "Minimalist Bedside Table",
+      "maxStack": 0
+    },
+    "982": {
+      "name": "Minimalist Bookshelf",
+      "maxStack": 0
+    },
+    "983": {
+      "name": "Minimalist Chair",
+      "maxStack": 0
+    },
+    "984": {
+      "name": "Minimalist Couch",
+      "maxStack": 0
+    },
+    "985": {
+      "name": "Minimalist Dresser",
+      "maxStack": 0
+    },
+    "986": {
+      "name": "Minimalist Lamp",
+      "maxStack": 0
+    },
+    "987": {
+      "name": "Minimalist Seat",
+      "maxStack": 0
+    },
+    "988": {
+      "name": "White Brick Wallpaper",
+      "maxStack": 0
+    },
+    "989": {
+      "name": "Red Brick Wallpaper",
+      "maxStack": 0
+    },
+    "990": {
+      "name": "Green Brick Wallpaper",
+      "maxStack": 0
+    },
+    "991": {
+      "name": "Dark Tiles",
+      "maxStack": 0
+    },
+    "992": {
+      "name": "Bright Tiles",
+      "maxStack": 0
+    },
+    "993": {
+      "name": "Mascot Head",
+      "maxStack": 0
+    },
+    "994": {
+      "name": "Mascot Legs",
+      "maxStack": 0
+    },
+    "995": {
+      "name": "Mascot Torso",
+      "maxStack": 0
+    },
+    "996": {
+      "name": "Bunk Bed",
+      "maxStack": 0
+    },
+    "997": {
+      "name": "Cooked Blob Fish",
+      "maxStack": 0
+    },
+    "998": {
+      "name": "Honey Comb Path",
+      "maxStack": 0
+    },
+    "999": {
+      "name": "Warm Nordic Wall",
+      "maxStack": 0
+    },
+    "1000": {
+      "name": "Warm Nordic Floor",
+      "maxStack": 0
+    },
+    "1001": {
+      "name": "Bottle Tree Seed",
+      "maxStack": 0
+    },
+    "1002": {
+      "name": "Mushroom Path",
+      "maxStack": 0
+    },
+    "1003": {
+      "name": "Pearl Path",
+      "maxStack": 0
+    },
+    "1004": {
+      "name": "Melon Scarecrow",
+      "maxStack": 0
+    },
+    "1005": {
+      "name": "Elf Ears",
+      "maxStack": 0
+    },
+    "1006": {
+      "name": "Elf Hat",
+      "maxStack": 0
+    },
+    "1007": {
+      "name": "Elf Pants",
+      "maxStack": 0
+    },
+    "1008": {
+      "name": "Elf Shirt",
+      "maxStack": 0
+    },
+    "1009": {
+      "name": "Elf Shoes",
+      "maxStack": 0
+    },
+    "1010": {
+      "name": "Festive Tree",
+      "maxStack": 0
+    },
+    "1011": {
+      "name": "Festive Scarecrow",
+      "maxStack": 0
+    },
+    "1012": {
+      "name": "Festive Crate",
+      "maxStack": 0
+    },
+    "1013": {
+      "name": "Festive Jackaroo",
+      "maxStack": 0
+    },
+    "1014": {
+      "name": "Cherries",
+      "maxStack": 0
+    },
+    "1015": {
+      "name": "Cooked Cherries",
+      "maxStack": 0
+    },
+    "1016": {
+      "name": "Fireplace",
+      "maxStack": 0
+    },
+    "1017": {
+      "name": "Mini Festive Tree",
+      "maxStack": 0
+    },
+    "1018": {
+      "name": "Festive Boom Box",
+      "maxStack": 0
+    },
+    "1019": {
+      "name": "Festive Towel",
+      "maxStack": 0
+    },
+    "1020": {
+      "name": "Festive Umbrella",
+      "maxStack": 0
+    },
+    "1021": {
+      "name": "Candy Cane",
+      "maxStack": 350,
+      "maxDurability": 350
+    },
+    "1022": {
+      "name": "Jolly Dress",
+      "maxStack": 0
+    },
+    "1023": {
+      "name": "Striped Boogie Board",
+      "maxStack": 0
+    },
+    "1024": {
+      "name": "Star Light",
+      "maxStack": 0
+    },
+    "1025": {
+      "name": "Candy Pickaxe",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "1026": {
+      "name": "Candy Axe",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "1027": {
+      "name": "Gingerbread Path",
+      "maxStack": 0
+    },
+    "1028": {
+      "name": "Festive Fence",
+      "maxStack": 0
+    },
+    "1029": {
+      "name": "Pleep Whistle",
+      "maxStack": 0
+    },
+    "1030": {
+      "name": "Holly Wreath",
+      "maxStack": 0
+    },
+    "1031": {
+      "name": "Tuckshop Deed",
+      "maxStack": 0
+    },
+    "1032": {
+      "name": "Marble Path",
+      "maxStack": 0
+    },
+    "1033": {
+      "name": "Coffee Seeds",
+      "maxStack": 0
+    },
+    "1034": {
+      "name": "Coffee Bean",
+      "maxStack": 0
+    },
+    "1035": {
+      "name": "Roasted Coffee Beans",
+      "maxStack": 0
+    },
+    "1036": {
+      "name": "Coffee",
+      "maxStack": 0
+    },
+    "1037": {
+      "name": "Signwriting  Table",
+      "maxStack": 0
+    },
+    "1038": {
+      "name": "A Letter Statue",
+      "maxStack": 0
+    },
+    "1039": {
+      "name": "B Letter Statue",
+      "maxStack": 0
+    },
+    "1040": {
+      "name": "C Letter Statue",
+      "maxStack": 0
+    },
+    "1041": {
+      "name": "D Letter Statue",
+      "maxStack": 0
+    },
+    "1042": {
+      "name": "E Letter Statue",
+      "maxStack": 0
+    },
+    "1043": {
+      "name": "F Letter Statue",
+      "maxStack": 0
+    },
+    "1044": {
+      "name": "G Letter Statue",
+      "maxStack": 0
+    },
+    "1045": {
+      "name": "H Letter Statue",
+      "maxStack": 0
+    },
+    "1046": {
+      "name": "I Letter Statue",
+      "maxStack": 0
+    },
+    "1047": {
+      "name": "J Letter Statue",
+      "maxStack": 0
+    },
+    "1048": {
+      "name": "K Letter Statue",
+      "maxStack": 0
+    },
+    "1049": {
+      "name": "L Letter Statue",
+      "maxStack": 0
+    },
+    "1050": {
+      "name": "M Letter Statue",
+      "maxStack": 0
+    },
+    "1051": {
+      "name": "N Letter Statue",
+      "maxStack": 0
+    },
+    "1052": {
+      "name": "O Letter Statue",
+      "maxStack": 0
+    },
+    "1053": {
+      "name": "P Letter Statue",
+      "maxStack": 0
+    },
+    "1054": {
+      "name": "Q Letter Statue",
+      "maxStack": 0
+    },
+    "1055": {
+      "name": "R Letter Statue",
+      "maxStack": 0
+    },
+    "1056": {
+      "name": "S Letter Statue",
+      "maxStack": 0
+    },
+    "1057": {
+      "name": "T Letter Statue",
+      "maxStack": 0
+    },
+    "1058": {
+      "name": "U Letter Statue",
+      "maxStack": 0
+    },
+    "1059": {
+      "name": "V Letter Statue",
+      "maxStack": 0
+    },
+    "1060": {
+      "name": "W Letter Statue",
+      "maxStack": 0
+    },
+    "1061": {
+      "name": "X Letter Statue",
+      "maxStack": 0
+    },
+    "1062": {
+      "name": "Y Letter Statue",
+      "maxStack": 0
+    },
+    "1063": {
+      "name": "Z Letter Statue",
+      "maxStack": 0
+    },
+    "1064": {
+      "name": "Hand Written sign",
+      "maxStack": 0
+    },
+    "1065": {
+      "name": "Signwriting  Pen",
+      "maxStack": 0
+    },
+    "1066": {
+      "name": "Iron Sign",
+      "maxStack": 0
+    },
+    "1067": {
+      "name": "Gum Wood Direction Sign",
+      "maxStack": 0
+    },
+    "1068": {
+      "name": "Palm Wood Direction Sign",
+      "maxStack": 0
+    },
+    "1069": {
+      "name": "Hard Wood Direction Sign",
+      "maxStack": 0
+    },
+    "1070": {
+      "name": "Tin Direction Sign",
+      "maxStack": 0
+    },
+    "1071": {
+      "name": "Sail Boat",
+      "maxStack": 0
+    },
+    "1072": {
+      "name": "Jackaroo Crossing Sign",
+      "maxStack": 0
+    },
+    "1073": {
+      "name": "Lattice Fence",
+      "maxStack": 0
+    },
+    "1074": {
+      "name": "Jackaroo Paw",
+      "maxStack": 0
+    },
+    "1075": {
+      "name": "Flannel Flower",
+      "maxStack": 0
+    },
+    "1076": {
+      "name": "River Daisy",
+      "maxStack": 0
+    },
+    "1077": {
+      "name": "Orange Paper Daisy",
+      "maxStack": 0
+    },
+    "1078": {
+      "name": "Gum Wood Flower Bed",
+      "maxStack": 0
+    },
+    "1079": {
+      "name": "Wide Gum Wood Bridge",
+      "maxStack": 0
+    },
+    "1080": {
+      "name": "Wide Hard Wood Bridge",
+      "maxStack": 0
+    },
+    "1081": {
+      "name": "Bird of Paradise",
+      "maxStack": 0
+    },
+    "1082": {
+      "name": "Glow Button",
+      "maxStack": 0
+    },
+    "1083": {
+      "name": "Trash Bin",
+      "maxStack": 0
+    },
+    "1084": {
+      "name": "Leaf Glider",
+      "maxStack": 0
+    },
+    "1085": {
+      "name": "Desert Pea Pot",
+      "maxStack": 0
+    },
+    "1086": {
+      "name": "River Daisy Pot",
+      "maxStack": 0
+    },
+    "1087": {
+      "name": "Flannel Flower Pot",
+      "maxStack": 0
+    },
+    "1088": {
+      "name": "Butterfly Orchid Pot",
+      "maxStack": 0
+    },
+    "1089": {
+      "name": "Orange Paper Daisy Pot",
+      "maxStack": 0
+    },
+    "1090": {
+      "name": "Pink Paper Daisy",
+      "maxStack": 0
+    },
+    "1091": {
+      "name": "White Paper Daisy",
+      "maxStack": 0
+    },
+    "1092": {
+      "name": "Wheelbarrow Flower Bed",
+      "maxStack": 0
+    },
+    "1093": {
+      "name": "Ruby Shard",
+      "maxStack": 0
+    },
+    "1094": {
+      "name": "Emerald Shard",
+      "maxStack": 0
+    },
+    "1095": {
+      "name": "Waterbed",
+      "maxStack": 0
+    },
+    "1096": {
+      "name": "Bottle of Clouds",
+      "maxStack": 10,
+      "maxDurability": 10
+    },
+    "1097": {
+      "name": "Large Cement Fountain",
+      "maxStack": 0
+    },
+    "1098": {
+      "name": "Copper Flower Pot",
+      "maxStack": 0
+    },
+    "1099": {
+      "name": "Lilly Pilly Seed",
+      "maxStack": 0
+    },
+    "1100": {
+      "name": "Small Lilly Pilly Seed",
+      "maxStack": 0
+    },
+    "1101": {
+      "name": "Comp Bug Net",
+      "maxStack": 600,
+      "maxDurability": 600
+    },
+    "1102": {
+      "name": "Gold Bug Comp Trophy",
+      "maxStack": 0
+    },
+    "1103": {
+      "name": "Silver Bug Comp Trophy",
+      "maxStack": 0
+    },
+    "1104": {
+      "name": "Bronze Bug Comp Trophy",
+      "maxStack": 0
+    },
+    "1105": {
+      "name": "Bridged Waterbed",
+      "maxStack": 0
+    },
+    "1106": {
+      "name": "Band Stand",
+      "maxStack": 0
+    },
+    "1107": {
+      "name": "Diving Helmet",
+      "maxStack": 0
+    },
+    "1108": {
+      "name": "Improved Chainsaw",
+      "maxStack": 2500,
+      "maxDurability": 2500
+    },
+    "1109": {
+      "name": "Empty Improved Chainsaw",
+      "maxStack": 2500,
+      "maxDurability": 2500
+    },
+    "1110": {
+      "name": "Balloon",
+      "maxStack": 250
+    },
+    "1111": {
+      "name": "Red Cloth Path",
+      "maxStack": 0
+    },
+    "1112": {
+      "name": "Sparkler",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "1113": {
+      "name": "Mu Whistle",
+      "maxStack": 0
+    },
+    "1114": {
+      "name": "Camera Tripod",
+      "maxStack": 0
+    },
+    "1115": {
+      "name": "Wooden Swing",
+      "maxStack": 0
+    },
+    "1116": {
+      "name": "Lily Pad",
+      "maxStack": 0
+    },
+    "1117": {
+      "name": "Giant Lily Pad",
+      "maxStack": 0
+    },
+    "1118": {
+      "name": "Hard Wood Flower Bed",
+      "maxStack": 0
+    },
+    "1119": {
+      "name": "Portable Roof",
+      "maxStack": 0
+    },
+    "1120": {
+      "name": "Key-Cycler",
+      "maxStack": 0
+    },
+    "1121": {
+      "name": "Billy Can Kit",
+      "maxStack": 0
+    },
+    "1122": {
+      "name": "Tongs",
+      "maxStack": 0
+    },
+    "1123": {
+      "name": "Tape Measure",
+      "maxStack": 0
+    },
+    "1124": {
+      "name": "Jacaranda Sapling",
+      "maxStack": 0
+    },
+    "1125": {
+      "name": "Small Cement Fountain",
+      "maxStack": 0
+    },
+    "1126": {
+      "name": "Wattle Tea",
+      "maxStack": 0
+    },
+    "1127": {
+      "name": "Bottle Brush Tea",
+      "maxStack": 0
+    },
+    "1128": {
+      "name": "Croco Statue",
+      "maxStack": 0
+    },
+    "1129": {
+      "name": "Frilly Statue",
+      "maxStack": 0
+    },
+    "1130": {
+      "name": "Cement Planter",
+      "maxStack": 0
+    },
+    "1131": {
+      "name": "Vine",
+      "maxStack": 0
+    },
+    "1132": {
+      "name": "Vine Fence",
+      "maxStack": 0
+    },
+    "1133": {
+      "name": "Mossy Brick Path",
+      "maxStack": 0
+    },
+    "1134": {
+      "name": "Hard Wood Market Stall",
+      "maxStack": 0
+    },
+    "1135": {
+      "name": "Marble Fence",
+      "maxStack": 0
+    },
+    "1136": {
+      "name": "Post Box",
+      "maxStack": 0
+    },
+    "1137": {
+      "name": "Marble Pedestal",
+      "maxStack": 0
+    },
+    "1138": {
+      "name": "Marble Bench",
+      "maxStack": 0
+    },
+    "1139": {
+      "name": "Marble Pillar",
+      "maxStack": 0
+    },
+    "1140": {
+      "name": "Rope Fence",
+      "maxStack": 0
+    },
+    "1141": {
+      "name": "Gerse Shirt",
+      "maxStack": 0
+    },
+    "1142": {
+      "name": "Purple Jeans",
+      "maxStack": 0
+    },
+    "1143": {
+      "name": "Purple Sneakers",
+      "maxStack": 0
+    },
+    "1144": {
+      "name": "Orange Sneakers",
+      "maxStack": 0
+    },
+    "1145": {
+      "name": "KD Shirt",
+      "maxStack": 0
+    },
+    "1146": {
+      "name": "Orange Pants",
+      "maxStack": 0
+    },
+    "1147": {
+      "name": "White Shorts",
+      "maxStack": 0
+    },
+    "1148": {
+      "name": "Reaps Shirt",
+      "maxStack": 0
+    },
+    "1149": {
+      "name": "Lime Sneakers",
+      "maxStack": 0
+    },
+    "1150": {
+      "name": "Helmet",
+      "maxStack": 0
+    },
+    "1151": {
+      "name": "Stone Lantern",
+      "maxStack": 0
+    },
+    "1152": {
+      "name": "Sailor Hat",
+      "maxStack": 0
+    },
+    "1153": {
+      "name": "Sailor Pants",
+      "maxStack": 0
+    },
+    "1154": {
+      "name": "Sailor Shirt",
+      "maxStack": 0
+    },
+    "1155": {
+      "name": "Sailor Boots",
+      "maxStack": 0
+    },
+    "1156": {
+      "name": "Sailor Dress",
+      "maxStack": 0
+    },
+    "1157": {
+      "name": "Sport Glasses",
+      "maxStack": 0
+    },
+    "1158": {
+      "name": "Marble",
+      "maxStack": 0
+    },
+    "1159": {
+      "name": "Dinner Set",
+      "maxStack": 0
+    },
+    "1160": {
+      "name": "Stack of Plates",
+      "maxStack": 0
+    },
+    "1161": {
+      "name": "Bread Board",
+      "maxStack": 0
+    },
+    "1162": {
+      "name": "Wattle Brew Set",
+      "maxStack": 0
+    },
+    "1163": {
+      "name": "Ramp",
+      "maxStack": 0
+    },
+    "1164": {
+      "name": "Advanced Sling Shot",
+      "maxStack": 200,
+      "maxDurability": 200
+    },
+    "1165": {
+      "name": "Berkonium Ore",
+      "maxStack": 0
+    },
+    "1166": {
+      "name": "Berkonium Bar",
+      "maxStack": 0
+    },
+    "1167": {
+      "name": "Plant Hammer",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "1168": {
+      "name": "Raw Grub Meat",
+      "maxStack": 0
+    },
+    "1169": {
+      "name": "Cooked Grub Meat",
+      "maxStack": 0
+    },
+    "1170": {
+      "name": "Plant Book",
+      "maxStack": 0
+    },
+    "1171": {
+      "name": "Traffic Cone",
+      "maxStack": 0
+    },
+    "1172": {
+      "name": "Apple Jam",
+      "maxStack": 0
+    },
+    "1173": {
+      "name": "Banana Jam",
+      "maxStack": 0
+    },
+    "1174": {
+      "name": "Lime Jam",
+      "maxStack": 0
+    },
+    "1175": {
+      "name": "Quandong Jam",
+      "maxStack": 0
+    },
+    "1176": {
+      "name": "Red Hibiscus",
+      "maxStack": 0
+    },
+    "1177": {
+      "name": "Yellow Hibiscus",
+      "maxStack": 0
+    },
+    "1178": {
+      "name": "Wide Brick Bridge",
+      "maxStack": 0
+    },
+    "1179": {
+      "name": "Improved Dirt Printer",
+      "maxStack": 200,
+      "maxDurability": 200
+    },
+    "1180": {
+      "name": "Empty Improved Dirt Printer",
+      "maxStack": 200,
+      "maxDurability": 200
+    },
+    "1181": {
+      "name": "Vine Festoon",
+      "maxStack": 0
+    },
+    "1182": {
+      "name": "Stone Wand",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "1183": {
+      "name": "Bottle Brush Vase",
+      "maxStack": 0
+    },
+    "1184": {
+      "name": "Potted Lilly Pilly",
+      "maxStack": 0
+    },
+    "1185": {
+      "name": "Painted Lady Butterfly",
+      "maxStack": 0
+    },
+    "1186": {
+      "name": "Grass Yellow Butterfly",
+      "maxStack": 0
+    },
+    "1187": {
+      "name": "Purple Azure Butterfly",
+      "maxStack": 0
+    },
+    "1188": {
+      "name": "Blast Furnace",
+      "maxStack": 0
+    },
+    "1189": {
+      "name": "Improved Table Saw",
+      "maxStack": 0
+    },
+    "1190": {
+      "name": "Ginger Shirt",
+      "maxStack": 0
+    },
+    "1191": {
+      "name": "Purple Shorts",
+      "maxStack": 0
+    },
+    "1192": {
+      "name": "Improved Jack Hammer",
+      "maxStack": 2500,
+      "maxDurability": 2500
+    },
+    "1193": {
+      "name": "Empty Improved Jack Hammer",
+      "maxStack": 2500,
+      "maxDurability": 2500
+    },
+    "1194": {
+      "name": "Improved Compactor",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "1195": {
+      "name": "Empty Improved Compactor",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "1196": {
+      "name": "Jurd Shirt",
+      "maxStack": 0
+    },
+    "1197": {
+      "name": "Mouth Almighty",
+      "maxStack": 0
+    },
+    "1198": {
+      "name": "Bee Hood",
+      "maxStack": 0
+    },
+    "1199": {
+      "name": "Stone Sign",
+      "maxStack": 0
+    },
+    "1200": {
+      "name": "Duck Canyon Shirt",
+      "maxStack": 0
+    },
+    "1201": {
+      "name": "Tree House Shirt",
+      "maxStack": 0
+    },
+    "1202": {
+      "name": "Soho Shirt",
+      "maxStack": 0
+    },
+    "1203": {
+      "name": "Spec Shirt",
+      "maxStack": 0
+    },
+    "1204": {
+      "name": "Tom Shirt",
+      "maxStack": 0
+    },
+    "1205": {
+      "name": "Penguin Hood",
+      "maxStack": 0
+    },
+    "1206": {
+      "name": "Finch Hood",
+      "maxStack": 0
+    },
+    "1207": {
+      "name": "Moxie Shirt",
+      "maxStack": 0
+    },
+    "1208": {
+      "name": "Tiger Hood",
+      "maxStack": 0
+    },
+    "1209": {
+      "name": "Tongue",
+      "maxStack": 0
+    },
+    "1210": {
+      "name": "Diggo Statue",
+      "maxStack": 0
+    },
+    "1211": {
+      "name": "Tongue Whip",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "1212": {
+      "name": "Caito Shirt",
+      "maxStack": 0
+    },
+    "1213": {
+      "name": "RileyKS Shirt",
+      "maxStack": 0
+    },
+    "1214": {
+      "name": "Sandwich Chalkboard",
+      "maxStack": 0
+    },
+    "1215": {
+      "name": "Bushlime Box",
+      "maxStack": 0
+    },
+    "1216": {
+      "name": "Banana Box",
+      "maxStack": 0
+    },
+    "1217": {
+      "name": "Apple Box",
+      "maxStack": 0
+    },
+    "1218": {
+      "name": "Quandong Box",
+      "maxStack": 0
+    },
+    "1219": {
+      "name": "Party Horn",
+      "maxStack": 0
+    },
+    "1220": {
+      "name": "Snag",
+      "maxStack": 0
+    },
+    "1221": {
+      "name": "Balloon",
+      "maxStack": 250
+    },
+    "1222": {
+      "name": "Dinkum Shirt",
+      "maxStack": 0
+    },
+    "1223": {
+      "name": "JB Shirt",
+      "maxStack": 0
+    },
+    "1224": {
+      "name": "Prize Ticket",
+      "maxStack": 0
+    },
+    "1225": {
+      "name": "Dinkum Cap",
+      "maxStack": 0
+    },
+    "1226": {
+      "name": "Bubble Blower",
+      "maxStack": 0
+    },
+    "1227": {
+      "name": "Croco Plush",
+      "maxStack": 0
+    },
+    "1228": {
+      "name": "Frying pan",
+      "maxStack": 180,
+      "maxDurability": 180
+    },
+    "1229": {
+      "name": "Magpie Plush",
+      "maxStack": 0
+    },
+    "1230": {
+      "name": "Mu Plush",
+      "maxStack": 0
+    },
+    "1231": {
+      "name": "Red Bar Stool",
+      "maxStack": 0
+    },
+    "1232": {
+      "name": "Raffle Wheel",
+      "maxStack": 0
+    },
+    "1233": {
+      "name": "Cape",
+      "maxStack": 0
+    },
+    "1234": {
+      "name": "Anniversary Balloons",
+      "maxStack": 0
+    },
+    "1235": {
+      "name": "Velvet Rope Fence",
+      "maxStack": 0
+    },
+    "1236": {
+      "name": "Red Carpet Path",
+      "maxStack": 0
+    },
+    "1237": {
+      "name": "Seaweed",
+      "maxStack": 0
+    },
+    "1238": {
+      "name": "Seaweed Soup",
+      "maxStack": 0
+    },
+    "1239": {
+      "name": "Bush Devil Plush",
+      "maxStack": 0
+    },
+    "1240": {
+      "name": "Camera Drone",
+      "maxStack": 0
+    },
+    "1241": {
+      "name": "Frilly Plush",
+      "maxStack": 0
+    },
+    "1242": {
+      "name": "Blue Hang Glider",
+      "maxStack": 0
+    },
+    "1243": {
+      "name": "Pink Hang Glider",
+      "maxStack": 0
+    },
+    "1244": {
+      "name": "Orange Hang Glider",
+      "maxStack": 0
+    },
+    "1245": {
+      "name": "Purple Hang Glider",
+      "maxStack": 0
+    },
+    "1246": {
+      "name": "Diggo Plush",
+      "maxStack": 0
+    },
+    "1247": {
+      "name": "Gum Wood Market Stall",
+      "maxStack": 0
+    },
+    "1248": {
+      "name": "Palm Wood Market Stall",
+      "maxStack": 0
+    },
+    "1249": {
+      "name": "Gum Wood Arch",
+      "maxStack": 0
+    },
+    "1250": {
+      "name": "Palm Wood Arch",
+      "maxStack": 0
+    },
+    "1251": {
+      "name": "Hard Wood Arch",
+      "maxStack": 0
+    },
+    "1252": {
+      "name": "Candelabra",
+      "maxStack": 0
+    },
+    "1253": {
+      "name": "White Gala Dress",
+      "maxStack": 0
+    },
+    "1254": {
+      "name": "Wide Palm Wood Bridge",
+      "maxStack": 0
+    },
+    "1255": {
+      "name": "Pincher Plant Plush",
+      "maxStack": 0
+    },
+    "1256": {
+      "name": "Fairy Light Wall",
+      "maxStack": 0
+    },
+    "1257": {
+      "name": "Tuxedo Jacket",
+      "maxStack": 0
+    },
+    "1258": {
+      "name": "Tuxedo Pants",
+      "maxStack": 0
+    },
+    "1259": {
+      "name": "Tuxedo Shoes",
+      "maxStack": 0
+    },
+    "1260": {
+      "name": "Vine Wall",
+      "maxStack": 0
+    },
+    "1261": {
+      "name": "Statue",
+      "maxStack": 0
+    },
+    "1262": {
+      "name": "Seamstress Dress",
+      "maxStack": 0
+    },
+    "1263": {
+      "name": "Lab Coat",
+      "maxStack": 0
+    },
+    "1264": {
+      "name": "Bouquet Pot",
+      "maxStack": 0
+    },
+    "1265": {
+      "name": "Black Hood",
+      "maxStack": 0
+    },
+    "1266": {
+      "name": "Ute",
+      "maxStack": 0
+    },
+    "1267": {
+      "name": "Red Hood",
+      "maxStack": 0
+    },
+    "1268": {
+      "name": "Tie Dye Pants",
+      "maxStack": 0
+    },
+    "1269": {
+      "name": "Tie Dye Shirt",
+      "maxStack": 0
+    },
+    "1270": {
+      "name": "Tie Dye Cap",
+      "maxStack": 0
+    },
+    "1271": {
+      "name": "Sugar Cane Crate",
+      "maxStack": 0
+    },
+    "1272": {
+      "name": "Cabbage Box",
+      "maxStack": 0
+    },
+    "1273": {
+      "name": "Carrot Box",
+      "maxStack": 0
+    },
+    "1274": {
+      "name": "Corn Box",
+      "maxStack": 0
+    },
+    "1275": {
+      "name": "Kale Box",
+      "maxStack": 0
+    },
+    "1276": {
+      "name": "Potato Box",
+      "maxStack": 0
+    },
+    "1277": {
+      "name": "Bottled Brush Set",
+      "maxStack": 0
+    },
+    "1278": {
+      "name": "Jelly Brew Set",
+      "maxStack": 0
+    },
+    "1279": {
+      "name": "Cooked Meat Plate",
+      "maxStack": 0
+    },
+    "1280": {
+      "name": "Cooked Drumstick Plate",
+      "maxStack": 0
+    },
+    "1281": {
+      "name": "Lamington Plate",
+      "maxStack": 0
+    },
+    "1282": {
+      "name": "Meat Pie Plate",
+      "maxStack": 0
+    },
+    "1283": {
+      "name": "Wheat Crate",
+      "maxStack": 0
+    },
+    "1284": {
+      "name": "Kanz Shirt",
+      "maxStack": 0
+    },
+    "1285": {
+      "name": "Tomato Box",
+      "maxStack": 0
+    },
+    "1286": {
+      "name": "Cheese Board",
+      "maxStack": 0
+    },
+    "1287": {
+      "name": "Cooked Croco Meat Plate",
+      "maxStack": 0
+    },
+    "1288": {
+      "name": "Pavlova Plate",
+      "maxStack": 0
+    },
+    "1289": {
+      "name": "Quiche Plate",
+      "maxStack": 0
+    },
+    "1290": {
+      "name": "Damper Plate",
+      "maxStack": 0
+    },
+    "1291": {
+      "name": "Sausage Roll Plate",
+      "maxStack": 0
+    },
+    "1292": {
+      "name": "Pastie Plate",
+      "maxStack": 0
+    },
+    "1293": {
+      "name": "Fairy Bread Plate",
+      "maxStack": 0
+    },
+    "1294": {
+      "name": "Egg Plate",
+      "maxStack": 0
+    },
+    "1295": {
+      "name": "Fish And Chips Plate",
+      "maxStack": 0
+    },
+    "1296": {
+      "name": "Fruit Salad Plate",
+      "maxStack": 0
+    },
+    "1297": {
+      "name": "Garden Salad Plate",
+      "maxStack": 0
+    },
+    "1298": {
+      "name": "Hearty Stew Plate",
+      "maxStack": 0
+    },
+    "1299": {
+      "name": "Prime Roast Plate",
+      "maxStack": 0
+    },
+    "1300": {
+      "name": "Onion Box",
+      "maxStack": 0
+    },
+    "1301": {
+      "name": "Watermelon Box",
+      "maxStack": 0
+    },
+    "1302": {
+      "name": "Pumpkin Box",
+      "maxStack": 0
+    },
+    "1303": {
+      "name": "Food Modeller",
+      "maxStack": 0
+    },
+    "1304": {
+      "name": "Flour Bag Stack",
+      "maxStack": 0
+    },
+    "1305": {
+      "name": "Sugar Bag Stack",
+      "maxStack": 0
+    },
+    "1306": {
+      "name": "Coffee Bag Stack",
+      "maxStack": 0
+    },
+    "1307": {
+      "name": "Coffee Cup Set",
+      "maxStack": 0
+    },
+    "1308": {
+      "name": "Wattle Tea Set",
+      "maxStack": 0
+    },
+    "1309": {
+      "name": "Bottle Tea Set",
+      "maxStack": 0
+    },
+    "1310": {
+      "name": "Mighty Spread Set",
+      "maxStack": 0
+    },
+    "1311": {
+      "name": "Honey Set",
+      "maxStack": 0
+    },
+    "1312": {
+      "name": "Apple Jam Set",
+      "maxStack": 0
+    },
+    "1313": {
+      "name": "Lime Jam Set",
+      "maxStack": 0
+    },
+    "1314": {
+      "name": "Banana Jam Set",
+      "maxStack": 0
+    },
+    "1315": {
+      "name": "Quandong Jam Set",
+      "maxStack": 0
+    },
+    "1316": {
+      "name": "River Reed Seed",
+      "maxStack": 0
+    },
+    "1317": {
+      "name": "Register",
+      "maxStack": 0
+    },
+    "1318": {
+      "name": "Green Bean Box",
+      "maxStack": 0
+    },
+    "1319": {
+      "name": "Meat on a Stick Set",
+      "maxStack": 0
+    },
+    "1320": {
+      "name": "Dagwood Dog Set",
+      "maxStack": 0
+    },
+    "1321": {
+      "name": "Cherry Box",
+      "maxStack": 0
+    },
+    "1322": {
+      "name": "Seaweed Soup Plate",
+      "maxStack": 0
+    },
+    "1323": {
+      "name": "Paper Bag Hat",
+      "maxStack": 0
+    },
+    "1324": {
+      "name": "Airport Deed",
+      "maxStack": 0
+    },
+    "1325": {
+      "name": "Gum Wood Entrance Sign",
+      "maxStack": 0
+    },
+    "1326": {
+      "name": "Palm Wood Entrance Sign",
+      "maxStack": 0
+    },
+    "1327": {
+      "name": "Hard Wood Entrance Sign",
+      "maxStack": 0
+    },
+    "1328": {
+      "name": "Rotary Clothesline",
+      "maxStack": 0
+    },
+    "1329": {
+      "name": "Red Beach Chair",
+      "maxStack": 0
+    },
+    "1330": {
+      "name": "Gum Log Stool",
+      "maxStack": 0
+    },
+    "1331": {
+      "name": "Hard Wood Log Stool",
+      "maxStack": 0
+    },
+    "1332": {
+      "name": "Palm Wood Log Stool",
+      "maxStack": 0
+    },
+    "1333": {
+      "name": "Summer Lily Seed",
+      "maxStack": 0
+    },
+    "1334": {
+      "name": "Indoor Summer Lily",
+      "maxStack": 0
+    },
+    "1335": {
+      "name": "Jackaroo Wand",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "1336": {
+      "name": "Aquamarine Shard",
+      "maxStack": 0
+    },
+    "1337": {
+      "name": "Floor Light",
+      "maxStack": 0
+    },
+    "1338": {
+      "name": "Red Floor Light",
+      "maxStack": 0
+    },
+    "1339": {
+      "name": "Green Floor Light",
+      "maxStack": 0
+    },
+    "1340": {
+      "name": "Blue Floor Light",
+      "maxStack": 0
+    },
+    "1341": {
+      "name": "White Throwing Disc",
+      "maxStack": 1
+    },
+    "1342": {
+      "name": "Comp Fishing Rod",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "1343": {
+      "name": "Pirate Glider",
+      "maxStack": 0
+    },
+    "1344": {
+      "name": "Pineapple",
+      "maxStack": 0
+    },
+    "1345": {
+      "name": "Treasure Map",
+      "maxStack": 0
+    },
+    "1346": {
+      "name": "Pilot Hat",
+      "maxStack": 0
+    },
+    "1347": {
+      "name": "Pilot Shirt",
+      "maxStack": 0
+    },
+    "1348": {
+      "name": "Pilot Pants",
+      "maxStack": 0
+    },
+    "1349": {
+      "name": "Pilot Boots",
+      "maxStack": 0
+    },
+    "1350": {
+      "name": "Red Spotty Dress",
+      "maxStack": 0
+    },
+    "1351": {
+      "name": "Beach Straw Hat",
+      "maxStack": 0
+    },
+    "1352": {
+      "name": "Ice Cream Maker",
+      "maxStack": 0
+    },
+    "1353": {
+      "name": "Ice Cream",
+      "maxStack": 0
+    },
+    "1354": {
+      "name": "Ice Cream Set",
+      "maxStack": 0
+    },
+    "1355": {
+      "name": "Gum Wood Kitchen Cabinet",
+      "maxStack": 0
+    },
+    "1356": {
+      "name": "Gum Wood Kitchen Sink",
+      "maxStack": 0
+    },
+    "1357": {
+      "name": "Palm Wood Kitchen Cabinet",
+      "maxStack": 0
+    },
+    "1358": {
+      "name": "Palm Wood Kitchen Sink",
+      "maxStack": 0
+    },
+    "1359": {
+      "name": "White Strap Shoes",
+      "maxStack": 0
+    },
+    "1360": {
+      "name": "Sand Castle",
+      "maxStack": 0
+    },
+    "1361": {
+      "name": "Sand Bucket",
+      "maxStack": 0
+    },
+    "1362": {
+      "name": "Interior Wall",
+      "maxStack": 0
+    },
+    "1363": {
+      "name": "Sand Fence",
+      "maxStack": 0
+    },
+    "1364": {
+      "name": "Player House 2",
+      "maxStack": 0
+    },
+    "1365": {
+      "name": "Your House Deed 3",
+      "maxStack": 0
+    },
+    "1366": {
+      "name": "Iron Wood Table",
+      "maxStack": 0
+    },
+    "1367": {
+      "name": "Season-All",
+      "maxStack": 0
+    },
+    "1368": {
+      "name": "Solar Panel",
+      "maxStack": 0
+    },
+    "1369": {
+      "name": "Palm Wood Table",
+      "maxStack": 0
+    },
+    "1370": {
+      "name": "Gum Wood Table",
+      "maxStack": 0
+    },
+    "1371": {
+      "name": "Hard Wood Table",
+      "maxStack": 0
+    },
+    "1372": {
+      "name": "Curtain Festoon",
+      "maxStack": 0
+    },
+    "1373": {
+      "name": "Octagon Sign",
+      "maxStack": 0
+    },
+    "1374": {
+      "name": "Garden Tap",
+      "maxStack": 0
+    },
+    "1375": {
+      "name": "Floor Drain",
+      "maxStack": 0
+    },
+    "1376": {
+      "name": "Picnic Basket",
+      "maxStack": 0
+    },
+    "1377": {
+      "name": "Pink Holiday Shirt",
+      "maxStack": 0
+    },
+    "1378": {
+      "name": "Purple Holiday Shirt",
+      "maxStack": 0
+    },
+    "1379": {
+      "name": "Orange Holiday Shirt",
+      "maxStack": 0
+    },
+    "1380": {
+      "name": "Green Holiday Shirt",
+      "maxStack": 0
+    },
+    "1381": {
+      "name": "Green Holiday Shorts",
+      "maxStack": 0
+    },
+    "1382": {
+      "name": "Orange Holiday Shorts",
+      "maxStack": 0
+    },
+    "1383": {
+      "name": "Pink Holiday Shorts",
+      "maxStack": 0
+    },
+    "1384": {
+      "name": "Purple Holiday Shorts",
+      "maxStack": 0
+    },
+    "1385": {
+      "name": "Life Guard Hat",
+      "maxStack": 0
+    },
+    "1386": {
+      "name": "Life Guard Shirt",
+      "maxStack": 0
+    },
+    "1387": {
+      "name": "Life Guard Shorts",
+      "maxStack": 0
+    },
+    "1388": {
+      "name": "Red Tile Path",
+      "maxStack": 0
+    },
+    "1389": {
+      "name": "Purple Tile Path",
+      "maxStack": 0
+    },
+    "1390": {
+      "name": "Yellow Tile Path",
+      "maxStack": 0
+    },
+    "1391": {
+      "name": "Green Tile Path",
+      "maxStack": 0
+    },
+    "1392": {
+      "name": "Orange Tile Path",
+      "maxStack": 0
+    },
+    "1393": {
+      "name": "Pink Tile Path",
+      "maxStack": 0
+    },
+    "1394": {
+      "name": "Blue Tile Path",
+      "maxStack": 0
+    },
+    "1395": {
+      "name": "Black Tile Path",
+      "maxStack": 0
+    },
+    "1396": {
+      "name": "White Tile Path",
+      "maxStack": 0
+    },
+    "1397": {
+      "name": "Beach Bar",
+      "maxStack": 0
+    },
+    "1398": {
+      "name": "Hay Bale",
+      "maxStack": 0
+    },
+    "1399": {
+      "name": "Cooler",
+      "maxStack": 0
+    },
+    "1400": {
+      "name": "Pineapple Box",
+      "maxStack": 0
+    },
+    "1401": {
+      "name": "Big Fan Hand",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "1402": {
+      "name": "Gum Wood Pergola",
+      "maxStack": 0
+    },
+    "1403": {
+      "name": "Palm Wood Pergola",
+      "maxStack": 0
+    },
+    "1404": {
+      "name": "Hard Wood Pergola",
+      "maxStack": 0
+    },
+    "1405": {
+      "name": "Bus Stop",
+      "maxStack": 0
+    },
+    "1406": {
+      "name": "Red Beach Hammock",
+      "maxStack": 0
+    },
+    "1407": {
+      "name": "Red Beach Umbrella",
+      "maxStack": 0
+    },
+    "1408": {
+      "name": "Beetroot",
+      "maxStack": 0
+    },
+    "1409": {
+      "name": "Flat Top Fence",
+      "maxStack": 0
+    },
+    "1410": {
+      "name": "Beetroot Seeds",
+      "maxStack": 0
+    },
+    "1411": {
+      "name": "Blue Beach Towel",
+      "maxStack": 0
+    },
+    "1412": {
+      "name": "Green Beach Towel",
+      "maxStack": 0
+    },
+    "1413": {
+      "name": "Red Beach Towel",
+      "maxStack": 0
+    },
+    "1414": {
+      "name": "Green Beach Umbrella",
+      "maxStack": 0
+    },
+    "1415": {
+      "name": "Blue Beach Umbrella",
+      "maxStack": 0
+    },
+    "1416": {
+      "name": "White Hibiscus",
+      "maxStack": 0
+    },
+    "1417": {
+      "name": "Purple Hibiscus",
+      "maxStack": 0
+    },
+    "1418": {
+      "name": "Red Seaweed",
+      "maxStack": 0
+    },
+    "1419": {
+      "name": "Dark Wood Kitchen Cabinet",
+      "maxStack": 0
+    },
+    "1420": {
+      "name": "Dark Wood Kitchen Sink",
+      "maxStack": 0
+    },
+    "1421": {
+      "name": "Green Beach Hammock",
+      "maxStack": 0
+    },
+    "1422": {
+      "name": "Blue Beach Hammock",
+      "maxStack": 0
+    },
+    "1423": {
+      "name": "Blue Beach Chair",
+      "maxStack": 0
+    },
+    "1424": {
+      "name": "Green Beach Chair",
+      "maxStack": 0
+    },
+    "1425": {
+      "name": "Arrow Light",
+      "maxStack": 0
+    },
+    "1426": {
+      "name": "Clown Fish",
+      "maxStack": 0
+    },
+    "1427": {
+      "name": "Gold Fish Trophy",
+      "maxStack": 0
+    },
+    "1428": {
+      "name": "Silver Fish Trophy",
+      "maxStack": 0
+    },
+    "1429": {
+      "name": "Bronze Fish Trophy",
+      "maxStack": 0
+    },
+    "1430": {
+      "name": "Shark Egg",
+      "maxStack": 0
+    },
+    "1431": {
+      "name": "Maggie Egg",
+      "maxStack": 0
+    },
+    "1432": {
+      "name": "Waiting Chair",
+      "maxStack": 0
+    },
+    "1433": {
+      "name": "Boarding Pass",
+      "maxStack": 0
+    },
+    "1434": {
+      "name": "Alpha Trident",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "1435": {
+      "name": "Alpha Shark Tooth",
+      "maxStack": 0
+    },
+    "1436": {
+      "name": "Coral Acacia Seed",
+      "maxStack": 0
+    },
+    "1437": {
+      "name": "Fridge",
+      "maxStack": 0
+    },
+    "1438": {
+      "name": "Blue Sun Glasses",
+      "maxStack": 0
+    },
+    "1439": {
+      "name": "Green Sun Glasses",
+      "maxStack": 0
+    },
+    "1440": {
+      "name": "Orange Sun Glasses",
+      "maxStack": 0
+    },
+    "1441": {
+      "name": "Pink Sun Glasses",
+      "maxStack": 0
+    },
+    "1442": {
+      "name": "Purple Sun Glasses",
+      "maxStack": 0
+    },
+    "1443": {
+      "name": "Beach Ball",
+      "maxStack": 0
+    },
+    "1444": {
+      "name": "Cup of Sunshine",
+      "maxStack": 25,
+      "maxDurability": 25
+    },
+    "1445": {
+      "name": "Tropical Grass Turf Roll",
+      "maxStack": 0
+    },
+    "1446": {
+      "name": "Butterfly Perfume",
+      "maxStack": 0
+    },
+    "1447": {
+      "name": "Beetroot Box",
+      "maxStack": 0
+    },
+    "1448": {
+      "name": "Milk Set",
+      "maxStack": 0
+    },
+    "1449": {
+      "name": "High Quality Milk Set",
+      "maxStack": 0
+    },
+    "1450": {
+      "name": "Silver Pocket Watch",
+      "maxStack": 0
+    },
+    "1451": {
+      "name": "Brain Coral",
+      "maxStack": 0
+    },
+    "1452": {
+      "name": "Bird Nest Coral",
+      "maxStack": 0
+    },
+    "1453": {
+      "name": "Blue Staghorn Coral",
+      "maxStack": 0
+    },
+    "1454": {
+      "name": "Blue Table Coral Fragment",
+      "maxStack": 0
+    },
+    "1455": {
+      "name": "Green Staghorn Coral",
+      "maxStack": 0
+    },
+    "1456": {
+      "name": "Pink Coral",
+      "maxStack": 0
+    },
+    "1457": {
+      "name": "Pink Table Coral Fragment",
+      "maxStack": 0
+    },
+    "1458": {
+      "name": "Green Tube Coral",
+      "maxStack": 0
+    },
+    "1459": {
+      "name": "Purple Spotty Dress",
+      "maxStack": 0
+    },
+    "1460": {
+      "name": "Purple Strap Shoes",
+      "maxStack": 0
+    },
+    "1461": {
+      "name": "Halo",
+      "maxStack": 0
+    },
+    "1462": {
+      "name": "Humphead Wrasse",
+      "maxStack": 0
+    },
+    "1463": {
+      "name": "Purple-Winged Mantis",
+      "maxStack": 0
+    },
+    "1464": {
+      "name": "Blue Tiger Butterfly",
+      "maxStack": 0
+    },
+    "1465": {
+      "name": "Common Crow Butterfly",
+      "maxStack": 0
+    },
+    "1466": {
+      "name": "Shark Statue",
+      "maxStack": 0
+    },
+    "1467": {
+      "name": "Seahorse",
+      "maxStack": 0
+    },
+    "1468": {
+      "name": "Triton's Trumpet",
+      "maxStack": 0
+    },
+    "1469": {
+      "name": "Sea Sponge",
+      "maxStack": 0
+    },
+    "1470": {
+      "name": "Police Hat",
+      "maxStack": 0
+    },
+    "1471": {
+      "name": "Police Pants",
+      "maxStack": 0
+    },
+    "1472": {
+      "name": "Police Shirt",
+      "maxStack": 0
+    },
+    "1473": {
+      "name": "Police Boots",
+      "maxStack": 0
+    },
+    "1474": {
+      "name": "White Panel Wall",
+      "maxStack": 0
+    },
+    "1475": {
+      "name": "Black Throwing Disc",
+      "maxStack": 1
+    },
+    "1476": {
+      "name": "Blue Throwing Disc",
+      "maxStack": 1
+    },
+    "1477": {
+      "name": "Green Throwing Disc",
+      "maxStack": 1
+    },
+    "1478": {
+      "name": "Orange Throwing Disc",
+      "maxStack": 1
+    },
+    "1479": {
+      "name": "Pink Throwing Disc",
+      "maxStack": 1
+    },
+    "1480": {
+      "name": "Purple Throwing Disc",
+      "maxStack": 1
+    },
+    "1481": {
+      "name": "Red Throwing Disc",
+      "maxStack": 1
+    },
+    "1482": {
+      "name": "Blue Tang",
+      "maxStack": 0
+    },
+    "1483": {
+      "name": "Yellow Tang",
+      "maxStack": 0
+    },
+    "1484": {
+      "name": "Festive Roo Plush",
+      "maxStack": 0
+    },
+    "1485": {
+      "name": "Wheezing Shirt",
+      "maxStack": 0
+    },
+    "1486": {
+      "name": "Festive Table",
+      "maxStack": 0
+    },
+    "1487": {
+      "name": "Festive Festoon",
+      "maxStack": 0
+    },
+    "1488": {
+      "name": "Cardboard Box",
+      "maxStack": 0
+    },
+    "1489": {
+      "name": "Coconut Drink Set",
+      "maxStack": 0
+    },
+    "1490": {
+      "name": "Festive Lamp",
+      "maxStack": 0
+    },
+    "1491": {
+      "name": "Coconut Drink",
+      "maxStack": 0
+    },
+    "1492": {
+      "name": "Plastic Chair",
+      "maxStack": 0
+    },
+    "1493": {
+      "name": "Festive Pole",
+      "maxStack": 0
+    },
+    "1494": {
+      "name": "Cooked Prawn",
+      "maxStack": 0
+    },
+    "1495": {
+      "name": "Cooked Prawn Plate",
+      "maxStack": 0
+    },
+    "1496": {
+      "name": "Red Festive Sweater",
+      "maxStack": 0
+    },
+    "1497": {
+      "name": "Festive Chair",
+      "maxStack": 0
+    },
+    "1498": {
+      "name": "Light Arch",
+      "maxStack": 0
+    },
+    "1499": {
+      "name": "Festive Gifts",
+      "maxStack": 0
+    },
+    "1500": {
+      "name": "Green Festive Sweater",
+      "maxStack": 0
+    },
+    "1501": {
+      "name": "Spag Bol",
+      "maxStack": 0
+    },
+    "1502": {
+      "name": "Cheesy Spag",
+      "maxStack": 0
+    },
+    "1503": {
+      "name": "Spag Bol Plate",
+      "maxStack": 0
+    },
+    "1504": {
+      "name": "Cheese Spag Plate",
+      "maxStack": 0
+    },
+    "1505": {
+      "name": "Jam Toast",
+      "maxStack": 0
+    },
+    "1506": {
+      "name": "Croco Skewer",
+      "maxStack": 0
+    },
+    "1507": {
+      "name": "Scones",
+      "maxStack": 0
+    },
+    "1508": {
+      "name": "Burger",
+      "maxStack": 0
+    },
+    "1509": {
+      "name": "Lot Burger",
+      "maxStack": 0
+    },
+    "1510": {
+      "name": "Dunny",
+      "maxStack": 0
+    },
+    "1511": {
+      "name": "Jam Toast Plate",
+      "maxStack": 0
+    },
+    "1512": {
+      "name": "Scones Plate",
+      "maxStack": 0
+    },
+    "1513": {
+      "name": "Croco Skewer Set",
+      "maxStack": 0
+    },
+    "1514": {
+      "name": "Burger Plate",
+      "maxStack": 0
+    },
+    "1515": {
+      "name": "Lot Burger Plate",
+      "maxStack": 0
+    },
+    "1516": {
+      "name": "Watermelon Popsicle",
+      "maxStack": 0
+    },
+    "1517": {
+      "name": "Advanced Crafting Table",
+      "maxStack": 250
+    },
+    "1518": {
+      "name": "Advanced Cooking Table",
+      "maxStack": 0
+    },
+    "1519": {
+      "name": "Sparkin' Soup",
+      "maxStack": 0
+    },
+    "1520": {
+      "name": "Water Melon Popsicle Set",
+      "maxStack": 0
+    },
+    "1521": {
+      "name": "Sparkin' Soup Plate",
+      "maxStack": 0
+    },
+    "1522": {
+      "name": "Crab Soup",
+      "maxStack": 0
+    },
+    "1523": {
+      "name": "Parmy and Chips",
+      "maxStack": 0
+    },
+    "1524": {
+      "name": "Parmi and Chips Plate",
+      "maxStack": 0
+    },
+    "1525": {
+      "name": "Crab Soup Plate",
+      "maxStack": 0
+    },
+    "1526": {
+      "name": "Yellow Morel",
+      "maxStack": 0
+    },
+    "1527": {
+      "name": "Slippery Jack",
+      "maxStack": 0
+    },
+    "1528": {
+      "name": "Field Mushroom",
+      "maxStack": 0
+    },
+    "1529": {
+      "name": "Milk Cap",
+      "maxStack": 0
+    },
+    "1530": {
+      "name": "Hand Trolley",
+      "maxStack": 1
+    },
+    "1531": {
+      "name": "Cooked Yabbie Plate",
+      "maxStack": 0
+    },
+    "1532": {
+      "name": "Cooked Yabbie",
+      "maxStack": 0
+    },
+    "1533": {
+      "name": "Red Roundhead",
+      "maxStack": 0
+    },
+    "1534": {
+      "name": "Slippery Jack Stool",
+      "maxStack": 0
+    },
+    "1535": {
+      "name": "Field Mushroom Lamp",
+      "maxStack": 0
+    },
+    "1536": {
+      "name": "Slippery Jack Lamp",
+      "maxStack": 0
+    },
+    "1537": {
+      "name": "Red Roundhead Lamp",
+      "maxStack": 0
+    },
+    "1538": {
+      "name": "Yellow Morel Lamp",
+      "maxStack": 0
+    },
+    "1539": {
+      "name": "Milk Cap Lamp",
+      "maxStack": 0
+    },
+    "1540": {
+      "name": "Mushroom Soup",
+      "maxStack": 0
+    },
+    "1541": {
+      "name": "Cooked Mushroom",
+      "maxStack": 0
+    },
+    "1542": {
+      "name": "Field Mushroom Basket",
+      "maxStack": 0
+    },
+    "1543": {
+      "name": "Milk Cap Basket",
+      "maxStack": 0
+    },
+    "1544": {
+      "name": "Slippery Jack Basket",
+      "maxStack": 0
+    },
+    "1545": {
+      "name": "Yellow Morel Basket",
+      "maxStack": 0
+    },
+    "1546": {
+      "name": "Roundhead Basket",
+      "maxStack": 0
+    },
+    "1547": {
+      "name": "Field Mushroom Stool",
+      "maxStack": 0
+    },
+    "1548": {
+      "name": "Milk Cap Stool",
+      "maxStack": 0
+    },
+    "1549": {
+      "name": "Roundhead Stool",
+      "maxStack": 0
+    },
+    "1550": {
+      "name": "Yellow Morel Stool",
+      "maxStack": 0
+    },
+    "1551": {
+      "name": "Mushroom Soup Plate",
+      "maxStack": 0
+    },
+    "1552": {
+      "name": "Toffee",
+      "maxStack": 0
+    },
+    "1553": {
+      "name": "Toffee Plate",
+      "maxStack": 0
+    },
+    "1554": {
+      "name": "Pumpkin Soup",
+      "maxStack": 0
+    },
+    "1555": {
+      "name": "Pumpkin Soup Plate",
+      "maxStack": 0
+    },
+    "1556": {
+      "name": "Balloon Sword",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "1557": {
+      "name": "Battle Broom",
+      "maxStack": 180,
+      "maxDurability": 180
+    },
+    "1558": {
+      "name": "Blastoad",
+      "maxStack": 0
+    },
+    "1559": {
+      "name": "Plat Pie",
+      "maxStack": 0
+    },
+    "1560": {
+      "name": "Toilet",
+      "maxStack": 0
+    },
+    "1561": {
+      "name": "Bath Tub",
+      "maxStack": 0
+    },
+    "1562": {
+      "name": "Charcoal Wall",
+      "maxStack": 0
+    },
+    "1563": {
+      "name": "Pastel Blue Wall",
+      "maxStack": 0
+    },
+    "1564": {
+      "name": "Pastel Green Wall",
+      "maxStack": 0
+    },
+    "1565": {
+      "name": "Pastel Grey Wall",
+      "maxStack": 0
+    },
+    "1566": {
+      "name": "Pastel Orange Wall",
+      "maxStack": 0
+    },
+    "1567": {
+      "name": "Pastel Pink Wall",
+      "maxStack": 0
+    },
+    "1568": {
+      "name": "Pastel Purple Wall",
+      "maxStack": 0
+    },
+    "1569": {
+      "name": "Pastel Red Wall",
+      "maxStack": 0
+    },
+    "1570": {
+      "name": "Light Room Divider",
+      "maxStack": 0
+    },
+    "1571": {
+      "name": "Eastern Room Divider",
+      "maxStack": 0
+    },
+    "1572": {
+      "name": "Rattan Room Divider",
+      "maxStack": 0
+    },
+    "1573": {
+      "name": "Mummy Boots",
+      "maxStack": 0
+    },
+    "1574": {
+      "name": "Mummy Hood",
+      "maxStack": 0
+    },
+    "1575": {
+      "name": "Mummy Pants",
+      "maxStack": 0
+    },
+    "1576": {
+      "name": "Mummy Shirt",
+      "maxStack": 0
+    },
+    "1577": {
+      "name": "Orange And Grey Jumper",
+      "maxStack": 0
+    },
+    "1578": {
+      "name": "White Hoodie",
+      "maxStack": 0
+    },
+    "1579": {
+      "name": "White Comfy Shoes",
+      "maxStack": 0
+    },
+    "1580": {
+      "name": "Black Hoodie",
+      "maxStack": 0
+    },
+    "1581": {
+      "name": "Black Comfy Shoes",
+      "maxStack": 0
+    },
+    "1582": {
+      "name": "Black Sweat Pants",
+      "maxStack": 0
+    },
+    "1583": {
+      "name": "Orange Hoodie",
+      "maxStack": 0
+    },
+    "1584": {
+      "name": "Orange Comfy Shoes",
+      "maxStack": 0
+    },
+    "1585": {
+      "name": "Orange Sweat Pants",
+      "maxStack": 0
+    },
+    "1586": {
+      "name": "Black And White Scarf",
+      "maxStack": 0
+    },
+    "1587": {
+      "name": "Pink Hoodie",
+      "maxStack": 0
+    },
+    "1588": {
+      "name": "Pink Comfy Shoes",
+      "maxStack": 0
+    },
+    "1589": {
+      "name": "Pink Sweat Pants",
+      "maxStack": 0
+    },
+    "1590": {
+      "name": "Green Hoodie",
+      "maxStack": 0
+    },
+    "1591": {
+      "name": "Green Comfy Shoes",
+      "maxStack": 0
+    },
+    "1592": {
+      "name": "Green Sweat Pants",
+      "maxStack": 0
+    },
+    "1593": {
+      "name": "Blue Hoodie",
+      "maxStack": 0
+    },
+    "1594": {
+      "name": "Blue Comfy Shoes",
+      "maxStack": 0
+    },
+    "1595": {
+      "name": "Blue Sweat Pants",
+      "maxStack": 0
+    },
+    "1596": {
+      "name": "Purple Hoodie",
+      "maxStack": 0
+    },
+    "1597": {
+      "name": "Purple Comfy Shoes",
+      "maxStack": 0
+    },
+    "1598": {
+      "name": "Purple Sweat Pants",
+      "maxStack": 0
+    },
+    "1599": {
+      "name": "Red Hoodie",
+      "maxStack": 0
+    },
+    "1600": {
+      "name": "Red Comfy Shoes",
+      "maxStack": 0
+    },
+    "1601": {
+      "name": "Red Sweat Pants",
+      "maxStack": 0
+    },
+    "1602": {
+      "name": "Yellow Hoodie",
+      "maxStack": 0
+    },
+    "1603": {
+      "name": "Yellow Comfy Shoes",
+      "maxStack": 0
+    },
+    "1604": {
+      "name": "Yellow Sweat Pants",
+      "maxStack": 0
+    },
+    "1605": {
+      "name": "Black Scarf",
+      "maxStack": 0
+    },
+    "1606": {
+      "name": "Grey Scarf",
+      "maxStack": 0
+    },
+    "1607": {
+      "name": "Patterned Scarf",
+      "maxStack": 0
+    },
+    "1608": {
+      "name": "Red and Black Scarf",
+      "maxStack": 0
+    },
+    "1609": {
+      "name": "Gum Log Seat",
+      "maxStack": 0
+    },
+    "1610": {
+      "name": "Dark Room Divider",
+      "maxStack": 0
+    },
+    "1611": {
+      "name": "Office Divider",
+      "maxStack": 0
+    },
+    "1612": {
+      "name": "Galaxy Glider",
+      "maxStack": 0
+    },
+    "1613": {
+      "name": "Galaxy Hood",
+      "maxStack": 0
+    },
+    "1614": {
+      "name": "Meteorite Chunk",
+      "maxStack": 0
+    },
+    "1615": {
+      "name": "Star Sabre",
+      "maxStack": 150,
+      "maxDurability": 150
+    },
+    "1616": {
+      "name": "Yellow Stripe Jumper",
+      "maxStack": 0
+    },
+    "1617": {
+      "name": "Charcoal Tights",
+      "maxStack": 0
+    },
+    "1618": {
+      "name": "Green Stripe Jumper",
+      "maxStack": 0
+    },
+    "1619": {
+      "name": "Grey Tights",
+      "maxStack": 0
+    },
+    "1620": {
+      "name": "Blue Stripe Jumper",
+      "maxStack": 0
+    },
+    "1621": {
+      "name": "White Tights",
+      "maxStack": 0
+    },
+    "1622": {
+      "name": "Guest House Level 2",
+      "maxStack": 0
+    },
+    "1623": {
+      "name": "Guest House Deed",
+      "maxStack": 0
+    },
+    "1624": {
+      "name": "Guest House 2 Level 2",
+      "maxStack": 0
+    },
+    "1625": {
+      "name": "Guest House Deed",
+      "maxStack": 0
+    },
+    "1626": {
+      "name": "Guest House 2 Level 2",
+      "maxStack": 0
+    },
+    "1627": {
+      "name": "Guest House Deed",
+      "maxStack": 0
+    },
+    "1628": {
+      "name": "Ride On Lawn Mower",
+      "maxStack": 0
+    },
+    "1629": {
+      "name": "Interior Doorway",
+      "maxStack": 0
+    },
+    "1630": {
+      "name": "Interior Half Wall",
+      "maxStack": 0
+    },
+    "1631": {
+      "name": "Fish Pond",
+      "maxStack": 0
+    },
+    "1632": {
+      "name": "Fish Roe",
+      "maxStack": 0
+    },
+    "1633": {
+      "name": "Rice Seed",
+      "maxStack": 0
+    },
+    "1634": {
+      "name": "Rice",
+      "maxStack": 0
+    },
+    "1635": {
+      "name": "Caviar",
+      "maxStack": 0
+    },
+    "1636": {
+      "name": "Cooked Rice",
+      "maxStack": 0
+    },
+    "1637": {
+      "name": "Egg Fried Rice",
+      "maxStack": 0
+    },
+    "1638": {
+      "name": "Rice Bag Stack",
+      "maxStack": 0
+    },
+    "1639": {
+      "name": "Egg Fried Rice Plate",
+      "maxStack": 0
+    },
+    "1640": {
+      "name": "Caviar Set",
+      "maxStack": 0
+    },
+    "1641": {
+      "name": "Cooked Rice Set",
+      "maxStack": 0
+    },
+    "1642": {
+      "name": "Roe Nigiri",
+      "maxStack": 0
+    },
+    "1643": {
+      "name": "Roe Nigiri Plate",
+      "maxStack": 0
+    },
+    "1644": {
+      "name": "Crude Ladder",
+      "maxStack": 0
+    },
+    "1645": {
+      "name": "Vine Lattice Ladder",
+      "maxStack": 0
+    },
+    "1646": {
+      "name": "Creeping Vine",
+      "maxStack": 0
+    },
+    "1647": {
+      "name": "Gum Wood Ladder",
+      "maxStack": 0
+    },
+    "1648": {
+      "name": "Hard Wood Ladder",
+      "maxStack": 0
+    },
+    "1649": {
+      "name": "Palm Wood Ladder",
+      "maxStack": 0
+    },
+    "1650": {
+      "name": "Iron Ladder",
+      "maxStack": 0
+    },
+    "1651": {
+      "name": "Rope Ladder",
+      "maxStack": 0
+    },
+    "1652": {
+      "name": "Green Wood Floor",
+      "maxStack": 0
+    },
+    "1653": {
+      "name": "Cabin Wall",
+      "maxStack": 0
+    },
+    "1654": {
+      "name": "Rainbow Fish",
+      "maxStack": 0
+    },
+    "1655": {
+      "name": "Lionfish",
+      "maxStack": 0
+    },
+    "1656": {
+      "name": "Tiger Beetle",
+      "maxStack": 0
+    },
+    "1657": {
+      "name": "Grass Tree Seed Pod",
+      "maxStack": 0
+    },
+    "1658": {
+      "name": "Grass Tree Seed",
+      "maxStack": 0
+    },
+    "1659": {
+      "name": "Cabin Stool",
+      "maxStack": 0
+    },
+    "1660": {
+      "name": "Cabin Chair",
+      "maxStack": 0
+    },
+    "1661": {
+      "name": "Cabin Seat",
+      "maxStack": 0
+    },
+    "1662": {
+      "name": "Cabin Couch",
+      "maxStack": 0
+    },
+    "1663": {
+      "name": "Cabin Bed",
+      "maxStack": 0
+    },
+    "1664": {
+      "name": "Old Table",
+      "maxStack": 0
+    },
+    "1665": {
+      "name": "Cabin Coffee Table",
+      "maxStack": 0
+    },
+    "1666": {
+      "name": "Cabin Drawers",
+      "maxStack": 0
+    },
+    "1667": {
+      "name": "Cabin Kitchen Table",
+      "maxStack": 0
+    },
+    "1668": {
+      "name": "Cabin Cabinet",
+      "maxStack": 0
+    },
+    "1669": {
+      "name": "Mushroom Risotto",
+      "maxStack": 0
+    },
+    "1670": {
+      "name": "Mushroom Risotto Plate",
+      "maxStack": 0
+    },
+    "1671": {
+      "name": "Insta-Grow",
+      "maxStack": 0
+    },
+    "1672": {
+      "name": "Old Wood Fence",
+      "maxStack": 0
+    },
+    "1673": {
+      "name": "Old Wood Lamp Post",
+      "maxStack": 0
+    },
+    "1674": {
+      "name": "Natural Path",
+      "maxStack": 0
+    },
+    "1675": {
+      "name": "Gravel Pathway",
+      "maxStack": 0
+    },
+    "1676": {
+      "name": "Auto Sorter",
+      "maxStack": 0
+    },
+    "1677": {
+      "name": "Wrought Iron Fence",
+      "maxStack": 0
+    },
+    "1678": {
+      "name": "Wrought Iron Lamp",
+      "maxStack": 0
+    },
+    "1679": {
+      "name": "Wrought Iron Bench",
+      "maxStack": 0
+    },
+    "1680": {
+      "name": "Wrought Iron Gate",
+      "maxStack": 0
+    },
+    "1681": {
+      "name": "Cabin Bedside Table",
+      "maxStack": 0
+    },
+    "1682": {
+      "name": "Cabin Bunk Bed",
+      "maxStack": 0
+    },
+    "1683": {
+      "name": "Old Gizmo",
+      "maxStack": 0
+    },
+    "1684": {
+      "name": "Smooth Cement Path",
+      "maxStack": 0
+    },
+    "1685": {
+      "name": "Honeycomb",
+      "maxStack": 0
+    },
+    "1686": {
+      "name": "Wish Fountain Deed",
+      "maxStack": 0
+    },
+    "1687": {
+      "name": "Tin Flower Bed",
+      "maxStack": 0
+    },
+    "1688": {
+      "name": "Pin Wheel",
+      "maxStack": 0
+    },
+    "1689": {
+      "name": "White Diamond Kite",
+      "maxStack": 250
+    },
+    "1690": {
+      "name": "Black Diamond Kite",
+      "maxStack": 250
+    },
+    "1691": {
+      "name": "Blue Diamond Kite",
+      "maxStack": 250
+    },
+    "1692": {
+      "name": "Green Diamond Kite",
+      "maxStack": 250
+    },
+    "1693": {
+      "name": "Orange Diamond Kite",
+      "maxStack": 250
+    },
+    "1694": {
+      "name": "Pink Diamond Kite",
+      "maxStack": 250
+    },
+    "1695": {
+      "name": "Purple Diamond Kite",
+      "maxStack": 250
+    },
+    "1696": {
+      "name": "Red Diamond Kite",
+      "maxStack": 250
+    },
+    "1697": {
+      "name": "Yellow Diamond Kite",
+      "maxStack": 250
+    },
+    "1698": {
+      "name": "White Box Kite",
+      "maxStack": 250
+    },
+    "1699": {
+      "name": "Black Box Kite",
+      "maxStack": 250
+    },
+    "1700": {
+      "name": "Blue Box Kite",
+      "maxStack": 250
+    },
+    "1701": {
+      "name": "Green Box Kite",
+      "maxStack": 250
+    },
+    "1702": {
+      "name": "Orange Box Kite",
+      "maxStack": 250
+    },
+    "1703": {
+      "name": "Pink Box Kite",
+      "maxStack": 250
+    },
+    "1704": {
+      "name": "Purple Box Kite",
+      "maxStack": 250
+    },
+    "1705": {
+      "name": "Red Box Kite",
+      "maxStack": 250
+    },
+    "1706": {
+      "name": "Yellow Box Kite",
+      "maxStack": 250
+    },
+    "1707": {
+      "name": "White Sled Kite",
+      "maxStack": 250
+    },
+    "1708": {
+      "name": "Black Sled Kite",
+      "maxStack": 250
+    },
+    "1709": {
+      "name": "Blue Sled Kite",
+      "maxStack": 250
+    },
+    "1710": {
+      "name": "Green Sled Kite",
+      "maxStack": 250
+    },
+    "1711": {
+      "name": "Orange Sled Kite",
+      "maxStack": 250
+    },
+    "1712": {
+      "name": "Pink Sled Kite",
+      "maxStack": 250
+    },
+    "1713": {
+      "name": "Purple Sled Kite",
+      "maxStack": 250
+    },
+    "1714": {
+      "name": "Red Sled Kite",
+      "maxStack": 250
+    },
+    "1715": {
+      "name": "Yellow Sled Kite",
+      "maxStack": 250
+    },
+    "1716": {
+      "name": "Kite Kit",
+      "maxStack": 0
+    },
+    "1717": {
+      "name": "Glitter Ball",
+      "maxStack": 0
+    },
+    "1718": {
+      "name": "Search Light",
+      "maxStack": 0
+    },
+    "1719": {
+      "name": "Aurora Shirt",
+      "maxStack": 0
+    },
+    "1720": {
+      "name": "Aurora Baseball Cap",
+      "maxStack": 0
+    },
+    "1721": {
+      "name": "Moon Lamp",
+      "maxStack": 0
+    },
+    "1722": {
+      "name": "Star Wall",
+      "maxStack": 0
+    },
+    "1723": {
+      "name": "Sky Fest Prize Ticket",
+      "maxStack": 0
+    },
+    "1724": {
+      "name": "Foil Hat",
+      "maxStack": 0
+    },
+    "1725": {
+      "name": "Star Carpet Path",
+      "maxStack": 0
+    },
+    "1726": {
+      "name": "Star Fence",
+      "maxStack": 0
+    },
+    "1727": {
+      "name": "Star Balloon",
+      "maxStack": 250
+    },
+    "1728": {
+      "name": "Har-Vac",
+      "maxStack": 3500,
+      "maxDurability": 3500
+    },
+    "1729": {
+      "name": "Empty Har-Vac",
+      "maxStack": 10000,
+      "maxDurability": 10000
+    },
+    "1730": {
+      "name": "Cockatoo Plush",
+      "maxStack": 0
+    },
+    "1731": {
+      "name": "Vombat Plush",
+      "maxStack": 0
+    },
+    "1732": {
+      "name": "Wary Mu Plush",
+      "maxStack": 0
+    },
+    "1733": {
+      "name": "Shark Plush",
+      "maxStack": 0
+    },
+    "1734": {
+      "name": "Party Hat",
+      "maxStack": 0
+    },
+    "1735": {
+      "name": "Flower Crown",
+      "maxStack": 0
+    },
+    "1736": {
+      "name": "Snow Ball",
+      "maxStack": 0
+    },
+    "1737": {
+      "name": "Ice Seat",
+      "maxStack": 0
+    },
+    "1738": {
+      "name": "Ice Sculpture",
+      "maxStack": 0
+    },
+    "1739": {
+      "name": "Ice Path",
+      "maxStack": 0
+    },
+    "1740": {
+      "name": "Ice Lamp",
+      "maxStack": 0
+    },
+    "1741": {
+      "name": "Snow Hood",
+      "maxStack": 0
+    },
+    "1742": {
+      "name": "Ice Table",
+      "maxStack": 0
+    },
+    "1743": {
+      "name": "Ice Ottoman",
+      "maxStack": 0
+    },
+    "1744": {
+      "name": "Ice Chest",
+      "maxStack": 0
+    },
+    "1745": {
+      "name": "Flame Jelly Bed",
+      "maxStack": 0
+    },
+    "1746": {
+      "name": "Iron Lantern",
+      "maxStack": 0
+    },
+    "1747": {
+      "name": "Black Marble Path",
+      "maxStack": 0
+    },
+    "1748": {
+      "name": "Flame Glider",
+      "maxStack": 0
+    },
+    "1749": {
+      "name": "Flame Jelly",
+      "maxStack": 0
+    },
+    "1750": {
+      "name": "Berkonium Wand",
+      "maxStack": 300,
+      "maxDurability": 300
+    },
+    "1751": {
+      "name": "Bush Devil Hood",
+      "maxStack": 0
+    },
+    "1752": {
+      "name": "Pickaxe Axe",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "1753": {
+      "name": "Ice Sculpting Table",
+      "maxStack": 0
+    },
+    "1754": {
+      "name": "Perfect Ruby",
+      "maxStack": 0
+    },
+    "1755": {
+      "name": "Perfect Emerald",
+      "maxStack": 0
+    },
+    "1756": {
+      "name": "Perfect Aquamarine",
+      "maxStack": 0
+    },
+    "1757": {
+      "name": "Ice Hammer",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "1758": {
+      "name": "Flame Jelly Hood",
+      "maxStack": 0
+    },
+    "1759": {
+      "name": "Ice Fence",
+      "maxStack": 0
+    },
+    "1760": {
+      "name": "Tree Pinchers",
+      "maxStack": 1
+    },
+    "1761": {
+      "name": "Tele-Jumper",
+      "maxStack": 0,
+      "maxDurability": 30
+    },
+    "1762": {
+      "name": "Key Cutter",
+      "maxStack": 0
+    },
+    "1763": {
+      "name": "Swag Pack",
+      "maxStack": 0
+    },
+    "1764": {
+      "name": "Flame Spear",
+      "maxStack": 250,
+      "maxDurability": 250
+    },
+    "1765": {
+      "name": "Hard Wood Tool Rack",
+      "maxStack": 0
+    },
+    "1766": {
+      "name": "Gum Wood Tool Rack",
+      "maxStack": 0
+    },
+    "1767": {
+      "name": "Palm Wood Tool Rack",
+      "maxStack": 0
+    },
+    "1768": {
+      "name": "Mannequin",
+      "maxStack": 0
+    },
+    "1769": {
+      "name": "Fake Goatee",
+      "maxStack": 0
+    },
+    "1770": {
+      "name": "Floor Plaque",
+      "maxStack": 0
+    },
+    "1771": {
+      "name": "Director Chair",
+      "maxStack": 0
+    },
+    "1772": {
+      "name": "Lil' Top Hat",
+      "maxStack": 0
+    },
+    "1773": {
+      "name": "Red Hair Bow",
+      "maxStack": 0
+    },
+    "1774": {
+      "name": "Slippers",
+      "maxStack": 0
+    },
+    "1775": {
+      "name": "Pajama Pants",
+      "maxStack": 0
+    },
+    "1776": {
+      "name": "Pajama Shirt",
+      "maxStack": 0
+    },
+    "1777": {
+      "name": "Sleeping Cap",
+      "maxStack": 0
+    },
+    "1778": {
+      "name": "Sleeping Mask",
+      "maxStack": 0
+    },
+    "1779": {
+      "name": "Villain Mustache",
+      "maxStack": 0
+    },
+    "1780": {
+      "name": "Heart  Sun Glasses",
+      "maxStack": 0
+    },
+    "1781": {
+      "name": "Raggy Shirt",
+      "maxStack": 0
+    },
+    "1782": {
+      "name": "Raggy Pants",
+      "maxStack": 0
+    },
+    "1783": {
+      "name": "Raggy Sneakers",
+      "maxStack": 0
+    },
+    "1784": {
+      "name": "Green Renaissance Dress",
+      "maxStack": 0
+    },
+    "1785": {
+      "name": "Red Renaissance Dress",
+      "maxStack": 0
+    },
+    "1786": {
+      "name": "Black Renaissance Dress",
+      "maxStack": 0
+    },
+    "1787": {
+      "name": "Brown Apron Dress",
+      "maxStack": 0
+    },
+    "1788": {
+      "name": "Horn Helmet",
+      "maxStack": 0
+    },
+    "1789": {
+      "name": "Blue Hair Bow",
+      "maxStack": 0
+    },
+    "1790": {
+      "name": "Purple Hair Bow",
+      "maxStack": 0
+    },
+    "1791": {
+      "name": "Yellow Hair Bow",
+      "maxStack": 0
+    },
+    "1792": {
+      "name": "Concierge Jacket",
+      "maxStack": 0
+    },
+    "1793": {
+      "name": "Concierge Hat",
+      "maxStack": 0
+    },
+    "1794": {
+      "name": "Purple Cap",
+      "maxStack": 0
+    },
+    "1795": {
+      "name": "Black Flats",
+      "maxStack": 0
+    },
+    "1796": {
+      "name": "Yellow Flats",
+      "maxStack": 0
+    },
+    "1797": {
+      "name": "Cool Cap",
+      "maxStack": 0
+    },
+    "1798": {
+      "name": "Hazmat Shirt",
+      "maxStack": 0
+    },
+    "1799": {
+      "name": "Hazmat Pants",
+      "maxStack": 0
+    },
+    "1800": {
+      "name": "Hazmat Hood",
+      "maxStack": 0
+    },
+    "1801": {
+      "name": "Hazmat Shoes",
+      "maxStack": 0
+    },
+    "1802": {
+      "name": "Blue Vintage Dress",
+      "maxStack": 0
+    },
+    "1803": {
+      "name": "Green Vintage Dress",
+      "maxStack": 0
+    },
+    "1804": {
+      "name": "Black Victorian Dress",
+      "maxStack": 0
+    },
+    "1805": {
+      "name": "Green Victorian Dress",
+      "maxStack": 0
+    },
+    "1806": {
+      "name": "Red Victorian Dress",
+      "maxStack": 0
+    },
+    "1807": {
+      "name": "Black Victorian Bonnet",
+      "maxStack": 0
+    },
+    "1808": {
+      "name": "Green Victorian Bonnet",
+      "maxStack": 0
+    },
+    "1809": {
+      "name": "Red Victorian Bonnet",
+      "maxStack": 0
+    },
+    "1810": {
+      "name": "Green Victorian Jacket",
+      "maxStack": 0
+    },
+    "1811": {
+      "name": "Cream Victorian Pants",
+      "maxStack": 0
+    },
+    "1812": {
+      "name": "Brown Victorian Boots",
+      "maxStack": 0
+    },
+    "1813": {
+      "name": "Purple Bucket Hat",
+      "maxStack": 0
+    },
+    "1814": {
+      "name": "Black Bucket Hat",
+      "maxStack": 0
+    },
+    "1815": {
+      "name": "Black Victorian Pants",
+      "maxStack": 0
+    },
+    "1816": {
+      "name": "Black Victorian Jacket",
+      "maxStack": 0
+    },
+    "1817": {
+      "name": "Black Victorian Boots",
+      "maxStack": 0
+    },
+    "1818": {
+      "name": "Red Victorian Jacket",
+      "maxStack": 0
+    },
+    "1819": {
+      "name": "White Victorian Boots",
+      "maxStack": 0
+    },
+    "1820": {
+      "name": "White Victorian Pants",
+      "maxStack": 0
+    },
+    "1821": {
+      "name": "Raggy Dress",
+      "maxStack": 0
+    },
+    "1822": {
+      "name": "Brown Tights",
+      "maxStack": 0
+    },
+    "1823": {
+      "name": "Antique Desk",
+      "maxStack": 0
+    },
+    "1824": {
+      "name": "Cactus Pot",
+      "maxStack": 0
+    },
+    "1825": {
+      "name": "Display Case",
+      "maxStack": 0
+    },
+    "1826": {
+      "name": "Kitchen Island",
+      "maxStack": 0
+    },
+    "1827": {
+      "name": "Dark Wood Kitchen Island",
+      "maxStack": 0
+    },
+    "1828": {
+      "name": "Gum Kitchen Island",
+      "maxStack": 0
+    },
+    "1829": {
+      "name": "Palm Kitchen Island",
+      "maxStack": 0
+    },
+    "1830": {
+      "name": "Palm Wood Double Gate",
+      "maxStack": 0
+    },
+    "1831": {
+      "name": "Gum Wood Double Gate",
+      "maxStack": 0
+    },
+    "1832": {
+      "name": "Hard Wood Double Gate",
+      "maxStack": 0
+    },
+    "1833": {
+      "name": "Tin Double Gate",
+      "maxStack": 0
+    },
+    "1834": {
+      "name": "Milk Crate Chair",
+      "maxStack": 0
+    },
+    "1835": {
+      "name": "Milk Crate Coffee Table",
+      "maxStack": 0
+    },
+    "1836": {
+      "name": "Milk Crate Bookshelf",
+      "maxStack": 0
+    },
+    "1837": {
+      "name": "Milk Crate Bed",
+      "maxStack": 0
+    },
+    "1838": {
+      "name": "Cement Bridge",
+      "maxStack": 0
+    },
+    "1839": {
+      "name": "Wide Cement Bridge",
+      "maxStack": 0
+    },
+    "1840": {
+      "name": "Blue Bandana",
+      "maxStack": 0
+    },
+    "1841": {
+      "name": "Black Bandana",
+      "maxStack": 0
+    },
+    "1842": {
+      "name": "Green Bandana",
+      "maxStack": 0
+    },
+    "1843": {
+      "name": "Orange Bandana",
+      "maxStack": 0
+    },
+    "1844": {
+      "name": "Red Bandana",
+      "maxStack": 0
+    },
+    "1845": {
+      "name": "Glass Fence",
+      "maxStack": 0
+    },
+    "1846": {
+      "name": "Black Hair Bow",
+      "maxStack": 0
+    },
+    "1847": {
+      "name": "White Hair Bow",
+      "maxStack": 0
+    },
+    "1848": {
+      "name": "Pink Hair Bow",
+      "maxStack": 0
+    },
+    "1849": {
+      "name": "Green Hair Bow",
+      "maxStack": 0
+    },
+    "1850": {
+      "name": "Pincher Hood",
+      "maxStack": 0
+    },
+    "1851": {
+      "name": "Pincher Plant Statue",
+      "maxStack": 0
+    },
+    "1852": {
+      "name": "Iron Bridge",
+      "maxStack": 0
+    },
+    "1853": {
+      "name": "Wide Iron Bridge",
+      "maxStack": 0
+    },
+    "1854": {
+      "name": "Gumleaf Grasshopper",
+      "maxStack": 0
+    },
+    "1855": {
+      "name": "Cicada",
+      "maxStack": 0
+    },
+    "1856": {
+      "name": "Empire Gudgeon",
+      "maxStack": 0
+    },
+    "1857": {
+      "name": "Rock Oyster",
+      "maxStack": 0
+    },
+    "1858": {
+      "name": "Nudibranch",
+      "maxStack": 0
+    },
+    "1859": {
+      "name": "Display Pedestal",
+      "maxStack": 0
+    },
+    "1860": {
+      "name": "Impostor Ball",
+      "maxStack": 250
+    },
+    "1861": {
+      "name": "Stack of Papers",
+      "maxStack": 0
+    },
+    "1862": {
+      "name": "Blue-ringed Octopus",
+      "maxStack": 0
+    },
+    "1863": {
+      "name": "Inverse Corner Ramp",
+      "maxStack": 0
+    },
+    "1864": {
+      "name": "Go-Go Clock",
+      "maxStack": 0
+    },
+    "1865": {
+      "name": "Go-Go Statue",
+      "maxStack": 0
+    },
+    "1866": {
+      "name": "Go-Go Lantern",
+      "maxStack": 0
+    },
+    "1867": {
+      "name": "Go-Go Phone Booth",
+      "maxStack": 0
+    },
+    "1868": {
+      "name": "Go-Go Wiggly Friend",
+      "maxStack": 0
+    },
+    "1869": {
+      "name": "Gonut",
+      "maxStack": 0
+    },
+    "1870": {
+      "name": "Fried Gonut",
+      "maxStack": 0
+    },
+    "1871": {
+      "name": "Go-Go Trike",
+      "maxStack": 0
+    },
+    "1872": {
+      "name": "Gonut Box",
+      "maxStack": 0
+    },
+    "1873": {
+      "name": "Go-Go Pet Rock",
+      "maxStack": 0
+    },
+    "1874": {
+      "name": "Go-Go Trinket",
+      "maxStack": 0
+    },
+    "1875": {
+      "name": "Bird Bill",
+      "maxStack": 0
+    },
+    "1876": {
+      "name": "Camping Chair",
+      "maxStack": 0
+    },
+    "1877": {
+      "name": "Hip-Hop Cassette",
+      "maxStack": 0
+    },
+    "1878": {
+      "name": "Bug Terrarium",
+      "maxStack": 0
+    },
+    "1879": {
+      "name": "Pop Cassette",
+      "maxStack": 0
+    },
+    "1880": {
+      "name": "Rock Cassette",
+      "maxStack": 0
+    },
+    "1881": {
+      "name": "Blues Cassette",
+      "maxStack": 0
+    },
+    "1882": {
+      "name": "Town Bell",
+      "maxStack": 0
+    },
+    "1883": {
+      "name": "Animal Brush",
+      "maxStack": 0
+    },
+    "1884": {
+      "name": "Plane",
+      "maxStack": 0
+    },
+    "1885": {
+      "name": "Cocoon",
+      "maxStack": 0
+    },
+    "1886": {
+      "name": "Silk",
+      "maxStack": 0
+    },
+    "1887": {
+      "name": "Rental Sign",
+      "maxStack": 0
+    },
+    "1888": {
+      "name": "Tin Pergola",
+      "maxStack": 0
+    },
+    "1889": {
+      "name": "Cloth Pergola",
+      "maxStack": 0
+    },
+    "1890": {
+      "name": "Brick Pergola",
+      "maxStack": 0
+    },
+    "1891": {
+      "name": "Gold Nugget",
+      "maxStack": 0
+    },
+    "1892": {
+      "name": "Gold Ore",
+      "maxStack": 0
+    },
+    "1893": {
+      "name": "Leather Seat",
+      "maxStack": 0
+    },
+    "1894": {
+      "name": "Leather Couch",
+      "maxStack": 0
+    },
+    "1895": {
+      "name": "House Deed",
+      "maxStack": 0
+    },
+    "1896": {
+      "name": "Guest House 4 Level 2",
+      "maxStack": 0
+    },
+    "1897": {
+      "name": "Guest House Deed",
+      "maxStack": 0
+    },
+    "1898": {
+      "name": "Gum Mirror Stand",
+      "maxStack": 0
+    },
+    "1899": {
+      "name": "Mirror Stand",
+      "maxStack": 0
+    },
+    "1900": {
+      "name": "Palm Mirror Stand",
+      "maxStack": 0
+    },
+    "1901": {
+      "name": "Basin",
+      "maxStack": 0
+    },
+    "1902": {
+      "name": "Wrought Iron Table",
+      "maxStack": 0
+    },
+    "1903": {
+      "name": "Wrought Iron Chair",
+      "maxStack": 0
+    },
+    "1904": {
+      "name": "Creepy Cassette",
+      "maxStack": 0
+    },
+    "1905": {
+      "name": "Dreary Cassette",
+      "maxStack": 0
+    },
+    "1906": {
+      "name": "Experimental Cassette",
+      "maxStack": 0
+    },
+    "1907": {
+      "name": "Country Cassette",
+      "maxStack": 0
+    },
+    "1908": {
+      "name": "Shopping Cassette",
+      "maxStack": 0
+    },
+    "1909": {
+      "name": "Old Cassette",
+      "maxStack": 0
+    },
+    "1910": {
+      "name": "Golden Cassette",
+      "maxStack": 0
+    },
+    "1911": {
+      "name": "Chill Cassette",
+      "maxStack": 0
+    },
+    "1912": {
+      "name": "Smooth Cassette",
+      "maxStack": 0
+    },
+    "1913": {
+      "name": "Dinner Cassette",
+      "maxStack": 0
+    },
+    "1914": {
+      "name": "Ambient Cassette",
+      "maxStack": 0
+    },
+    "1915": {
+      "name": "Map Table",
+      "maxStack": 0
+    },
+    "1916": {
+      "name": "Wide Bookshelf",
+      "maxStack": 0
+    },
+    "1917": {
+      "name": "Dark Wooden Chest Of Drawers",
+      "maxStack": 0
+    },
+    "1918": {
+      "name": "Barbed Wire Fence",
+      "maxStack": 0
+    },
+    "1919": {
+      "name": "Board Fence",
+      "maxStack": 0
+    },
+    "1920": {
+      "name": "Road Lamp",
+      "maxStack": 0
+    },
+    "1921": {
+      "name": "Rope Bridge",
+      "maxStack": 0
+    },
+    "1922": {
+      "name": "Inflatable Pool",
+      "maxStack": 0
+    },
+    "1923": {
+      "name": "Bin Chook Statue",
+      "maxStack": 0
+    },
+    "1924": {
+      "name": "Gold Crown",
+      "maxStack": 0
+    },
+    "1925": {
+      "name": "Royal Crown",
+      "maxStack": 0
+    },
+    "1926": {
+      "name": "Mighty Sandwich",
+      "maxStack": 0
+    },
+    "1927": {
+      "name": "Mighty Sandwich Plate",
+      "maxStack": 0
+    },
+    "1928": {
+      "name": "Wide Rope Bridge",
+      "maxStack": 0
+    },
+    "1929": {
+      "name": "Doggo Bowl",
+      "maxStack": 0
+    },
+    "1930": {
+      "name": "Basalt",
+      "maxStack": 0
+    },
+    "1931": {
+      "name": "Animal Shower",
+      "maxStack": 0
+    },
+    "1932": {
+      "name": "Black Raglan Sleeve",
+      "maxStack": 0
+    },
+    "1933": {
+      "name": "Blue Raglan Sleeve",
+      "maxStack": 0
+    },
+    "1934": {
+      "name": "Green Raglan Sleeve",
+      "maxStack": 0
+    },
+    "1935": {
+      "name": "Orange Raglan Sleeve",
+      "maxStack": 0
+    },
+    "1936": {
+      "name": "Pink Raglan Sleeve",
+      "maxStack": 0
+    },
+    "1937": {
+      "name": "Purple Raglan Sleeve",
+      "maxStack": 0
+    },
+    "1938": {
+      "name": "Red Raglan Sleeve",
+      "maxStack": 0
+    },
+    "1939": {
+      "name": "Yellow Raglan Sleeve",
+      "maxStack": 0
+    },
+    "1940": {
+      "name": "Black Capri Pants",
+      "maxStack": 0
+    },
+    "1941": {
+      "name": "Blue Capri Pants",
+      "maxStack": 0
+    },
+    "1942": {
+      "name": "Green Capri Pants",
+      "maxStack": 0
+    },
+    "1943": {
+      "name": "Orange Capri Pants",
+      "maxStack": 0
+    },
+    "1944": {
+      "name": "Pink Capri Pants",
+      "maxStack": 0
+    },
+    "1945": {
+      "name": "Purple Capri Pants",
+      "maxStack": 0
+    },
+    "1946": {
+      "name": "Red Capri Pants",
+      "maxStack": 0
+    },
+    "1947": {
+      "name": "Yellow Capri Pants",
+      "maxStack": 0
+    },
+    "1948": {
+      "name": "Medieval Helmet",
+      "maxStack": 0
+    },
+    "1949": {
+      "name": "Medieval Breastplate",
+      "maxStack": 0
+    },
+    "1950": {
+      "name": "Medieval Leggings",
+      "maxStack": 0
+    },
+    "1951": {
+      "name": "Medieval Boots",
+      "maxStack": 0
+    },
+    "1952": {
+      "name": "Gold Bar",
+      "maxStack": 0
+    },
+    "1953": {
+      "name": "Battle Fish",
+      "maxStack": 180,
+      "maxDurability": 180
+    },
+    "1954": {
+      "name": "Battlegrounds Hat",
+      "maxStack": 0
+    },
+    "1955": {
+      "name": "Battlegrounds Shirt",
+      "maxStack": 0
+    },
+    "1956": {
+      "name": "Battlegrounds Pants",
+      "maxStack": 0
+    },
+    "1957": {
+      "name": "Battlegrounds Shoes",
+      "maxStack": 0
+    },
+    "1958": {
+      "name": "Macquarie Perch",
+      "maxStack": 0
+    },
+    "1959": {
+      "name": "Spotted Handfish",
+      "maxStack": 0
+    },
+    "1960": {
+      "name": "Lungfish",
+      "maxStack": 0
+    },
+    "1961": {
+      "name": "Bone Shirt",
+      "maxStack": 0
+    },
+    "1962": {
+      "name": "Bone Pants",
+      "maxStack": 0
+    },
+    "1963": {
+      "name": "Bone Shoes",
+      "maxStack": 0
+    },
+    "1964": {
+      "name": "Hoop Earrings",
+      "maxStack": 0
+    },
+    "1965": {
+      "name": "Nose Ring",
+      "maxStack": 0
+    },
+    "1966": {
+      "name": "Nose Bandage",
+      "maxStack": 0
+    },
+    "1967": {
+      "name": "Ruby Earrings",
+      "maxStack": 0
+    },
+    "1968": {
+      "name": "Emerald Earrings",
+      "maxStack": 0
+    },
+    "1969": {
+      "name": "Aquamarine Earrings",
+      "maxStack": 0
+    },
+    "1970": {
+      "name": "Mystery Bag",
+      "maxStack": 0
+    },
+    "1971": {
+      "name": "Paper Hat",
+      "maxStack": 0
+    },
+    "1972": {
+      "name": "Blistering Bottle",
+      "maxStack": 4,
+      "maxDurability": 4
+    },
+    "1973": {
+      "name": "Opal Earrings",
+      "maxStack": 0
+    },
+    "1974": {
+      "name": "Leather Bench",
+      "maxStack": 0
+    },
+    "1975": {
+      "name": "Pearl Earrings",
+      "maxStack": 0
+    },
+    "1976": {
+      "name": "Glowing Mushroom Pot",
+      "maxStack": 0
+    },
+    "1977": {
+      "name": "Giant Bat Wings",
+      "maxStack": 0
+    },
+    "1978": {
+      "name": "Glowing Hang Glider",
+      "maxStack": 0
+    },
+    "1979": {
+      "name": "Giant Feather Wings",
+      "maxStack": 0
+    },
+    "1980": {
+      "name": "Bone Mask",
+      "maxStack": 0
+    },
+    "1981": {
+      "name": "Floor Candelabra",
+      "maxStack": 0
+    },
+    "1982": {
+      "name": "Fiery Halo",
+      "maxStack": 0
+    },
+    "1983": {
+      "name": "Die",
+      "maxStack": 0
+    },
+    "1984": {
+      "name": "Glowing Slab",
+      "maxStack": 0
+    },
+    "1985": {
+      "name": "Face Bandage",
+      "maxStack": 0
+    },
+    "1986": {
+      "name": "Glowing Box",
+      "maxStack": 0
+    },
+    "1987": {
+      "name": "Glowing Path",
+      "maxStack": 0
+    },
+    "1988": {
+      "name": "Glowing Pickaxe",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "1989": {
+      "name": "Glowing Axe",
+      "maxStack": 400,
+      "maxDurability": 400
+    },
+    "1990": {
+      "name": "Wind Chime",
+      "maxStack": 0
+    },
+    "1991": {
+      "name": "Glowing Dress",
+      "maxStack": 0
+    },
+    "1992": {
+      "name": "Blue Coat",
+      "maxStack": 0
+    },
+    "1993": {
+      "name": "Orange Coat",
+      "maxStack": 0
+    },
+    "1994": {
+      "name": "Orange Ripped Jeans",
+      "maxStack": 0
+    },
+    "1995": {
+      "name": "Green Holiday Hat",
+      "maxStack": 0
+    },
+    "1996": {
+      "name": "Orange Holiday Hat",
+      "maxStack": 0
+    },
+    "1997": {
+      "name": "Pink Holiday Hat",
+      "maxStack": 0
+    },
+    "1998": {
+      "name": "Purple Holiday Hat",
+      "maxStack": 0
+    },
+    "1999": {
+      "name": "Glowing Coat",
+      "maxStack": 0
+    },
+    "2000": {
+      "name": "Red Slip Dress",
+      "maxStack": 0
+    },
+    "2001": {
+      "name": "Retro Sweater",
+      "maxStack": 0
+    },
+    "2002": {
+      "name": "Glowing Glasses",
+      "maxStack": 0
+    },
+    "2003": {
+      "name": "Wooden Swing Set",
+      "maxStack": 0
+    },
+    "2004": {
+      "name": "Green Slip Dress",
+      "maxStack": 0
+    },
+    "2005": {
+      "name": "Yellow Slip Dress",
+      "maxStack": 0
+    },
+    "2006": {
+      "name": "Hanging Planter",
+      "maxStack": 0
+    },
+    "2007": {
+      "name": "Native Bread",
+      "maxStack": 0
+    },
+    "2008": {
+      "name": "Worms",
+      "maxStack": 0
+    },
+    "2009": {
+      "name": "Railway Track",
+      "maxStack": 0
+    },
+    "2010": {
+      "name": "Curved Railway Track",
+      "maxStack": 0
+    },
+    "2011": {
+      "name": "Train",
+      "maxStack": 0
+    },
+    "2012": {
+      "name": "Railway Bridge",
+      "maxStack": 0
+    },
+    "2013": {
+      "name": "Train Car",
+      "maxStack": 0
+    },
+    "2014": {
+      "name": "Domesti-Crate",
+      "maxStack": 0
+    },
+    "2015": {
+      "name": "Auto Placer",
+      "maxStack": 0
+    },
+    "2016": {
+      "name": "Pretty Pebble",
+      "maxStack": 0
+    },
+    "2017": {
+      "name": "Egg Incubator",
+      "maxStack": 0
+    },
+    "2018": {
+      "name": "Duff Dust",
+      "maxStack": 0
+    },
+    "2019": {
+      "name": "Fertilised Chicken Egg",
+      "maxStack": 0
+    },
+    "2020": {
+      "name": "Conductor Shirt",
+      "maxStack": 0
+    },
+    "2021": {
+      "name": "Conductor Pants",
+      "maxStack": 0
+    },
+    "2022": {
+      "name": "Conductor Cap",
+      "maxStack": 0
+    },
+    "2023": {
+      "name": "Pineapple Jam",
+      "maxStack": 0
+    },
+    "2024": {
+      "name": "Pineapple Jam Set",
+      "maxStack": 0
+    }
+  }
+}
