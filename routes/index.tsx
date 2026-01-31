@@ -5,6 +5,7 @@ import FileSelectWrapper from "../islands/FileSelectWrapper.tsx";
 import QuickEdit from "../islands/QuickEdit.tsx";
 import AdvancedEditor from "../islands/AdvancedEditor.tsx";
 import ContainerEditor from "../islands/ContainerEditor.tsx";
+import PlayerInventoryEditor from "../islands/PlayerInventoryEditor.tsx";
 import ContainerAdvancedEditor from "../islands/ContainerAdvancedEditor.tsx";
 import DownloadManager from "../islands/DownloadManager.tsx";
 import PageDropZone from "../islands/PageDropZone.tsx";
@@ -136,6 +137,9 @@ export default define.page(async function Home() {
 
               {/* Player Quick Edit */}
               <QuickEdit />
+
+              {/* Player Inventory & Stashes */}
+              <PlayerInventoryEditor />
 
               {/* Player Advanced Editor */}
               <AdvancedEditor />
