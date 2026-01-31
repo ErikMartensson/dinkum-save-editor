@@ -2,6 +2,58 @@ const ES3_PASSWORD = "jamesbendon";
 const PBKDF2_ITERATIONS = 100;
 
 /**
+ * Serializes data to match Unity ES3's JSON format:
+ * - \r\n line endings
+ * - Tab indentation
+ * - Spaces around colons: "key" : value
+ * - Primitive arrays on a single indented line
+ * - Object arrays with },{ between elements (no newline)
+ */
+export function serializeES3Json(data: unknown): string {
+  return formatValue(data, 0);
+}
+
+function formatValue(value: unknown, depth: number): string {
+  if (value === null) return "null";
+  if (typeof value === "boolean") return value ? "true" : "false";
+  if (typeof value === "number") return String(value);
+  if (typeof value === "string") return JSON.stringify(value);
+
+  if (Array.isArray(value)) {
+    if (value.length === 0) {
+      return "[\r\n" + tabs(depth + 1) + "\r\n" + tabs(depth) + "]";
+    }
+
+    // Arrays of primitives: values on a single indented line
+    if (typeof value[0] !== "object" || value[0] === null) {
+      const items = value.map((v) => formatValue(v, depth + 1)).join(",");
+      return "[\r\n" + tabs(depth + 1) + items + "\r\n" + tabs(depth) + "]";
+    }
+
+    // Arrays of objects: },{ between elements (no newline between } and {)
+    const elements = value.map((v) => formatValue(v, depth + 1));
+    return "[\r\n" + tabs(depth + 1) + elements.join(",") +
+      "\r\n" + tabs(depth) + "]";
+  }
+
+  if (typeof value === "object") {
+    const entries = Object.entries(value as Record<string, unknown>);
+    if (entries.length === 0) return "{\r\n" + tabs(depth) + "}";
+
+    const lines = entries.map(([k, v]) =>
+      tabs(depth + 1) + JSON.stringify(k) + " : " + formatValue(v, depth + 1)
+    );
+    return "{\r\n" + lines.join(",\r\n") + "\r\n" + tabs(depth) + "}";
+  }
+
+  return String(value);
+}
+
+function tabs(n: number): string {
+  return "\t".repeat(n);
+}
+
+/**
  * Derives an AES-128 key from the password using PBKDF2 with IV as salt
  */
 async function deriveKey(password: string, iv: Uint8Array): Promise<CryptoKey> {

@@ -31,10 +31,11 @@ export default function DownloadManager() {
     isEncrypting.value = true;
 
     try {
-      const jsonString = JSON.stringify(data);
-
       // Import crypto utilities dynamically for client-side use
-      const { encryptES3 } = await import("../utils/crypto.ts");
+      const { encryptES3, serializeES3Json } = await import(
+        "../utils/crypto.ts"
+      );
+      const jsonString = serializeES3Json(data);
       const encrypted = await encryptES3(jsonString, false);
 
       // Create a new Uint8Array with proper ArrayBuffer for Blob compatibility

@@ -15,11 +15,11 @@ export default function FileSelect() {
   const isProcessing = useSignal(false);
 
   const handleFile = async (file: File) => {
-    const isES3 = file.name.endsWith(".es3");
+    const isES3 = file.name.endsWith(".es3") || file.name.endsWith(".es3.bac");
     const isJSON = file.name.endsWith(".json");
 
     if (!isES3 && !isJSON) {
-      error.value = "Please select a .es3 or .json file";
+      error.value = "Please select a .es3, .es3.bac, or .json file";
       return;
     }
 
@@ -190,7 +190,7 @@ export default function FileSelect() {
                     id="file-select"
                     name="file-select"
                     type="file"
-                    accept=".es3,.json"
+                    accept=".es3,.es3.bac,.json"
                     multiple
                     class="sr-only"
                     onInput={handleFileInput}
@@ -201,7 +201,8 @@ export default function FileSelect() {
                 </p>
               </div>
               <p class="text-xs text-dinkum-accent mt-2 font-mclaren">
-                .es3 or .json files - Select Player and/or Container saves
+                .es3, .es3.bac, or .json files - Select Player and/or Container
+                saves
               </p>
             </>
           )}

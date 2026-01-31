@@ -11,6 +11,7 @@ interface JsonNodeProps {
   searchQuery: string;
   isMatchingPath: boolean;
   shouldAutoExpand: boolean;
+  defaultExpanded?: boolean | null;
 }
 
 // Helper function to check if a subtree contains any matches
@@ -36,10 +37,22 @@ function hasMatchInSubtree(obj: unknown, query: string): boolean {
 }
 
 function JsonNode(
-  { data, path, depth, onEdit, searchQuery, isMatchingPath, shouldAutoExpand }:
-    JsonNodeProps,
+  {
+    data,
+    path,
+    depth,
+    onEdit,
+    searchQuery,
+    isMatchingPath,
+    shouldAutoExpand,
+    defaultExpanded,
+  }: JsonNodeProps,
 ) {
-  const isExpanded = useSignal(shouldAutoExpand || depth < 2); // Auto-expand if search match or first 2 levels
+  const isExpanded = useSignal(
+    defaultExpanded !== null && defaultExpanded !== undefined
+      ? defaultExpanded
+      : (shouldAutoExpand || depth < 2),
+  );
 
   // Update expansion when shouldAutoExpand changes
   if (shouldAutoExpand && !isExpanded.value) {
@@ -223,6 +236,7 @@ function JsonNode(
                 searchQuery={searchQuery}
                 isMatchingPath={isMatching}
                 shouldAutoExpand={hasDescendantMatch}
+                defaultExpanded={defaultExpanded}
               />
             );
           })}
@@ -233,11 +247,12 @@ function JsonNode(
 }
 
 export default function ContainerAdvancedEditor() {
-  const isExpanded = useSignal(false);
   const searchQuery = useSignal("");
   const debouncedSearchQuery = useDebouncedValue(searchQuery, 300);
   const hasChanges = useSignal(false);
   const currentMatchIndex = useSignal(0);
+  const treeVersion = useSignal(0);
+  const defaultNodeExpanded = useSignal<boolean | null>(null);
 
   const searchResult = useJsonSearch(containerData, debouncedSearchQuery);
 
@@ -264,11 +279,13 @@ export default function ContainerAdvancedEditor() {
   };
 
   const handleExpandAll = () => {
-    isExpanded.value = true;
+    defaultNodeExpanded.value = true;
+    treeVersion.value++;
   };
 
   const handleCollapseAll = () => {
-    isExpanded.value = false;
+    defaultNodeExpanded.value = false;
+    treeVersion.value++;
   };
 
   const handleClearSearch = () => {
@@ -450,6 +467,7 @@ export default function ContainerAdvancedEditor() {
 
       <div class="bg-dinkum-beige rounded-lg p-4 max-h-[600px] overflow-y-auto font-mono text-sm">
         <JsonNode
+          key={`tree-${treeVersion.value}`}
           data={containerData.value}
           path="root"
           depth={0}
@@ -457,6 +475,7 @@ export default function ContainerAdvancedEditor() {
           searchQuery={searchQuery.value}
           isMatchingPath={searchResult.value.matchingPaths.has("root")}
           shouldAutoExpand={searchResult.value.shouldExpand("root")}
+          defaultExpanded={defaultNodeExpanded.value}
         />
       </div>
 
