@@ -20,7 +20,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-SCRIPT_VERSION = "1.1.0"
+SCRIPT_VERSION = "1.3.0"
 
 # Items whose durability isn't stored in maxStack (e.g. watering cans track
 # water level, tele items track uses). Values confirmed from a creative-mode
@@ -356,6 +356,67 @@ def calibrate_offset(
     sys.exit(1)
 
 
+# --- Game version from WorldManager ---
+
+
+def extract_game_version(game_dir: Path) -> str | None:
+    """
+    Extract the game version from the WorldManager singleton in level0.
+
+    The game displays "v.1.<master>.<version>" on the main menu via the
+    showVersionNumber script. The "1." prefix is hardcoded; masterVersionNumber
+    and versionNumber are the first two int32 instance fields on WorldManager.
+    """
+    import UnityPy
+
+    gg_path = find_game_file(game_dir, "globalgamemanagers.assets")
+    genv = UnityPy.load(str(gg_path))
+
+    wm_script_pid = None
+    for obj in genv.objects:
+        if obj.type.name == "MonoScript":
+            raw = obj.get_raw_data()
+            name_len = struct.unpack("<I", raw[0:4])[0]
+            if name_len < 200:
+                name = raw[4 : 4 + name_len].decode("utf-8", errors="replace")
+                if name == "WorldManager":
+                    wm_script_pid = obj.path_id
+                    break
+
+    if wm_script_pid is None:
+        print("  WARNING: Could not find WorldManager MonoScript")
+        return None
+
+    level_path = find_game_file(game_dir, "level0")
+    lenv = UnityPy.load(str(level_path))
+
+    for obj in lenv.objects:
+        if obj.type.name != "MonoBehaviour":
+            continue
+        raw = obj.get_raw_data()
+        if len(raw) < 36:
+            continue
+        script_path_id = struct.unpack("<q", raw[20:28])[0]
+        if script_path_id != wm_script_pid:
+            continue
+
+        # Skip MonoBehaviour header (28 bytes) + m_Name string
+        pos = 28
+        pos = skip_unity_string(raw, pos)
+
+        # First two int32 fields: versionNumber, masterVersionNumber
+        if pos + 8 > len(raw):
+            print("  WARNING: WorldManager data too short")
+            return None
+
+        version_number = struct.unpack("<i", raw[pos : pos + 4])[0]
+        master_version = struct.unpack("<i", raw[pos + 4 : pos + 8])[0]
+        return f"1.{master_version}.{version_number}"
+
+    print("  WARNING: Could not find WorldManager instance in level0")
+    return None
+
+
 # --- Output ---
 
 
@@ -363,6 +424,7 @@ def build_output(
     item_names: dict[int, str],
     is_tool_map: dict[int, bool],
     max_stack_map: dict[int, int],
+    game_version: str | None,
 ) -> dict:
     """Build the final JSON structure."""
     items = {}
@@ -372,12 +434,10 @@ def build_output(
         is_tool = is_tool_map.get(item_id, False)
         max_stack = max_stack_map.get(item_id)
 
-        if max_stack is not None:
-            entry["maxStack"] = max_stack
-
         # Determine max durability:
         # 1. Manual overrides for items whose durability isn't in maxStack
-        # 2. isATool items with positive maxStack
+        # 2. isATool items with positive maxStack (the game stores durability
+        #    in the maxStack field for tools)
         if item_id in DURABILITY_OVERRIDES:
             entry["maxDurability"] = DURABILITY_OVERRIDES[item_id]
             durability_count += 1
@@ -387,15 +447,16 @@ def build_output(
 
         items[str(item_id)] = entry
 
-    return {
-        "meta": {
-            "extractedAt": datetime.now(timezone.utc).isoformat(),
-            "totalItems": len(items),
-            "totalItemsWithDurability": durability_count,
-            "scriptVersion": SCRIPT_VERSION,
-        },
-        "items": items,
+    meta: dict = {
+        "extractedAt": datetime.now(timezone.utc).isoformat(),
+        "totalItems": len(items),
+        "totalItemsWithDurability": durability_count,
+        "scriptVersion": SCRIPT_VERSION,
     }
+    if game_version:
+        meta["gameVersion"] = game_version
+
+    return {"meta": meta, "items": items}
 
 
 def validate_output(output: dict) -> list[str]:
@@ -450,6 +511,12 @@ def main():
         default=None,
         help="Output JSON path (default: ../data/items.json relative to this script)",
     )
+    parser.add_argument(
+        "--game-version",
+        type=str,
+        default=None,
+        help="Override auto-detected game version (e.g. 1.0.7)",
+    )
     args = parser.parse_args()
 
     if not args.game_dir.exists():
@@ -474,8 +541,20 @@ def main():
     print(f"  Found {tool_count} tools, extracted maxStack for {len(max_stack_map)} items")
     print()
 
+    game_version = args.game_version
+    if not game_version:
+        print("Phase 2.5: Extracting game version...")
+        game_version = extract_game_version(args.game_dir)
+        if game_version:
+            print(f"  Detected game version: {game_version}")
+        else:
+            print("  Could not detect game version (use --game-version to set manually)")
+    else:
+        print(f"Using provided game version: {game_version}")
+    print()
+
     print("Phase 3: Building output...")
-    output = build_output(item_names, is_tool_map, max_stack_map)
+    output = build_output(item_names, is_tool_map, max_stack_map, game_version)
 
     warnings = validate_output(output)
     if warnings:

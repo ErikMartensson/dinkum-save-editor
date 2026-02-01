@@ -15,6 +15,9 @@ pip install -r requirements.txt
 python extract_items.py "/path/to/Dinkum"
 ```
 
+The game version is auto-detected from the `WorldManager` singleton in `level0`.
+Use `--game-version` to override if auto-detection fails.
+
 The output defaults to `../data/items.json` (relative to this script). Override
 with `--output`:
 
@@ -50,6 +53,13 @@ game updates that shift field positions.
 Items with durability not stored in `maxStack` (watering cans, tele items) use
 manually confirmed overrides from creative-mode save data.
 
+### Phase 2.5: Game Version
+
+Reads `versionNumber` and `masterVersionNumber` from the `WorldManager`
+singleton in `level0`. The game constructs its display version as
+`1.<master>.<version>` (the `1.` prefix is hardcoded in the `showVersionNumber`
+script).
+
 ### Phase 3: Validation
 
 Cross-checks item counts, durability ranges, and calibration values against
@@ -63,21 +73,22 @@ expected results.
     "extractedAt": "2026-01-30T23:42:55.084691+00:00",
     "totalItems": 2025,
     "totalItemsWithDurability": 89,
-    "scriptVersion": "1.1.0"
+    "scriptVersion": "1.3.0",
+    "gameVersion": "1.0.7"
   },
   "items": {
-    "0": { "name": "Basic Axe", "maxStack": 150, "maxDurability": 150 },
-    "1": { "name": "Megaphone", "maxStack": 99 },
-    "10": { "name": "Watering Can", "maxStack": 0, "maxDurability": 20 },
-    "236": { "name": "Slingshot", "maxStack": 200, "maxDurability": 200 }
+    "0": { "name": "Basic Axe", "maxDurability": 150 },
+    "1": { "name": "Megaphone" },
+    "10": { "name": "Watering Can", "maxDurability": 20 },
+    "236": { "name": "Slingshot", "maxDurability": 200 }
   }
 }
 ```
 
-- **`maxStack`**: Raw value from game data. For tools, this is the max
-  durability. For regular items, this is the max stack size.
-- **`maxDurability`**: Present only for items with durability. Computed from
-  `maxStack` (for tools) or manual overrides (for watering cans, tele items).
+- **`maxDurability`**: Present only for items with durability (tools, watering
+  cans, tele items). For most tools this is extracted from the game's internal
+  `maxStack` field. Watering cans and tele items use manual overrides since
+  their durability is stored differently.
 
 ## After a Game Update
 

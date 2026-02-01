@@ -2,7 +2,6 @@ import itemData from "../data/items.json" with { type: "json" };
 
 interface ItemEntry {
   name: string;
-  maxStack?: number;
   maxDurability?: number;
 }
 
