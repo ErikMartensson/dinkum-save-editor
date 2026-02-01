@@ -1,4 +1,5 @@
 import { useSignal } from "@preact/signals";
+import { useEffect, useRef } from "preact/hooks";
 import { ComponentChildren } from "preact";
 import {
   containerData,
@@ -17,6 +18,25 @@ interface PageDropZoneProps {
 export default function PageDropZone({ children }: PageDropZoneProps) {
   const isDragging = useSignal(false);
   const isProcessing = useSignal(false);
+  const dragTimeoutRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isDragging.value) {
+        isDragging.value = false;
+      }
+    };
+
+    globalThis.addEventListener("keydown", handleKeyDown);
+    return () => globalThis.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  const clearDragTimeout = () => {
+    if (dragTimeoutRef.current !== null) {
+      clearTimeout(dragTimeoutRef.current);
+      dragTimeoutRef.current = null;
+    }
+  };
 
   const handleFile = async (file: File) => {
     const isES3 = file.name.endsWith(".es3");
@@ -113,6 +133,7 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
     e.preventDefault();
     e.stopPropagation();
     isDragging.value = false;
+    clearDragTimeout();
 
     const files = e.dataTransfer?.files;
     if (files && files.length > 0) {
@@ -124,22 +145,28 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
     e.preventDefault();
     e.stopPropagation();
     isDragging.value = true;
+
+    // Safety net: dragover fires continuously while dragging over the page.
+    // If it stops (drag left the window), clear the state after a short delay.
+    clearDragTimeout();
+    dragTimeoutRef.current = globalThis.setTimeout(() => {
+      isDragging.value = false;
+      dragTimeoutRef.current = null;
+    }, 300);
   };
 
   const handleDragLeave = (e: DragEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    // Check if we're leaving the window/document
     const target = e.target as HTMLElement;
     const relatedTarget = e.relatedTarget as HTMLElement;
 
-    // If relatedTarget is null, we're leaving the window
-    // If target is the document or body, we're at the top level
     if (
       !relatedTarget || target === document.documentElement ||
       target === document.body
     ) {
       isDragging.value = false;
+      clearDragTimeout();
     }
   };
 
