@@ -12,8 +12,8 @@ export default function FileSelectWrapper() {
 
   return (
     <>
-      <FeaturesList />
       <FileSelect />
+      <FeaturesList />
     </>
   );
 }

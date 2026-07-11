@@ -71,10 +71,11 @@ export default define.page(async function Home() {
                 Dinkum Save Editor
               </h1>
               <p class="text-lg font-mclaren">
-                Save editor for Dinkum v1.0 and later
+                Works with the current version of Dinkum (v1.0 and later)
               </p>
               <p class="text-md font-mclaren">
-                Encrypted (.es3) or decrypted (.json) save files
+                Everything happens in your browser. Your saves never leave your
+                computer.
               </p>
             </div>
 

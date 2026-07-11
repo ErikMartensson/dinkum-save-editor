@@ -246,7 +246,8 @@ export default function SaveFileLocation() {
             slot. The main save file is{" "}
             <code class="px-1 rounded text-xs font-mono">
               Player.es3
-            </code>.
+            </code>. To back up a save, copy the whole slot folder somewhere
+            safe.
           </p>
         </div>
       </div>

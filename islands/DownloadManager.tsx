@@ -265,8 +265,8 @@ export default function DownloadManager() {
         <div class="mt-4 p-4 bg-dinkum-orange/30 border-2 border-dinkum-accent rounded-lg">
           <p class="text-sm text-dinkum-tertiary font-mclaren">
             <strong>⚠️ Important:</strong>{" "}
-            Always backup your original save files before using edited versions
-            in the game!
+            Back up your saves before replacing them: copy the whole Slot folder
+            somewhere safe.
           </p>
         </div>
       </div>
