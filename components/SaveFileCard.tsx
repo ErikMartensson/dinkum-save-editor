@@ -21,19 +21,19 @@ export default function SaveFileCard({
   const dateInfo = saveData.date.value;
 
   return (
-    <div class="bg-dinkum-gray rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
+    <div class="rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
       <div class="flex items-start justify-between mb-4">
         <div>
           <h3 class="text-lg font-bold text-dinkum-tertiary font-mclaren">
             {filename}
           </h3>
-          <p class="text-sm text-dinkum-accent font-mclaren">
+          <p class="text-sm font-mclaren">
             {formatFileSize(fileSize)}
           </p>
         </div>
         <div class="flex items-center gap-2">
           <svg
-            class="w-5 h-5 text-dinkum-secondary"
+            class="w-5 h-5"
             fill="currentColor"
             viewBox="0 0 20 20"
           >
@@ -43,7 +43,7 @@ export default function SaveFileCard({
               clip-rule="evenodd"
             />
           </svg>
-          <span class="text-sm font-medium text-dinkum-secondary font-mclaren">
+          <span class="text-sm font-medium font-mclaren">
             Loaded
           </span>
         </div>
@@ -51,37 +51,37 @@ export default function SaveFileCard({
 
       <div class="grid grid-cols-2 gap-4 text-sm">
         <div>
-          <p class="text-dinkum-accent font-mclaren">Player</p>
+          <p class="font-mclaren">Player</p>
           <p class="font-medium text-dinkum-tertiary font-mclaren">
             {playerInfo.playerName}
           </p>
         </div>
         <div>
-          <p class="text-dinkum-accent font-mclaren">Island</p>
+          <p class="font-mclaren">Island</p>
           <p class="font-medium text-dinkum-tertiary font-mclaren">
             {playerInfo.islandName}
           </p>
         </div>
         <div>
-          <p class="text-dinkum-accent font-mclaren">Money</p>
+          <p class="font-mclaren">Money</p>
           <p class="font-medium text-dinkum-tertiary font-mclaren">
             {playerInfo.money.toLocaleString()}
           </p>
         </div>
         <div>
-          <p class="text-dinkum-accent font-mclaren">Bank</p>
+          <p class="font-mclaren">Bank</p>
           <p class="font-medium text-dinkum-tertiary font-mclaren">
             {playerInfo.bankBalance.toLocaleString()}
           </p>
         </div>
         <div>
-          <p class="text-dinkum-accent font-mclaren">Game Date</p>
+          <p class="font-mclaren">Game Date</p>
           <p class="font-medium text-dinkum-tertiary font-mclaren">
             Year {dateInfo.year}, Day {dateInfo.day}
           </p>
         </div>
         <div>
-          <p class="text-dinkum-accent font-mclaren">Creative Mode</p>
+          <p class="font-mclaren">Creative Mode</p>
           <p class="font-medium text-dinkum-tertiary font-mclaren">
             {playerInfo.isCreative ? "Yes" : "No"}
           </p>

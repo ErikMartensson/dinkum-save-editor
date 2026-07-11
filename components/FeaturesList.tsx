@@ -39,7 +39,7 @@ export default function FeaturesList() {
   ];
 
   return (
-    <div class="bg-dinkum-gray mt-4">
+    <div class="mt-4">
       <h2 class="text-2xl font-bold text-dinkum-tertiary mb-4 font-mclaren text-center">
         ✨ What Can You Do? ✨
       </h2>
@@ -47,13 +47,13 @@ export default function FeaturesList() {
         {features.map((feature) => (
           <div
             key={feature.title}
-            class={`bg-dinkum-primary/10 rounded-lg p-4 border-2 ${feature.borderStyle} hover:scale-105 transform transition-all hover:shadow-lg`}
+            class={`rounded-lg p-4 border-2 ${feature.borderStyle} hover:scale-105 transform transition-all hover:shadow-lg`}
           >
             <div class="text-4xl mb-2 text-center">{feature.emoji}</div>
             <h3 class="text-lg font-bold text-dinkum-tertiary font-mclaren text-center mb-1">
               {feature.title}
             </h3>
-            <p class="text-sm text-dinkum-accent font-mclaren text-center">
+            <p class="text-sm font-mclaren text-center">
               {feature.desc}
             </p>
           </div>

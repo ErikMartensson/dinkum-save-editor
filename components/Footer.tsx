@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer class="bg-dinkum-gray footer-border mt-12">
+    <footer class="footer-border mt-12">
       <div class="container mx-auto px-4 py-8">
         <div class="max-w-4xl mx-auto">
           {/* Main Footer Content */}
@@ -16,15 +16,15 @@ export function Footer() {
               </p>
 
               {/* Encryption Password Callout */}
-              <div class="bg-dinkum-primary/20 border-2 border-dinkum-accent rounded-lg p-4 mb-4">
-                <h4 class="text-sm font-bold text-dinkum-accent font-mclaren mb-2">
+              <div class="border-2 border-dinkum-accent rounded-lg p-4 mb-4">
+                <h4 class="text-sm font-bold font-mclaren mb-2">
                   🐨 Fun Trivia
                 </h4>
                 <p class="text-sm text-dinkum-tertiary font-mclaren mb-2">
                   Dinkum save files use AES encryption with the password:
                 </p>
-                <div class="bg-dinkum-gray/50 border border-dinkum-accent/30 rounded px-3 py-2 mb-2">
-                  <code class="text-base font-mono text-dinkum-accent font-bold">
+                <div class="border border-dinkum-tertiary rounded px-3 py-2 mb-2">
+                  <code class="text-base font-mono font-bold">
                     jamesbendon
                   </code>
                 </div>
@@ -33,7 +33,7 @@ export function Footer() {
                 </p>
               </div>
 
-              <p class="text-sm text-dinkum-accent font-bold font-mclaren">
+              <p class="text-sm font-bold font-mclaren">
                 ⚠️ Always backup your original save files before editing!
               </p>
             </div>
@@ -51,7 +51,7 @@ export function Footer() {
                       href="https://github.com/ErikMartensson/dinkum-save-editor"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-dinkum-accent hover:text-dinkum-orange underline font-semibold inline-flex items-center gap-1"
+                      class="hover:text-dinkum-orange underline font-semibold inline-flex items-center gap-1"
                     >
                       <svg
                         class="w-4 h-4"
@@ -73,7 +73,7 @@ export function Footer() {
                       href="https://github.com/kieransouth/dinkum-save-editor"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-dinkum-accent hover:text-dinkum-orange underline inline-flex items-center gap-1"
+                      class="hover:text-dinkum-orange underline inline-flex items-center gap-1"
                     >
                       <svg
                         class="w-4 h-4"
@@ -85,7 +85,7 @@ export function Footer() {
                       kieransouth/dinkum-save-editor
                     </a>
                   </div>
-                  <span class="text-xs text-dinkum-accent ml-4">
+                  <span class="text-xs ml-4">
                     (MIT License)
                   </span>
                 </li>
@@ -98,7 +98,7 @@ export function Footer() {
                       href="https://github.com/alextusinean/es3-editor"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-dinkum-accent hover:text-dinkum-orange underline inline-flex items-center gap-1"
+                      class="hover:text-dinkum-orange underline inline-flex items-center gap-1"
                     >
                       <svg
                         class="w-4 h-4"
@@ -110,7 +110,7 @@ export function Footer() {
                       alextusinean/es3-editor
                     </a>
                   </div>
-                  <span class="text-xs text-dinkum-accent ml-4">
+                  <span class="text-xs ml-4">
                     (GPL-3.0 License)
                   </span>
                 </li>
@@ -121,12 +121,12 @@ export function Footer() {
                       href="https://fonts.google.com/specimen/McLaren"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-dinkum-accent hover:text-dinkum-orange underline"
+                      class="hover:text-dinkum-orange underline"
                     >
                       Google Fonts
                     </a>
                   </div>
-                  <span class="text-xs text-dinkum-accent ml-4">
+                  <span class="text-xs ml-4">
                     (OFL License)
                   </span>
                 </li>
@@ -139,7 +139,7 @@ export function Footer() {
             <p class="text-sm text-dinkum-tertiary font-mclaren text-center">
               Made with 💛 for the Dinkum community
             </p>
-            <div class="text-xs text-dinkum-accent font-mclaren text-center space-y-1">
+            <div class="text-xs font-mclaren text-center space-y-1">
               <p>
                 This is an unofficial fan-made tool. Dinkum is a trademark of
                 James Bendon.

@@ -184,7 +184,7 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
         <div class="fixed inset-0 z-50 bg-dinkum-secondary/40 backdrop-blur-sm flex items-center justify-center pointer-events-none">
           <div class="bg-dinkum-beige border-4 border-dashed border-dinkum-accent rounded-2xl p-12 shadow-2xl">
             <svg
-              class="mx-auto h-24 w-24 text-dinkum-accent mb-4"
+              class="mx-auto h-24 w-24 mb-4"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 48 48"
@@ -200,7 +200,7 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
             <p class="text-3xl font-bold text-dinkum-tertiary font-mclaren text-center">
               Drop your save file here
             </p>
-            <p class="text-lg text-dinkum-accent font-mclaren text-center mt-2">
+            <p class="text-lg font-mclaren text-center mt-2">
               .es3 or .json files
             </p>
           </div>

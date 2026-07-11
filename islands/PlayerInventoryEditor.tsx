@@ -121,7 +121,7 @@ export default function PlayerInventoryEditor() {
   };
 
   return (
-    <div class="bg-dinkum-gray rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
+    <div class="rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
       <h2 class="text-xl font-bold text-dinkum-tertiary font-mclaren mb-4">
         Player Inventory & Stashes
       </h2>
@@ -137,7 +137,7 @@ export default function PlayerInventoryEditor() {
         >
           <div class="flex items-center gap-3">
             <svg
-              class="w-5 h-5 text-dinkum-accent"
+              class="w-5 h-5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -153,13 +153,13 @@ export default function PlayerInventoryEditor() {
               <p class="font-medium text-dinkum-tertiary font-mclaren">
                 Player Inventory
               </p>
-              <p class="text-xs text-dinkum-accent font-mclaren">
+              <p class="text-xs font-mclaren">
                 {getItemCount(playerInfo.itemsInInvSlots)} items &bull;{" "}
                 {playerInfo.itemsInInvSlots.length} slots
               </p>
             </div>
           </div>
-          <span class="text-dinkum-secondary text-sm">
+          <span class="text-sm">
             {inventoryExpanded.value ? "\u25BC" : "\u25B6"}
           </span>
         </div>
@@ -168,7 +168,7 @@ export default function PlayerInventoryEditor() {
           <div class="p-3 pt-0">
             <div class="border-t border-dinkum-primary pt-3">
               <div class="flex items-center justify-between mb-2">
-                <p class="text-xs text-dinkum-accent font-mclaren">
+                <p class="text-xs font-mclaren">
                   Click a slot to edit
                 </p>
                 {getItemCount(playerInfo.itemsInInvSlots) > 0 && (
@@ -185,8 +185,8 @@ export default function PlayerInventoryEditor() {
                 )}
               </div>
 
-              <div class="bg-dinkum-secondary/10 border border-dinkum-secondary/30 rounded-lg p-2">
-                <p class="text-[10px] text-dinkum-secondary font-mclaren font-medium mb-1">
+              <div class="border border-dinkum-tertiary rounded-lg p-2">
+                <p class="text-[10px] font-mclaren font-medium mb-1">
                   Toolbar ({toolbarSize} slots)
                 </p>
                 <ItemGrid
@@ -202,7 +202,7 @@ export default function PlayerInventoryEditor() {
                 />
               </div>
 
-              <p class="text-[10px] text-dinkum-accent font-mclaren mb-1 mt-3">
+              <p class="text-[10px] font-mclaren mb-1 mt-3">
                 Backpack ({backpackItemIds.length} slots)
               </p>
               <ItemGrid
@@ -235,7 +235,7 @@ export default function PlayerInventoryEditor() {
             <p class="text-sm font-medium text-dinkum-tertiary font-mclaren">
               Stashes ({stashKeys.length})
             </p>
-            <span class="text-dinkum-secondary text-sm">
+            <span class="text-sm">
               {stashesExpanded.value ? "\u25BC" : "\u25B6"}
             </span>
           </div>
@@ -306,7 +306,7 @@ function StashSection(
       >
         <div class="flex items-center gap-3">
           <svg
-            class="w-5 h-5 text-dinkum-accent"
+            class="w-5 h-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -322,14 +322,14 @@ function StashSection(
             <p class="font-medium text-dinkum-tertiary font-mclaren">
               Stash #{stashIndex + 1}
             </p>
-            <p class="text-xs text-dinkum-accent font-mclaren">
+            <p class="text-xs font-mclaren">
               {getItemCount(stash.itemId)} items &bull; {stash.itemId.length}
               {" "}
               slots
             </p>
           </div>
         </div>
-        <span class="text-dinkum-secondary text-sm">
+        <span class="text-sm">
           {isExpanded.value ? "\u25BC" : "\u25B6"}
         </span>
       </div>
@@ -338,7 +338,7 @@ function StashSection(
         <div class="p-3 pt-0">
           <div class="border-t border-dinkum-primary pt-3">
             <div class="flex items-center justify-between mb-2">
-              <p class="text-xs text-dinkum-accent font-mclaren">
+              <p class="text-xs font-mclaren">
                 Click a slot to edit
               </p>
               {getItemCount(stash.itemId) > 0 && (

@@ -117,14 +117,14 @@ function JsonNode(
           <button
             type="button"
             onClick={handleSave}
-            class="px-2 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded text-xs hover:bg-dinkum-accent transition-colors"
+            class="px-2 py-1 bg-dinkum-tertiary rounded text-xs hover:bg-dinkum-accent transition-colors"
           >
             Save
           </button>
           <button
             type="button"
             onClick={handleCancel}
-            class="px-2 py-1 bg-dinkum-gray text-dinkum-tertiary rounded text-xs hover:bg-dinkum-accent hover:text-dinkum-secondary transition-colors"
+            class="px-2 py-1 rounded text-xs hover:bg-dinkum-accent hover:text-dinkum-secondary transition-colors"
           >
             Cancel
           </button>
@@ -162,7 +162,7 @@ function JsonNode(
     const keyName = path.split(".").pop() || "";
     return (
       <div class="ml-4">
-        <span class="text-dinkum-accent font-mono">
+        <span class="font-mono">
           {isMatchingPath ? highlightText(keyName) : keyName}:
         </span>
         {renderPrimitive()}
@@ -183,11 +183,11 @@ function JsonNode(
         <button
           type="button"
           onClick={() => isExpanded.value = !isExpanded.value}
-          class="text-dinkum-secondary hover:text-dinkum-orange transition-colors"
+          class="hover:text-dinkum-orange transition-colors"
         >
           {isExpanded.value ? "▼" : "▶"}
         </button>
-        <span class="text-dinkum-accent font-mono font-bold">
+        <span class="font-mono font-bold">
           {isMatchingPath ? highlightText(keyName) : keyName}
         </span>
         <span class="text-dinkum-tertiary text-sm font-mono">
@@ -346,9 +346,9 @@ export default function AdvancedEditor() {
           <h2 class="text-2xl font-bold text-dinkum-tertiary font-mclaren">
             Player Advanced Editor
           </h2>
-          <div class="flex items-center gap-2 bg-dinkum-beige px-3 py-1 rounded-md border border-dinkum-primary">
+          <div class="flex items-center gap-2 px-3 py-1 rounded-md border border-dinkum-primary">
             <svg
-              class="w-4 h-4 text-dinkum-accent"
+              class="w-4 h-4"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -369,14 +369,14 @@ export default function AdvancedEditor() {
           <button
             type="button"
             onClick={handleExpandAll}
-            class="px-3 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded hover:bg-dinkum-accent transition-colors text-sm font-mclaren"
+            class="px-3 py-1 bg-dinkum-tertiary rounded hover:bg-dinkum-accent transition-colors text-sm font-mclaren"
           >
             Expand All
           </button>
           <button
             type="button"
             onClick={handleCollapseAll}
-            class="px-3 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded hover:bg-dinkum-accent transition-colors text-sm font-mclaren"
+            class="px-3 py-1 bg-dinkum-tertiary rounded hover:bg-dinkum-accent transition-colors text-sm font-mclaren"
           >
             Collapse All
           </button>
@@ -384,7 +384,7 @@ export default function AdvancedEditor() {
       </div>
 
       <div class="mb-4">
-        <p class="text-sm text-dinkum-accent mb-2 font-mclaren">
+        <p class="text-sm mb-2 font-mclaren">
           ⚠️ Advanced users only! Click any value to edit it directly.
         </p>
         <div class="relative">
@@ -408,7 +408,7 @@ export default function AdvancedEditor() {
                   <button
                     type="button"
                     onClick={handlePreviousMatch}
-                    class="px-2 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded text-xs hover:bg-dinkum-accent transition-colors"
+                    class="px-2 py-1 bg-dinkum-tertiary rounded text-xs hover:bg-dinkum-accent transition-colors"
                     title="Previous match (Shift+Enter)"
                   >
                     ↑
@@ -416,7 +416,7 @@ export default function AdvancedEditor() {
                   <button
                     type="button"
                     onClick={handleNextMatch}
-                    class="px-2 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded text-xs hover:bg-dinkum-accent transition-colors"
+                    class="px-2 py-1 bg-dinkum-tertiary rounded text-xs hover:bg-dinkum-accent transition-colors"
                     title="Next match (Enter)"
                   >
                     ↓
@@ -432,7 +432,7 @@ export default function AdvancedEditor() {
               <button
                 type="button"
                 onClick={handleClearSearch}
-                class="px-2 py-1 bg-dinkum-gray text-dinkum-tertiary rounded text-xs hover:bg-dinkum-accent hover:text-dinkum-secondary transition-colors"
+                class="px-2 py-1 rounded text-xs hover:bg-dinkum-accent hover:text-dinkum-secondary transition-colors"
               >
                 Clear
               </button>
@@ -450,7 +450,7 @@ export default function AdvancedEditor() {
         </div>
       )}
 
-      <div class="bg-dinkum-beige rounded-lg p-4 max-h-[600px] overflow-y-auto font-mono text-sm">
+      <div class="rounded-lg p-4 max-h-[600px] overflow-y-auto font-mono text-sm">
         <JsonNode
           data={saveData.value}
           path="root"

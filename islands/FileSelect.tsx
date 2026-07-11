@@ -148,7 +148,7 @@ export default function FileSelect() {
         class={`border-4 border-dashed rounded-lg p-8 text-center transition-all duration-200 ${
           isDragging.value
             ? "border-dinkum-secondary bg-dinkum-secondary/30 scale-105 shadow-lg"
-            : "border-dinkum-accent bg-dinkum-gray hover:border-dinkum-orange"
+            : "border-dinkum-accent hover:border-dinkum-orange"
         } ${isProcessing.value ? "opacity-50 pointer-events-none" : ""}`}
         onDrop={handleDrop}
         onDragOver={handleDragOver}
@@ -167,7 +167,7 @@ export default function FileSelect() {
           : (
             <>
               <svg
-                class="mx-auto h-12 w-12 text-dinkum-orange"
+                class="mx-auto h-12 w-12"
                 stroke="currentColor"
                 fill="none"
                 viewBox="0 0 48 48"
@@ -183,7 +183,7 @@ export default function FileSelect() {
               <div class="mt-4">
                 <label
                   for="file-select"
-                  class="cursor-pointer rounded-md font-bold text-dinkum-secondary hover:text-dinkum-orange hover:underline focus-within:outline-none font-mclaren text-lg transition-colors"
+                  class="cursor-pointer rounded-md font-bold hover:text-dinkum-orange hover:underline focus-within:outline-none font-mclaren text-lg transition-colors"
                 >
                   <span>Select a file</span>
                   <input
@@ -200,7 +200,7 @@ export default function FileSelect() {
                   or drag and drop
                 </p>
               </div>
-              <p class="text-xs text-dinkum-accent mt-2 font-mclaren">
+              <p class="text-xs mt-2 font-mclaren">
                 .es3, .es3.bac, or .json files - Select Player and/or Container
                 saves
               </p>

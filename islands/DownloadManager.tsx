@@ -83,7 +83,7 @@ export default function DownloadManager() {
   }
 
   return (
-    <div class="bg-dinkum-gray rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
+    <div class="rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
       <h2 class="text-xl font-bold mb-4 text-dinkum-tertiary font-mclaren">
         Download
       </h2>
@@ -99,7 +99,7 @@ export default function DownloadManager() {
               <button
                 type="button"
                 onClick={() => downloadJSON(saveData.value, filename.value!)}
-                class="w-full px-4 py-2 bg-dinkum-tertiary text-dinkum-secondary rounded-lg font-medium font-mclaren hover:bg-dinkum-accent hover:scale-101 transition-all flex items-center justify-center gap-2 border-2 border-dinkum-primary shadow-md hover:shadow-lg text-sm"
+                class="w-full px-4 py-2 bg-dinkum-tertiary rounded-lg font-medium font-mclaren hover:bg-dinkum-accent hover:scale-101 transition-all flex items-center justify-center gap-2 border-2 border-dinkum-primary shadow-md hover:shadow-lg text-sm"
               >
                 <svg
                   class="w-4 h-4"
@@ -124,8 +124,8 @@ export default function DownloadManager() {
                 disabled={isEncrypting.value}
                 class={`w-full px-4 py-2 rounded-lg font-medium font-mclaren transition-all flex items-center justify-center gap-2 border-2 text-sm ${
                   isEncrypting.value
-                    ? "bg-dinkum-gray text-dinkum-accent border-dinkum-primary cursor-not-allowed opacity-50"
-                    : "bg-dinkum-tertiary text-dinkum-secondary border-dinkum-primary hover:bg-dinkum-accent hover:scale-101 shadow-md hover:shadow-lg"
+                    ? "border-dinkum-primary cursor-not-allowed opacity-50"
+                    : "bg-dinkum-tertiary border-dinkum-primary hover:bg-dinkum-accent hover:scale-101 shadow-md hover:shadow-lg"
                 }`}
               >
                 {isEncrypting.value
@@ -170,7 +170,7 @@ export default function DownloadManager() {
                 type="button"
                 onClick={() =>
                   downloadJSON(containerData.value, containerFilename.value!)}
-                class="w-full px-4 py-2 bg-dinkum-tertiary text-dinkum-secondary rounded-lg font-medium font-mclaren hover:bg-dinkum-accent hover:scale-101 transition-all flex items-center justify-center gap-2 border-2 border-dinkum-primary shadow-md hover:shadow-lg text-sm"
+                class="w-full px-4 py-2 bg-dinkum-tertiary rounded-lg font-medium font-mclaren hover:bg-dinkum-accent hover:scale-101 transition-all flex items-center justify-center gap-2 border-2 border-dinkum-primary shadow-md hover:shadow-lg text-sm"
               >
                 <svg
                   class="w-4 h-4"
@@ -198,8 +198,8 @@ export default function DownloadManager() {
                 disabled={isEncrypting.value}
                 class={`w-full px-4 py-2 rounded-lg font-medium font-mclaren transition-all flex items-center justify-center gap-2 border-2 text-sm ${
                   isEncrypting.value
-                    ? "bg-dinkum-gray text-dinkum-accent border-dinkum-primary cursor-not-allowed opacity-50"
-                    : "bg-dinkum-tertiary text-dinkum-secondary border-dinkum-primary hover:bg-dinkum-accent hover:scale-101 shadow-md hover:shadow-lg"
+                    ? "border-dinkum-primary cursor-not-allowed opacity-50"
+                    : "bg-dinkum-tertiary border-dinkum-primary hover:bg-dinkum-accent hover:scale-101 shadow-md hover:shadow-lg"
                 }`}
               >
                 {isEncrypting.value
@@ -241,8 +241,8 @@ export default function DownloadManager() {
             disabled={isEncrypting.value}
             class={`w-full px-4 py-3 rounded-lg font-bold font-mclaren transition-all flex items-center justify-center gap-2 border-2 ${
               isEncrypting.value
-                ? "bg-dinkum-gray text-dinkum-accent border-dinkum-primary cursor-not-allowed opacity-50"
-                : "bg-dinkum-tertiary text-dinkum-secondary border-dinkum-primary hover:bg-dinkum-accent hover:scale-101 shadow-md hover:shadow-lg"
+                ? "border-dinkum-primary cursor-not-allowed opacity-50"
+                : "bg-dinkum-tertiary border-dinkum-primary hover:bg-dinkum-accent hover:scale-101 shadow-md hover:shadow-lg"
             }`}
           >
             <svg

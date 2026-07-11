@@ -59,7 +59,7 @@ export default function SaveFileLocation() {
         class={`shrink-0 px-3 py-1 rounded text-xs font-mclaren transition-all duration-300 ${
           isCopied
             ? "bg-green-500 text-white scale-105"
-            : "bg-dinkum-tertiary text-dinkum-secondary hover:bg-dinkum-accent"
+            : "bg-dinkum-tertiary hover:bg-dinkum-accent"
         }`}
         title="Copy to clipboard"
       >
@@ -113,7 +113,7 @@ export default function SaveFileLocation() {
         </div>
       ))}
 
-      <div class="bg-dinkum-gray rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
+      <div class="rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
         <h2 class="text-2xl font-bold text-dinkum-tertiary font-mclaren mb-4">
           📁 Finding Your Save Files
         </h2>
@@ -122,7 +122,7 @@ export default function SaveFileLocation() {
         <div class="mb-6">
           <div class="flex items-center gap-2 mb-3">
             <svg
-              class="w-6 h-6 text-dinkum-accent"
+              class="w-6 h-6"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -142,7 +142,7 @@ export default function SaveFileLocation() {
             <ol class="list-decimal list-inside space-y-2 text-sm text-dinkum-tertiary font-mclaren mb-4">
               <li>
                 Press{" "}
-                <kbd class="px-2 py-1 bg-dinkum-gray rounded border border-dinkum-primary text-xs font-mono">
+                <kbd class="px-2 py-1 rounded border border-dinkum-primary text-xs font-mono">
                   Windows + R
                 </kbd>{" "}
                 on your keyboard
@@ -153,16 +153,16 @@ export default function SaveFileLocation() {
               <li>Press Enter or click OK</li>
               <li>
                 Look for folders named{" "}
-                <code class="px-1 bg-dinkum-gray rounded text-xs font-mono">
+                <code class="px-1 rounded text-xs font-mono">
                   Slot0
                 </code>,{" "}
-                <code class="px-1 bg-dinkum-gray rounded text-xs font-mono">
+                <code class="px-1 rounded text-xs font-mono">
                   Slot1
                 </code>, etc.
               </li>
             </ol>
 
-            <div class="bg-dinkum-gray border-2 border-dinkum-border-primary rounded-lg p-3 mb-2">
+            <div class="border-2 border-dinkum-tertiary rounded-lg p-3 mb-2">
               <div class="flex items-center justify-between gap-2">
                 <code class="text-sm font-mono text-dinkum-tertiary break-all select-all">
                   %USERPROFILE%\AppData\LocalLow\James Bendon\Dinkum\
@@ -174,7 +174,7 @@ export default function SaveFileLocation() {
               </div>
             </div>
 
-            <p class="text-xs text-dinkum-accent font-mclaren italic">
+            <p class="text-xs font-mclaren italic">
               💡 Tip: You can also navigate manually by showing hidden folders
               in File Explorer (View → Show → Hidden items)
             </p>
@@ -185,7 +185,7 @@ export default function SaveFileLocation() {
         <div>
           <div class="flex items-center gap-2 mb-3">
             <svg
-              class="w-6 h-6 text-dinkum-accent"
+              class="w-6 h-6"
               fill="currentColor"
               viewBox="0 0 37 50"
               xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +207,7 @@ export default function SaveFileLocation() {
               Save files are in the Proton compatibility folder:
             </p>
 
-            <div class="bg-dinkum-gray border-2 border-dinkum-border-primary rounded-lg p-3 mb-2">
+            <div class="border-2 border-dinkum-tertiary rounded-lg p-3 mb-2">
               <div class="flex items-center justify-between gap-2">
                 <code class="text-xs font-mono text-dinkum-tertiary break-all select-all">
                   ~/.local/share/Steam/steamapps/compatdata/1062520/pfx/drive_c/users/steamuser/AppData/LocalLow/James
@@ -220,7 +220,7 @@ export default function SaveFileLocation() {
               </div>
             </div>
 
-            <p class="text-xs text-dinkum-accent font-mclaren italic">
+            <p class="text-xs font-mclaren italic">
               💡 On Steam Deck, access via Desktop Mode file manager. The ~
               represents your home directory.
             </p>
@@ -228,23 +228,23 @@ export default function SaveFileLocation() {
         </div>
 
         {/* Save Slot Info */}
-        <div class="mt-6 bg-dinkum-primary/20 border-2 border-dinkum-accent rounded-lg p-4">
-          <h4 class="text-sm font-bold text-dinkum-accent font-mclaren mb-2">
+        <div class="mt-6 border-2 border-dinkum-accent rounded-lg p-4">
+          <h4 class="text-sm font-bold font-mclaren mb-2">
             📂 About Save Slots
           </h4>
           <p class="text-sm text-dinkum-tertiary font-mclaren">
             Inside the Dinkum folder, you'll find folders named{" "}
-            <code class="px-1 bg-dinkum-gray rounded text-xs font-mono">
+            <code class="px-1 rounded text-xs font-mono">
               Slot0
             </code>,{" "}
-            <code class="px-1 bg-dinkum-gray rounded text-xs font-mono">
+            <code class="px-1 rounded text-xs font-mono">
               Slot1
             </code>,{" "}
-            <code class="px-1 bg-dinkum-gray rounded text-xs font-mono">
+            <code class="px-1 rounded text-xs font-mono">
               Slot2
             </code>, etc. Each folder contains the save files for one game save
             slot. The main save file is{" "}
-            <code class="px-1 bg-dinkum-gray rounded text-xs font-mono">
+            <code class="px-1 rounded text-xs font-mono">
               Player.es3
             </code>.
           </p>

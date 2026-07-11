@@ -70,10 +70,10 @@ export default define.page(async function Home() {
               <h1 class="text-5xl font-bold text-dinkum-tertiary mb-2 font-mclaren">
                 Dinkum Save Editor
               </h1>
-              <p class="text-dinkum-accent text-lg font-mclaren">
+              <p class="text-lg font-mclaren">
                 Save editor for Dinkum v1.0 and later
               </p>
-              <p class="text-dinkum-accent text-md font-mclaren">
+              <p class="text-md font-mclaren">
                 Encrypted (.es3) or decrypted (.json) save files
               </p>
             </div>
@@ -97,13 +97,13 @@ export default define.page(async function Home() {
 
               {/* Container File Info */}
               {containerData.value && containerFilename.value && (
-                <div class="bg-dinkum-gray rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
+                <div class="rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
                   <div class="flex items-start justify-between mb-4">
                     <div>
                       <h3 class="text-lg font-bold text-dinkum-tertiary font-mclaren">
                         {containerFilename.value}
                       </h3>
-                      <p class="text-sm text-dinkum-accent font-mclaren">
+                      <p class="text-sm font-mclaren">
                         {containerFileSize.value < 1024
                           ? `${containerFileSize.value} B`
                           : `${(containerFileSize.value / 1024).toFixed(1)} KB`}
@@ -111,7 +111,7 @@ export default define.page(async function Home() {
                     </div>
                     <div class="flex items-center gap-2">
                       <svg
-                        class="w-5 h-5 text-dinkum-secondary"
+                        class="w-5 h-5"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -121,7 +121,7 @@ export default define.page(async function Home() {
                           clip-rule="evenodd"
                         />
                       </svg>
-                      <span class="text-sm font-medium text-dinkum-secondary font-mclaren">
+                      <span class="text-sm font-medium font-mclaren">
                         Loaded
                       </span>
                     </div>

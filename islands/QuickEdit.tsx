@@ -116,14 +116,14 @@ export default function QuickEdit() {
   }
 
   return (
-    <div class="bg-dinkum-gray rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
+    <div class="rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-xl font-bold text-dinkum-tertiary font-mclaren">
           Player Quick Edit
         </h2>
         <div class="flex items-center gap-2 bg-dinkum-beige px-3 py-1 rounded-md border border-dinkum-primary">
           <svg
-            class="w-4 h-4 text-dinkum-accent"
+            class="w-4 h-4"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -146,7 +146,7 @@ export default function QuickEdit() {
           <div>
             <label
               for="playerName"
-              class="block text-sm font-medium text-dinkum-accent mb-1 font-mclaren"
+              class="block text-sm font-medium mb-1 font-mclaren"
             >
               Player Name
             </label>
@@ -162,7 +162,7 @@ export default function QuickEdit() {
           <div>
             <label
               for="islandName"
-              class="block text-sm font-medium text-dinkum-accent mb-1 font-mclaren"
+              class="block text-sm font-medium mb-1 font-mclaren"
             >
               Island Name
             </label>
@@ -180,7 +180,7 @@ export default function QuickEdit() {
           <div>
             <label
               for="money"
-              class="block text-sm font-medium text-dinkum-accent mb-1 font-mclaren"
+              class="block text-sm font-medium mb-1 font-mclaren"
             >
               Money (In Hand)
             </label>
@@ -196,7 +196,7 @@ export default function QuickEdit() {
           <div>
             <label
               for="bankBalance"
-              class="block text-sm font-medium text-dinkum-accent mb-1 font-mclaren"
+              class="block text-sm font-medium mb-1 font-mclaren"
             >
               Bank Balance
             </label>
@@ -214,7 +214,7 @@ export default function QuickEdit() {
           <div>
             <label
               for="health"
-              class="block text-sm font-medium text-dinkum-accent mb-1 font-mclaren"
+              class="block text-sm font-medium mb-1 font-mclaren"
             >
               Health
             </label>
@@ -230,7 +230,7 @@ export default function QuickEdit() {
           <div>
             <label
               for="healthMax"
-              class="block text-sm font-medium text-dinkum-accent mb-1 font-mclaren"
+              class="block text-sm font-medium mb-1 font-mclaren"
             >
               Max Health
             </label>
@@ -246,7 +246,7 @@ export default function QuickEdit() {
           <div>
             <label
               for="stamina"
-              class="block text-sm font-medium text-dinkum-accent mb-1 font-mclaren"
+              class="block text-sm font-medium mb-1 font-mclaren"
             >
               Stamina
             </label>
@@ -262,7 +262,7 @@ export default function QuickEdit() {
           <div>
             <label
               for="staminaMax"
-              class="block text-sm font-medium text-dinkum-accent mb-1 font-mclaren"
+              class="block text-sm font-medium mb-1 font-mclaren"
             >
               Max Stamina
             </label>
@@ -279,7 +279,7 @@ export default function QuickEdit() {
         <div>
           <label
             for="permitPoints"
-            class="block text-sm font-medium text-dinkum-accent mb-1 font-mclaren"
+            class="block text-sm font-medium mb-1 font-mclaren"
           >
             Permit Points
           </label>
@@ -299,7 +299,7 @@ export default function QuickEdit() {
               id="isCreative"
               defaultChecked={fields.value.isCreative}
               onChange={handleChange}
-              class="h-4 w-4 text-dinkum-secondary focus:ring-dinkum-secondary border-dinkum-primary rounded"
+              class="h-4 w-4 focus:ring-dinkum-secondary border-dinkum-primary rounded"
             />
             <label
               for="isCreative"
@@ -316,7 +316,7 @@ export default function QuickEdit() {
                 id="hasBeenCreative"
                 defaultChecked={fields.value.hasBeenCreative}
                 onChange={handleChange}
-                class="h-4 w-4 text-dinkum-secondary focus:ring-dinkum-secondary border-dinkum-primary rounded"
+                class="h-4 w-4 focus:ring-dinkum-secondary border-dinkum-primary rounded"
               />
               <label
                 for="hasBeenCreative"
@@ -325,7 +325,7 @@ export default function QuickEdit() {
                 Steam Achievements Blocked
               </label>
             </div>
-            <p class="text-xs text-dinkum-accent font-mclaren mt-1 ml-6">
+            <p class="text-xs font-mclaren mt-1 ml-6">
               Using creative mode sets this flag, which permanently blocks Steam
               achievements for this save. Uncheck it to re-enable them.
             </p>
@@ -339,8 +339,8 @@ export default function QuickEdit() {
             disabled={!isDirty.value}
             class={`w-full px-4 py-2 rounded-lg font-medium font-mclaren transition-all border-2 ${
               isDirty.value
-                ? "bg-dinkum-tertiary text-dinkum-secondary border-dinkum-primary hover:bg-dinkum-accent hover:scale-101 shadow-md hover:shadow-lg"
-                : "bg-dinkum-gray text-dinkum-accent border-dinkum-primary cursor-not-allowed opacity-50"
+                ? "bg-dinkum-tertiary border-dinkum-primary hover:bg-dinkum-accent hover:scale-101 shadow-md hover:shadow-lg"
+                : "border-dinkum-primary cursor-not-allowed opacity-50"
             }`}
           >
             {isDirty.value ? "Save Changes" : "No Changes"}

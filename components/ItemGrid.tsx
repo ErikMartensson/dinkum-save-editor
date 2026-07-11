@@ -74,10 +74,10 @@ export function ItemGrid(
                     : `Slot ${realIndex + 1}: ${getItemName(itemId)} x${stack}`}
                   class={`w-full aspect-square rounded border-2 text-xs font-mclaren flex flex-col items-center justify-center p-0.5 transition-colors ${
                     isEditing
-                      ? "border-dinkum-secondary bg-dinkum-secondary/20 ring-2 ring-dinkum-secondary"
+                      ? "border-dinkum-secondary ring-2 ring-dinkum-secondary"
                       : isEmpty
-                      ? "border-dinkum-primary/40 bg-dinkum-beige/50 text-dinkum-accent/40 hover:border-dinkum-primary hover:bg-dinkum-beige"
-                      : "border-dinkum-primary bg-white text-dinkum-tertiary hover:border-dinkum-secondary hover:bg-dinkum-secondary/10"
+                      ? "bg-dinkum-beige/50 text-dinkum-accent/40 hover:bg-dinkum-beige"
+                      : "border-dinkum-primary bg-white text-dinkum-tertiary hover:bg-dinkum-secondary/10"
                   }`}
                 >
                   {isEmpty
@@ -91,7 +91,7 @@ export function ItemGrid(
                         <span class="text-[10px] leading-tight text-center truncate w-full">
                           {getItemName(itemId)}
                         </span>
-                        <span class="text-[9px] text-dinkum-accent">
+                        <span class="text-[9px]">
                           x{stack}
                         </span>
                       </>
@@ -205,7 +205,7 @@ export function SlotEditor(
     >
       <div class="space-y-2">
         <div>
-          <label class="block text-xs font-medium text-dinkum-accent font-mclaren mb-1">
+          <label class="block text-xs font-medium font-mclaren mb-1">
             Item
           </label>
           <div class="relative">
@@ -235,7 +235,7 @@ export function SlotEditor(
               >
                 {filteredItems.value.length === 0
                   ? (
-                    <div class="px-2 py-1 text-xs text-dinkum-accent font-mclaren">
+                    <div class="px-2 py-1 text-xs font-mclaren">
                       No items found
                     </div>
                   )
@@ -246,12 +246,12 @@ export function SlotEditor(
                       onClick={() => handleSelect(item.id)}
                       class={`w-full text-left px-2 py-1 text-xs font-mclaren transition-colors ${
                         item.id === selectedItemId.value
-                          ? "bg-dinkum-secondary/10 text-dinkum-tertiary"
+                          ? "text-dinkum-tertiary"
                           : "text-dinkum-tertiary hover:bg-dinkum-beige"
                       }`}
                     >
                       <span>{item.name}</span>
-                      <span class="text-dinkum-accent ml-1">#{item.id}</span>
+                      <span class="ml-1">#{item.id}</span>
                     </button>
                   ))}
               </div>
@@ -260,7 +260,7 @@ export function SlotEditor(
         </div>
 
         <div>
-          <label class="block text-xs font-medium text-dinkum-accent font-mclaren mb-1">
+          <label class="block text-xs font-medium font-mclaren mb-1">
             {getMaxDurability(selectedItemId.value) !== null
               ? "Durability"
               : "Quantity"}
@@ -278,7 +278,7 @@ export function SlotEditor(
             class="w-full px-2 py-1 text-xs border-2 border-dinkum-primary rounded bg-dinkum-beige text-dinkum-tertiary font-mclaren focus:outline-none focus:border-dinkum-secondary"
           />
           {getMaxDurability(selectedItemId.value) !== null && (
-            <p class="text-[10px] text-dinkum-accent mt-0.5 font-mclaren">
+            <p class="text-[10px] mt-0.5 font-mclaren">
               Max: {getMaxDurability(selectedItemId.value)}
             </p>
           )}
@@ -288,7 +288,7 @@ export function SlotEditor(
           <button
             type="button"
             onClick={() => onSave(selectedItemId.value, selectedStack.value)}
-            class="flex-1 px-2 py-1 text-xs bg-dinkum-tertiary text-dinkum-secondary rounded hover:bg-dinkum-accent transition-colors font-mclaren"
+            class="flex-1 px-2 py-1 text-xs bg-dinkum-tertiary rounded hover:bg-dinkum-accent transition-colors font-mclaren"
           >
             Set
           </button>
@@ -302,7 +302,7 @@ export function SlotEditor(
           <button
             type="button"
             onClick={onCancel}
-            class="px-2 py-1 text-xs bg-dinkum-beige text-dinkum-accent rounded hover:bg-dinkum-primary/20 transition-colors font-mclaren"
+            class="px-2 py-1 text-xs rounded transition-colors font-mclaren"
           >
             Cancel
           </button>

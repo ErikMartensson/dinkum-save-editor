@@ -99,7 +99,7 @@ export default function ContainerEditor() {
   };
 
   return (
-    <div class="bg-dinkum-gray rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
+    <div class="rounded-lg shadow-lg border-2 border-dinkum-primary p-6">
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center gap-3">
           <h2 class="text-xl font-bold text-dinkum-tertiary font-mclaren">
@@ -107,7 +107,7 @@ export default function ContainerEditor() {
           </h2>
           <div class="flex items-center gap-2 bg-dinkum-beige px-3 py-1 rounded-md border border-dinkum-primary">
             <svg
-              class="w-4 h-4 text-dinkum-accent"
+              class="w-4 h-4"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -124,7 +124,7 @@ export default function ContainerEditor() {
             </span>
           </div>
           {isDirty.value && (
-            <span class="text-xs text-dinkum-secondary font-mclaren bg-dinkum-secondary/20 px-2 py-0.5 rounded">
+            <span class="text-xs font-mclaren px-2 py-0.5 rounded">
               Modified
             </span>
           )}
@@ -137,14 +137,14 @@ export default function ContainerEditor() {
               editingSlot.value = null;
             }
           }}
-          class="px-3 py-1 bg-dinkum-tertiary text-dinkum-secondary rounded hover:bg-dinkum-accent transition-colors text-sm font-mclaren"
+          class="px-3 py-1 bg-dinkum-tertiary rounded hover:bg-dinkum-accent transition-colors text-sm font-mclaren"
         >
           {isExpanded.value ? "Collapse" : "Expand"}
         </button>
       </div>
 
       <div class="mb-4">
-        <p class="text-sm text-dinkum-accent font-mclaren">
+        <p class="text-sm font-mclaren">
           Total Chests: {chests.length}
         </p>
       </div>
@@ -162,7 +162,7 @@ export default function ContainerEditor() {
               >
                 <div class="flex items-center gap-3">
                   <svg
-                    class="w-5 h-5 text-dinkum-accent"
+                    class="w-5 h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -178,14 +178,14 @@ export default function ContainerEditor() {
                     <p class="font-medium text-dinkum-tertiary font-mclaren">
                       Chest #{index + 1}
                     </p>
-                    <p class="text-xs text-dinkum-accent font-mclaren">
+                    <p class="text-xs font-mclaren">
                       {getChestLocation(chest)} &bull; {getItemCount(chest)}
                       {" "}
                       items
                     </p>
                   </div>
                 </div>
-                <span class="text-dinkum-secondary text-sm">
+                <span class="text-sm">
                   {selectedChestIndex.value === index ? "\u25BC" : "\u25B6"}
                 </span>
               </div>
@@ -194,7 +194,7 @@ export default function ContainerEditor() {
                 <div class="p-3 pt-0">
                   <div class="border-t border-dinkum-primary pt-3">
                     <div class="flex items-center justify-between mb-2">
-                      <p class="text-xs text-dinkum-accent font-mclaren">
+                      <p class="text-xs font-mclaren">
                         Click a slot to edit
                       </p>
                       {getItemCount(chest) > 0 && (
