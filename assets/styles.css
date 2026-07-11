@@ -127,14 +127,16 @@ a:hover {
 }
 
 /* Button Styles */
-button, .button {
+button,
+.button {
   font-family: "McLaren", cursive;
   background-color: var(--dinkum-tertiary);
   color: var(--dinkum-secondary);
   transition: all 0.2s ease;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   background-color: var(--dinkum-accent);
   transform: translateY(-1px);
   box-shadow: 0 2px 6px rgba(57, 33, 0, 0.15);
@@ -153,14 +155,18 @@ button:hover, .button:hover {
 }
 
 /* Input Styles */
-input, textarea, select {
+input,
+textarea,
+select {
   font-family: "McLaren", cursive;
   background-color: var(--dinkum-beige);
   border: 2px solid var(--dinkum-primary);
   color: var(--dinkum-tertiary);
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
   border-color: var(--dinkum-secondary);
   box-shadow: 0 0 0 3px rgba(255, 196, 0, 0.2);

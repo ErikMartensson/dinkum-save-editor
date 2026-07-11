@@ -18,7 +18,7 @@ interface PageDropZoneProps {
 export default function PageDropZone({ children }: PageDropZoneProps) {
   const isDragging = useSignal(false);
   const isProcessing = useSignal(false);
-  const dragTimeoutRef = useRef<number | null>(null);
+  const dragTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {

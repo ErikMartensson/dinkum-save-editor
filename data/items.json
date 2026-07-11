@@ -1,10 +1,10 @@
 {
   "meta": {
-    "extractedAt": "2026-02-01T10:00:59.247438+00:00",
-    "totalItems": 2025,
-    "totalItemsWithDurability": 89,
+    "extractedAt": "2026-07-11T21:12:53.796828+00:00",
+    "totalItems": 2136,
+    "totalItemsWithDurability": 94,
     "scriptVersion": "1.3.0",
-    "gameVersion": "1.0.7"
+    "gameVersion": "1.0.8"
   },
   "items": {
     "0": {
@@ -4931,7 +4931,7 @@
     },
     "1615": {
       "name": "Star Sabre",
-      "maxDurability": 150
+      "maxDurability": 1000
     },
     "1616": {
       "name": "Yellow Stripe Jumper"
@@ -6170,6 +6170,344 @@
     },
     "2024": {
       "name": "Pineapple Jam Set"
+    },
+    "2025": {
+      "name": "Critter Book"
+    },
+    "2026": {
+      "name": "Matching Steps"
+    },
+    "2027": {
+      "name": "Servo"
+    },
+    "2028": {
+      "name": "Penguin Plush"
+    },
+    "2029": {
+      "name": "Smooth Black Path"
+    },
+    "2030": {
+      "name": "Smooth Blue Path"
+    },
+    "2031": {
+      "name": "Smooth Green Path"
+    },
+    "2032": {
+      "name": "Smooth Orange Path"
+    },
+    "2033": {
+      "name": "Smooth Pink Path"
+    },
+    "2034": {
+      "name": "Smooth Purple Path"
+    },
+    "2035": {
+      "name": "Smooth Red Path"
+    },
+    "2036": {
+      "name": "Smooth White Path"
+    },
+    "2037": {
+      "name": "Smooth Yellow Path"
+    },
+    "2038": {
+      "name": "Cork Hat"
+    },
+    "2039": {
+      "name": "Loop Fence"
+    },
+    "2040": {
+      "name": "Bright Gravel Path"
+    },
+    "2041": {
+      "name": "Pleep Plush"
+    },
+    "2042": {
+      "name": "Disguise Glasses"
+    },
+    "2043": {
+      "name": "Oval Sunnies"
+    },
+    "2044": {
+      "name": "Cat Ears"
+    },
+    "2045": {
+      "name": "Vine Pergola"
+    },
+    "2046": {
+      "name": "Marble Pergola"
+    },
+    "2047": {
+      "name": "Bin Chook Plush"
+    },
+    "2048": {
+      "name": "Pencil Cup"
+    },
+    "2049": {
+      "name": "Chopping Board"
+    },
+    "2050": {
+      "name": "Toy Ute"
+    },
+    "2051": {
+      "name": "Votive Candle"
+    },
+    "2052": {
+      "name": "White Cushion Stack"
+    },
+    "2053": {
+      "name": "Blue Cushion Stack"
+    },
+    "2054": {
+      "name": "Red Cushion Stack"
+    },
+    "2055": {
+      "name": "Switch Railway Track"
+    },
+    "2056": {
+      "name": "Old Bowser"
+    },
+    "2057": {
+      "name": "Green Sleeveless Dress"
+    },
+    "2058": {
+      "name": "Dark Cottage Shoes"
+    },
+    "2059": {
+      "name": "White Sleeveless Dress"
+    },
+    "2060": {
+      "name": "Brown Cottage Shoes"
+    },
+    "2061": {
+      "name": "Red Bow Dress"
+    },
+    "2062": {
+      "name": "Yellow Item Sign"
+    },
+    "2063": {
+      "name": "Blue Sign"
+    },
+    "2064": {
+      "name": "White Sign"
+    },
+    "2065": {
+      "name": "Yellow Bow Dress"
+    },
+    "2066": {
+      "name": "Pink Petal Dress"
+    },
+    "2067": {
+      "name": "Green Petal Dress"
+    },
+    "2068": {
+      "name": "Purple Petal Dress"
+    },
+    "2069": {
+      "name": "Arch Fence"
+    },
+    "2070": {
+      "name": "Wheelie Bin"
+    },
+    "2071": {
+      "name": "Blue Carpet Path"
+    },
+    "2072": {
+      "name": "Blue Belt Fence"
+    },
+    "2073": {
+      "name": "Fairy Light Pergola"
+    },
+    "2074": {
+      "name": "Fish Berley Box"
+    },
+    "2075": {
+      "name": "Boaricoot Whistle"
+    },
+    "2076": {
+      "name": "Sport Helmet"
+    },
+    "2077": {
+      "name": "Improved Stone Grinder"
+    },
+    "2078": {
+      "name": "Yellow Single Person Tent"
+    },
+    "2079": {
+      "name": "Blue Single Person Tent"
+    },
+    "2080": {
+      "name": "Green Single Person Tent"
+    },
+    "2081": {
+      "name": "Tyre Planter"
+    },
+    "2082": {
+      "name": "Tyre Bench"
+    },
+    "2083": {
+      "name": "White Brick Path"
+    },
+    "2084": {
+      "name": "Black Pastel Floor"
+    },
+    "2085": {
+      "name": "Blue Pastel Floor"
+    },
+    "2086": {
+      "name": "Brown Pastel Floor"
+    },
+    "2087": {
+      "name": "Green Pastel Floor"
+    },
+    "2088": {
+      "name": "Orange Pastel Floor"
+    },
+    "2089": {
+      "name": "Pink Pastel Floor"
+    },
+    "2090": {
+      "name": "Purple Pastel Floor"
+    },
+    "2091": {
+      "name": "Red Pastel Floor"
+    },
+    "2092": {
+      "name": "White Pastel Floor"
+    },
+    "2093": {
+      "name": "Yellow Pastel Floor"
+    },
+    "2094": {
+      "name": "White Brick Flower Bed"
+    },
+    "2095": {
+      "name": "Black Cattleman Hat"
+    },
+    "2096": {
+      "name": "White Cattleman Hat"
+    },
+    "2097": {
+      "name": "Bowler Hat"
+    },
+    "2098": {
+      "name": "Shovel of Pebbles",
+      "maxDurability": 600
+    },
+    "2099": {
+      "name": "Magenta Pig Face"
+    },
+    "2100": {
+      "name": "Saltbush Seed"
+    },
+    "2101": {
+      "name": "Lighthouse"
+    },
+    "2102": {
+      "name": "Spear Grass Seed"
+    },
+    "2103": {
+      "name": "Pearl Bluebush Seed"
+    },
+    "2104": {
+      "name": "Encyclopedia"
+    },
+    "2105": {
+      "name": "Mallee Gumnut"
+    },
+    "2106": {
+      "name": "Burger Pack"
+    },
+    "2107": {
+      "name": "Jackaroo Pack"
+    },
+    "2108": {
+      "name": "Crate Pack"
+    },
+    "2109": {
+      "name": "Flame Jelly Pack"
+    },
+    "2110": {
+      "name": "Boombox Pack"
+    },
+    "2111": {
+      "name": "Messenger Pack"
+    },
+    "2112": {
+      "name": "Guitar Pack"
+    },
+    "2113": {
+      "name": "Bum Bag Pack"
+    },
+    "2114": {
+      "name": "Hard Pack"
+    },
+    "2115": {
+      "name": "Handbag Pack"
+    },
+    "2116": {
+      "name": "Tote Pack"
+    },
+    "2117": {
+      "name": "Hunter's Stool"
+    },
+    "2118": {
+      "name": "Scooter"
+    },
+    "2119": {
+      "name": "Secateurs"
+    },
+    "2120": {
+      "name": "Black Pocket Watch"
+    },
+    "2121": {
+      "name": "Hunter's Helmet"
+    },
+    "2122": {
+      "name": "Alpha Plant Hammer",
+      "maxDurability": 1000
+    },
+    "2123": {
+      "name": "White Pig Face"
+    },
+    "2124": {
+      "name": "Red Pig Face"
+    },
+    "2125": {
+      "name": "Tome of Wounding"
+    },
+    "2126": {
+      "name": "Airship Souvenir"
+    },
+    "2127": {
+      "name": "Lighthouse Souvenir"
+    },
+    "2128": {
+      "name": "Shark Statue Souvenir"
+    },
+    "2129": {
+      "name": "Orb of Stars",
+      "maxDurability": 1
+    },
+    "2130": {
+      "name": "Invisible Glider"
+    },
+    "2131": {
+      "name": "Copy Pad"
+    },
+    "2132": {
+      "name": "Auto Animal Trap"
+    },
+    "2133": {
+      "name": "Alpha Battle Fish",
+      "maxDurability": 500
+    },
+    "2134": {
+      "name": "Camera Pack"
+    },
+    "2135": {
+      "name": "Medkit",
+      "maxDurability": 15
     }
   }
 }
