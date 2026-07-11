@@ -11,6 +11,7 @@ interface JsonNodeProps {
   searchQuery: string;
   isMatchingPath: boolean;
   shouldAutoExpand: boolean;
+  expandDepth?: number | null;
 }
 
 // Helper function to check if a subtree contains any matches
@@ -36,10 +37,22 @@ function hasMatchInSubtree(obj: unknown, query: string): boolean {
 }
 
 function JsonNode(
-  { data, path, depth, onEdit, searchQuery, isMatchingPath, shouldAutoExpand }:
-    JsonNodeProps,
+  {
+    data,
+    path,
+    depth,
+    onEdit,
+    searchQuery,
+    isMatchingPath,
+    shouldAutoExpand,
+    expandDepth,
+  }: JsonNodeProps,
 ) {
-  const isExpanded = useSignal(shouldAutoExpand || depth < 2); // Auto-expand if search match or first 2 levels
+  const isExpanded = useSignal(
+    expandDepth !== null && expandDepth !== undefined
+      ? depth < expandDepth
+      : (shouldAutoExpand || depth < 2),
+  );
 
   // Update expansion when shouldAutoExpand changes
   if (shouldAutoExpand && !isExpanded.value) {
@@ -223,6 +236,7 @@ function JsonNode(
                 searchQuery={searchQuery}
                 isMatchingPath={isMatching}
                 shouldAutoExpand={hasDescendantMatch}
+                expandDepth={expandDepth}
               />
             );
           })}
@@ -233,7 +247,9 @@ function JsonNode(
 }
 
 export default function AdvancedEditor() {
-  const isExpanded = useSignal(false);
+  const sectionExpanded = useSignal(false);
+  const treeVersion = useSignal(0);
+  const expandDepth = useSignal<number | null>(null);
   const searchQuery = useSignal("");
   const debouncedSearchQuery = useDebouncedValue(searchQuery, 300);
   const hasChanges = useSignal(false);
@@ -263,14 +279,16 @@ export default function AdvancedEditor() {
     hasChanges.value = true;
   };
 
+  // Expanding every node renders tens of thousands of DOM nodes on a player
+  // save (the catalogue array alone has 2000+ entries), so cap the depth.
   const handleExpandAll = () => {
-    // This would require a more complex state management
-    // For now, just toggle the main expansion
-    isExpanded.value = true;
+    expandDepth.value = 3;
+    treeVersion.value++;
   };
 
   const handleCollapseAll = () => {
-    isExpanded.value = false;
+    expandDepth.value = 0;
+    treeVersion.value++;
   };
 
   const handleClearSearch = () => {
@@ -341,7 +359,12 @@ export default function AdvancedEditor() {
 
   return (
     <div class="bg-white rounded-lg shadow-md border-2 border-dinkum-primary p-6">
-      <div class="flex items-center justify-between mb-4">
+      <div
+        class={`flex items-center justify-between cursor-pointer rounded-lg -m-2 p-2 hover:bg-dinkum-beige/80 transition-colors ${
+          sectionExpanded.value ? "mb-4" : ""
+        }`}
+        onClick={() => sectionExpanded.value = !sectionExpanded.value}
+      >
         <div class="flex items-center gap-3">
           <h2 class="text-2xl font-bold text-dinkum-tertiary font-mclaren">
             Player Advanced Editor
@@ -365,109 +388,121 @@ export default function AdvancedEditor() {
             </span>
           </div>
         </div>
-        <div class="flex gap-2">
-          <button
-            type="button"
-            onClick={handleExpandAll}
-            class="px-3 py-1 bg-dinkum-tertiary rounded hover:bg-dinkum-accent transition-colors text-sm font-mclaren"
-          >
-            Expand All
-          </button>
-          <button
-            type="button"
-            onClick={handleCollapseAll}
-            class="px-3 py-1 bg-dinkum-tertiary rounded hover:bg-dinkum-accent transition-colors text-sm font-mclaren"
-          >
-            Collapse All
-          </button>
-        </div>
+        <span class="text-sm">
+          {sectionExpanded.value ? "▼" : "▶"}
+        </span>
       </div>
 
-      <div class="mb-4">
-        <p class="text-sm mb-2 font-mclaren">
-          ⚠️ Advanced users only! Click any value to edit it directly.
-        </p>
-        <div class="relative">
-          <input
-            type="text"
-            placeholder="Search fields and values... (Enter: next, Shift+Enter: previous)"
-            value={searchQuery.value}
-            onInput={(e) =>
-              searchQuery.value = (e.target as HTMLInputElement).value}
-            onKeyDown={handleKeyDown}
-            class="w-full px-4 py-2 border-2 border-dinkum-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-dinkum-secondary font-mclaren pr-20"
-          />
-          {searchQuery.value && (
-            <div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-2">
-              {searchResult.value.matches.length > 0 && (
-                <>
-                  <span class="text-xs text-dinkum-tertiary font-mclaren">
-                    {currentMatchIndex.value + 1} /{" "}
-                    {searchResult.value.matches.length}
-                  </span>
+      {sectionExpanded.value && (
+        <>
+          <div class="mb-4">
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-sm font-mclaren">
+                ⚠️ Advanced users only! Click any value to edit it directly.
+              </p>
+              <div class="flex gap-2">
+                <button
+                  type="button"
+                  onClick={handleExpandAll}
+                  class="px-3 py-1 bg-dinkum-tertiary rounded hover:bg-dinkum-accent transition-colors text-sm font-mclaren"
+                >
+                  Expand All
+                </button>
+                <button
+                  type="button"
+                  onClick={handleCollapseAll}
+                  class="px-3 py-1 bg-dinkum-tertiary rounded hover:bg-dinkum-accent transition-colors text-sm font-mclaren"
+                >
+                  Collapse All
+                </button>
+              </div>
+            </div>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Search fields and values... (Enter: next, Shift+Enter: previous)"
+                value={searchQuery.value}
+                onInput={(e) =>
+                  searchQuery.value = (e.target as HTMLInputElement).value}
+                onKeyDown={handleKeyDown}
+                class="w-full px-4 py-2 border-2 border-dinkum-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-dinkum-secondary font-mclaren pr-20"
+              />
+              {searchQuery.value && (
+                <div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-2">
+                  {searchResult.value.matches.length > 0 && (
+                    <>
+                      <span class="text-xs text-dinkum-tertiary font-mclaren">
+                        {currentMatchIndex.value + 1} /{" "}
+                        {searchResult.value.matches.length}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={handlePreviousMatch}
+                        class="px-2 py-1 bg-dinkum-tertiary rounded text-xs hover:bg-dinkum-accent transition-colors"
+                        title="Previous match (Shift+Enter)"
+                      >
+                        ↑
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleNextMatch}
+                        class="px-2 py-1 bg-dinkum-tertiary rounded text-xs hover:bg-dinkum-accent transition-colors"
+                        title="Next match (Enter)"
+                      >
+                        ↓
+                      </button>
+                    </>
+                  )}
+                  {searchResult.value.matches.length === 0 &&
+                    debouncedSearchQuery.value && (
+                    <span class="text-xs text-red-600 font-mclaren">
+                      No matches
+                    </span>
+                  )}
                   <button
                     type="button"
-                    onClick={handlePreviousMatch}
-                    class="px-2 py-1 bg-dinkum-tertiary rounded text-xs hover:bg-dinkum-accent transition-colors"
-                    title="Previous match (Shift+Enter)"
+                    onClick={handleClearSearch}
+                    class="px-2 py-1 rounded text-xs hover:bg-dinkum-accent hover:text-dinkum-secondary transition-colors"
                   >
-                    ↑
+                    Clear
                   </button>
-                  <button
-                    type="button"
-                    onClick={handleNextMatch}
-                    class="px-2 py-1 bg-dinkum-tertiary rounded text-xs hover:bg-dinkum-accent transition-colors"
-                    title="Next match (Enter)"
-                  >
-                    ↓
-                  </button>
-                </>
+                </div>
               )}
-              {searchResult.value.matches.length === 0 &&
-                debouncedSearchQuery.value && (
-                <span class="text-xs text-red-600 font-mclaren">
-                  No matches
-                </span>
-              )}
-              <button
-                type="button"
-                onClick={handleClearSearch}
-                class="px-2 py-1 rounded text-xs hover:bg-dinkum-accent hover:text-dinkum-secondary transition-colors"
-              >
-                Clear
-              </button>
+            </div>
+          </div>
+
+          {hasChanges.value && (
+            <div class="mb-4 p-3 bg-yellow-50 border-2 border-yellow-400 rounded-lg">
+              <p class="text-sm text-yellow-800 font-mclaren">
+                ⚠️ You have unsaved changes. Use the Download Manager below to
+                save your edits.
+              </p>
             </div>
           )}
-        </div>
-      </div>
 
-      {hasChanges.value && (
-        <div class="mb-4 p-3 bg-yellow-50 border-2 border-yellow-400 rounded-lg">
-          <p class="text-sm text-yellow-800 font-mclaren">
-            ⚠️ You have unsaved changes. Use the Download Manager below to save
-            your edits.
-          </p>
-        </div>
+          <div class="rounded-lg p-4 max-h-[600px] overflow-y-auto font-mono text-sm">
+            <JsonNode
+              key={`tree-${treeVersion.value}`}
+              data={saveData.value}
+              path="root"
+              depth={0}
+              onEdit={handleEdit}
+              searchQuery={searchQuery.value}
+              isMatchingPath={searchResult.value.matchingPaths.has("root")}
+              shouldAutoExpand={searchResult.value.shouldExpand("root")}
+              expandDepth={expandDepth.value}
+            />
+          </div>
+
+          <div class="mt-4 text-xs text-dinkum-tertiary font-mclaren">
+            <p>
+              💡 Tip: Click on any primitive value (strings, numbers, booleans)
+              to edit it. Changes are applied immediately to the in-memory save
+              data.
+            </p>
+          </div>
+        </>
       )}
-
-      <div class="rounded-lg p-4 max-h-[600px] overflow-y-auto font-mono text-sm">
-        <JsonNode
-          data={saveData.value}
-          path="root"
-          depth={0}
-          onEdit={handleEdit}
-          searchQuery={searchQuery.value}
-          isMatchingPath={searchResult.value.matchingPaths.has("root")}
-          shouldAutoExpand={searchResult.value.shouldExpand("root")}
-        />
-      </div>
-
-      <div class="mt-4 text-xs text-dinkum-tertiary font-mclaren">
-        <p>
-          💡 Tip: Click on any primitive value (strings, numbers, booleans) to
-          edit it. Changes are applied immediately to the in-memory save data.
-        </p>
-      </div>
     </div>
   );
 }
