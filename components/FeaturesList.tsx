@@ -46,9 +46,7 @@ export default function FeaturesList() {
             <h3 class="text-lg font-bold text-dinkum-tertiary font-mclaren mb-1">
               {feature.emoji} {feature.title}
             </h3>
-            <p class="text-sm font-mclaren">
-              {feature.desc}
-            </p>
+            <p class="text-sm font-mclaren">{feature.desc}</p>
           </div>
         ))}
       </div>

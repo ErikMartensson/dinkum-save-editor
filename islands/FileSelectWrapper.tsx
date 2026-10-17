@@ -1,6 +1,6 @@
-import { containerData, saveData } from "../routes/index.tsx";
-import FileSelect from "./FileSelect.tsx";
 import FeaturesList from "../components/FeaturesList.tsx";
+import { containerData, saveData } from "../utils/state.ts";
+import FileSelect from "./FileSelect.tsx";
 
 export default function FileSelectWrapper() {
   // This island will reactively hide when files are loaded

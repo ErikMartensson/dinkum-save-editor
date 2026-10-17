@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { TargetedEvent } from "preact";
+import type { TargetedEvent } from "preact";
 import {
   containerData,
   containerFilename,
@@ -8,7 +8,7 @@ import {
   filename,
   fileSize,
   saveData,
-} from "../routes/index.tsx";
+} from "../utils/state.ts";
 
 export default function FileSelect() {
   const isDragging = useSignal(false);
@@ -100,7 +100,8 @@ export default function FileSelect() {
 
     // Show warnings if any files were skipped
     if (warnings.length > 0) {
-      error.value = warnings.join("\n") +
+      error.value =
+        warnings.join("\n") +
         "\n\nOnly one Player save and one Container save can be loaded at a time.";
     }
   };
@@ -129,7 +130,10 @@ export default function FileSelect() {
     const x = e.clientX;
     const y = e.clientY;
     if (
-      x <= rect.left || x >= rect.right || y <= rect.top || y >= rect.bottom
+      x <= rect.left ||
+      x >= rect.right ||
+      y <= rect.top ||
+      y >= rect.bottom
     ) {
       isDragging.value = false;
     }
@@ -154,58 +158,55 @@ export default function FileSelect() {
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
       >
-        {isProcessing.value
-          ? (
-            <div class="flex flex-col items-center gap-4">
-              <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-dinkum-secondary">
-              </div>
-              <p class="text-dinkum-tertiary font-mclaren">
-                Decrypting save file...
+        {isProcessing.value ? (
+          <div class="flex flex-col items-center gap-4">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-dinkum-secondary"></div>
+            <p class="text-dinkum-tertiary font-mclaren">
+              Decrypting save file...
+            </p>
+          </div>
+        ) : (
+          <>
+            <svg
+              class="mx-auto h-12 w-12"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 48 48"
+              aria-hidden="true"
+            >
+              <path
+                d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <div class="mt-4">
+              <label
+                for="file-select"
+                class="cursor-pointer rounded-md font-bold hover:text-dinkum-orange hover:underline focus-within:outline-none font-mclaren text-lg transition-colors"
+              >
+                <span>Select a file</span>
+                <input
+                  id="file-select"
+                  name="file-select"
+                  type="file"
+                  accept=".es3,.es3.bac,.json"
+                  multiple
+                  class="sr-only"
+                  onInput={handleFileInput}
+                />
+              </label>{" "}
+              <p class="text-dinkum-tertiary inline font-mclaren text-lg">
+                or drag and drop
               </p>
             </div>
-          )
-          : (
-            <>
-              <svg
-                class="mx-auto h-12 w-12"
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 48 48"
-                aria-hidden="true"
-              >
-                <path
-                  d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <div class="mt-4">
-                <label
-                  for="file-select"
-                  class="cursor-pointer rounded-md font-bold hover:text-dinkum-orange hover:underline focus-within:outline-none font-mclaren text-lg transition-colors"
-                >
-                  <span>Select a file</span>
-                  <input
-                    id="file-select"
-                    name="file-select"
-                    type="file"
-                    accept=".es3,.es3.bac,.json"
-                    multiple
-                    class="sr-only"
-                    onInput={handleFileInput}
-                  />
-                </label>{" "}
-                <p class="text-dinkum-tertiary inline font-mclaren text-lg">
-                  or drag and drop
-                </p>
-              </div>
-              <p class="text-xs mt-2 font-mclaren">
-                .es3, .es3.bac, or .json files - Select Player and/or Container
-                saves
-              </p>
-            </>
-          )}
+            <p class="text-xs mt-2 font-mclaren">
+              .es3, .es3.bac, or .json files - Select Player and/or Container
+              saves
+            </p>
+          </>
+        )}
       </div>
     </div>
   );

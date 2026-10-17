@@ -1,4 +1,4 @@
-const CACHE_NAME = "dinkum-save-editor-v1";
+const CACHE_NAME = "dinkum-save-editor-v2";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

@@ -1,7 +1,7 @@
 import { useSignal } from "@preact/signals";
-import { containerData, containerFilename } from "../routes/index.tsx";
-import type { ChestSave } from "../utils/types.ts";
 import { ItemGrid, type SlotEditState } from "../components/ItemGrid.tsx";
+import { containerData, containerFilename } from "../utils/state.ts";
+import type { ChestSave } from "../utils/types.ts";
 
 export default function ContainerEditor() {
   const isExpanded = useSignal(true);
@@ -75,12 +75,7 @@ export default function ContainerEditor() {
 
   const handleSlotClear = () => {
     if (!editingSlot.value) return;
-    updateSlot(
-      editingSlot.value.gridIndex,
-      editingSlot.value.slotIndex,
-      -1,
-      0,
-    );
+    updateSlot(editingSlot.value.gridIndex, editingSlot.value.slotIndex, -1, 0);
   };
 
   const handleCancel = () => {
@@ -144,9 +139,7 @@ export default function ContainerEditor() {
       </div>
 
       <div class="mb-4">
-        <p class="text-sm font-mclaren">
-          Total Chests: {chests.length}
-        </p>
+        <p class="text-sm font-mclaren">Total Chests: {chests.length}</p>
       </div>
 
       {isExpanded.value && (
@@ -179,8 +172,7 @@ export default function ContainerEditor() {
                       Chest #{index + 1}
                     </p>
                     <p class="text-xs font-mclaren">
-                      {getChestLocation(chest)} &bull; {getItemCount(chest)}
-                      {" "}
+                      {getChestLocation(chest)} &bull; {getItemCount(chest)}{" "}
                       items
                     </p>
                   </div>
@@ -194,9 +186,7 @@ export default function ContainerEditor() {
                 <div class="p-3 pt-0">
                   <div class="border-t border-dinkum-primary pt-3">
                     <div class="flex items-center justify-between mb-2">
-                      <p class="text-xs font-mclaren">
-                        Click a slot to edit
-                      </p>
+                      <p class="text-xs font-mclaren">Click a slot to edit</p>
                       {getItemCount(chest) > 0 && (
                         <button
                           type="button"

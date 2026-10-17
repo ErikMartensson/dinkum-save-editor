@@ -1,4 +1,4 @@
-import { Signal, useComputed } from "@preact/signals";
+import { type Signal, useComputed } from "@preact/signals";
 
 interface SearchMatch {
   path: string;
@@ -39,9 +39,9 @@ export function useJsonSearch(
       if (objType === "object") {
         const isArray = Array.isArray(obj);
         const entries = isArray
-          ? (obj as unknown[]).map((v, i) =>
-            [String(i), v] as [string, unknown]
-          )
+          ? (obj as unknown[]).map(
+              (v, i) => [String(i), v] as [string, unknown],
+            )
           : Object.entries(obj as Record<string, unknown>);
 
         for (const [key, value] of entries) {
@@ -83,9 +83,8 @@ export function useJsonSearch(
               while (parentPath && parentPath !== "root") {
                 pathsToExpand.add(parentPath);
                 const lastDot = parentPath.lastIndexOf(".");
-                parentPath = lastDot > 0
-                  ? parentPath.substring(0, lastDot)
-                  : "";
+                parentPath =
+                  lastDot > 0 ? parentPath.substring(0, lastDot) : "";
               }
               pathsToExpand.add("root");
             }

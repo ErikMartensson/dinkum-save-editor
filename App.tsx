@@ -1,68 +1,32 @@
-import { signal } from "@preact/signals";
-import { Head } from "fresh/runtime";
-import { define } from "../utils.ts";
-import FileSelectWrapper from "../islands/FileSelectWrapper.tsx";
-import QuickEdit from "../islands/QuickEdit.tsx";
-import AdvancedEditor from "../islands/AdvancedEditor.tsx";
-import ContainerEditor from "../islands/ContainerEditor.tsx";
-import PlayerInventoryEditor from "../islands/PlayerInventoryEditor.tsx";
-import ContainerAdvancedEditor from "../islands/ContainerAdvancedEditor.tsx";
-import DownloadManager from "../islands/DownloadManager.tsx";
-import PageDropZone from "../islands/PageDropZone.tsx";
-import ErrorDismiss from "../islands/ErrorDismiss.tsx";
-import DevAutoLoader from "../islands/DevAutoLoader.tsx";
-import SaveFileCard from "../components/SaveFileCard.tsx";
-import SaveFileLocation from "../islands/SaveFileLocation.tsx";
-import { Footer } from "../components/Footer.tsx";
-import type { ContainerSaveData, DinkumSaveData } from "../utils/types.ts";
+import { Footer } from "./components/Footer.tsx";
+import SaveFileCard from "./components/SaveFileCard.tsx";
+import AdvancedEditor from "./islands/AdvancedEditor.tsx";
+import ContainerAdvancedEditor from "./islands/ContainerAdvancedEditor.tsx";
+import ContainerEditor from "./islands/ContainerEditor.tsx";
+import DevAutoLoader from "./islands/DevAutoLoader.tsx";
+import DownloadManager from "./islands/DownloadManager.tsx";
+import ErrorDismiss from "./islands/ErrorDismiss.tsx";
+import FileSelectWrapper from "./islands/FileSelectWrapper.tsx";
+import PageDropZone from "./islands/PageDropZone.tsx";
+import PlayerInventoryEditor from "./islands/PlayerInventoryEditor.tsx";
+import QuickEdit from "./islands/QuickEdit.tsx";
+import SaveFileLocation from "./islands/SaveFileLocation.tsx";
+import SwRegistration from "./islands/SwRegistration.tsx";
+import {
+  containerData,
+  containerFilename,
+  containerFileSize,
+  filename,
+  fileSize,
+  saveData,
+} from "./utils/state.ts";
 
-// Global signals that can be shared across islands
-export const saveData = signal<DinkumSaveData | null>(null);
-export const containerData = signal<ContainerSaveData | null>(null);
-export const filename = signal<string | null>(null);
-export const containerFilename = signal<string | null>(null);
-export const fileSize = signal<number>(0);
-export const containerFileSize = signal<number>(0);
-export const error = signal<string | null>(null);
-
-/**
- * Check if there are dev save files to load (SSR only, dev mode only)
- */
-async function checkDevSaveFiles(): Promise<string[]> {
-  // Only check in development mode
-  if (Deno.env.get("DENO_DEPLOYMENT_ID") !== undefined) {
-    return [];
-  }
-
-  try {
-    const files: string[] = [];
-    for await (const entry of Deno.readDir("./selected-saves")) {
-      if (
-        entry.isFile &&
-        (entry.name.endsWith(".es3") || entry.name.endsWith(".json"))
-      ) {
-        files.push(entry.name);
-      }
-    }
-    return files;
-  } catch {
-    // Directory doesn't exist or can't be read
-    return [];
-  }
-}
-
-export default define.page(async function Home() {
-  // Check for dev save files during SSR
-  const devSaveFiles = await checkDevSaveFiles();
-  const hasDevSaveFiles = devSaveFiles.length > 0;
+export default function App() {
   return (
     <>
-      <Head>
-        <title>Dinkum Save Editor</title>
-      </Head>
+      <DevAutoLoader />
+      <SwRegistration />
       <PageDropZone>
-        {/* Only include DevAutoLoader if there are files to load */}
-        {hasDevSaveFiles && <DevAutoLoader />}
         <div class="min-h-screen bg-dinkum-beige">
           <div class="container mx-auto px-4 py-8">
             {/* Header */}
@@ -129,8 +93,7 @@ export default define.page(async function Home() {
                   </div>
                   <p class="text-sm text-dinkum-tertiary font-mclaren">
                     Container file with{" "}
-                    {containerData.value?.chests?.value?.allChests?.length || 0}
-                    {" "}
+                    {containerData.value?.chests?.value?.allChests?.length || 0}{" "}
                     chests
                   </p>
                 </div>
@@ -165,4 +128,4 @@ export default define.page(async function Home() {
       </PageDropZone>
     </>
   );
-});
+}

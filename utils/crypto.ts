@@ -21,29 +21,36 @@ function formatValue(value: unknown, depth: number): string {
 
   if (Array.isArray(value)) {
     if (value.length === 0) {
-      return "[\r\n" + tabs(depth + 1) + "\r\n" + tabs(depth) + "]";
+      return `[\r\n${tabs(depth + 1)}\r\n${tabs(depth)}]`;
     }
 
     // Arrays of primitives: values on a single indented line
     if (typeof value[0] !== "object" || value[0] === null) {
       const items = value.map((v) => formatValue(v, depth + 1)).join(",");
-      return "[\r\n" + tabs(depth + 1) + items + "\r\n" + tabs(depth) + "]";
+      return `[\r\n${tabs(depth + 1)}${items}\r\n${tabs(depth)}]`;
     }
 
     // Arrays of objects: },{ between elements (no newline between } and {)
     const elements = value.map((v) => formatValue(v, depth + 1));
-    return "[\r\n" + tabs(depth + 1) + elements.join(",") +
-      "\r\n" + tabs(depth) + "]";
+    return (
+      "[\r\n" +
+      tabs(depth + 1) +
+      elements.join(",") +
+      "\r\n" +
+      tabs(depth) +
+      "]"
+    );
   }
 
   if (typeof value === "object") {
     const entries = Object.entries(value as Record<string, unknown>);
-    if (entries.length === 0) return "{\r\n" + tabs(depth) + "}";
+    if (entries.length === 0) return `{\r\n${tabs(depth)}}`;
 
-    const lines = entries.map(([k, v]) =>
-      tabs(depth + 1) + JSON.stringify(k) + " : " + formatValue(v, depth + 1)
+    const lines = entries.map(
+      ([k, v]) =>
+        `${tabs(depth + 1) + JSON.stringify(k)} : ${formatValue(v, depth + 1)}`,
     );
-    return "{\r\n" + lines.join(",\r\n") + "\r\n" + tabs(depth) + "}";
+    return `{\r\n${lines.join(",\r\n")}\r\n${tabs(depth)}}`;
   }
 
   return String(value);

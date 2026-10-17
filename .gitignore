@@ -5,9 +5,10 @@
 .env.production.local
 .env.local
 
-# Fresh build directory
-_fresh/
-# npm + other dependencies
+# Build output
+dist/
+
+# npm and other dependencies
 node_modules/
 vendor/
 
@@ -16,3 +17,4 @@ encrypted-saves/
 selected-saves/
 .roo/
 .claude/
+AGENTS.md

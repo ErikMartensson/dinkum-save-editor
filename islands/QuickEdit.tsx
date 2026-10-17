@@ -1,6 +1,6 @@
 import { useComputed, useSignal } from "@preact/signals";
+import { filename, saveData } from "../utils/state.ts";
 import type { DinkumSaveData, QuickEditFields } from "../utils/types.ts";
-import { filename, saveData } from "../routes/index.tsx";
 
 export default function QuickEdit() {
   const isDirty = useSignal(false);
@@ -30,8 +30,9 @@ export default function QuickEdit() {
   const handleSave = () => {
     if (!saveData.value || !fields.value) return;
 
-    const newPlayerName =
-      (document.getElementById("playerName") as HTMLInputElement).value;
+    const newPlayerName = (
+      document.getElementById("playerName") as HTMLInputElement
+    ).value;
 
     // Create updated save data
     const updated: DinkumSaveData = {
@@ -41,30 +42,36 @@ export default function QuickEdit() {
         value: {
           ...saveData.value.playerInfo.value,
           playerName: newPlayerName,
-          islandName:
-            (document.getElementById("islandName") as HTMLInputElement)
-              .value,
+          islandName: (
+            document.getElementById("islandName") as HTMLInputElement
+          ).value,
           money: parseInt(
             (document.getElementById("money") as HTMLInputElement).value,
+            10,
           ),
           bankBalance: parseInt(
             (document.getElementById("bankBalance") as HTMLInputElement).value,
+            10,
           ),
           health: parseInt(
             (document.getElementById("health") as HTMLInputElement).value,
+            10,
           ),
           healthMax: parseInt(
             (document.getElementById("healthMax") as HTMLInputElement).value,
+            10,
           ),
           stamina: parseInt(
             (document.getElementById("stamina") as HTMLInputElement).value,
+            10,
           ),
           staminaMax: parseInt(
             (document.getElementById("staminaMax") as HTMLInputElement).value,
+            10,
           ),
-          isCreative:
-            (document.getElementById("isCreative") as HTMLInputElement)
-              .checked,
+          isCreative: (
+            document.getElementById("isCreative") as HTMLInputElement
+          ).checked,
           hasBeenCreative: (
             document.getElementById("hasBeenCreative") as HTMLInputElement
           ).checked,
@@ -76,6 +83,7 @@ export default function QuickEdit() {
           ...saveData.value.licences.value,
           permitPoints: parseInt(
             (document.getElementById("permitPoints") as HTMLInputElement).value,
+            10,
           ),
         },
       },

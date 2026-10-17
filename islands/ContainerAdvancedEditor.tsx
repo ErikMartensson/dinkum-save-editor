@@ -1,7 +1,7 @@
 import { useSignal } from "@preact/signals";
-import { containerData, containerFilename } from "../routes/index.tsx";
-import { useJsonSearch } from "../hooks/useJsonSearch.ts";
 import { useDebouncedValue } from "../hooks/useDebouncedValue.ts";
+import { useJsonSearch } from "../hooks/useJsonSearch.ts";
+import { containerData, containerFilename } from "../utils/state.ts";
 
 interface JsonNodeProps {
   data: unknown;
@@ -36,22 +36,20 @@ function hasMatchInSubtree(obj: unknown, query: string): boolean {
   return false;
 }
 
-function JsonNode(
-  {
-    data,
-    path,
-    depth,
-    onEdit,
-    searchQuery,
-    isMatchingPath,
-    shouldAutoExpand,
-    expandDepth,
-  }: JsonNodeProps,
-) {
+function JsonNode({
+  data,
+  path,
+  depth,
+  onEdit,
+  searchQuery,
+  isMatchingPath,
+  shouldAutoExpand,
+  expandDepth,
+}: JsonNodeProps) {
   const isExpanded = useSignal(
     expandDepth !== null && expandDepth !== undefined
       ? depth < expandDepth
-      : (shouldAutoExpand || depth < 2),
+      : shouldAutoExpand || depth < 2,
   );
 
   // Update expansion when shouldAutoExpand changes
@@ -79,7 +77,7 @@ function JsonNode(
     // Try to parse the value to the correct type
     if (dataType === "number") {
       newValue = Number(editValue.value);
-      if (isNaN(newValue as number)) {
+      if (Number.isNaN(newValue as number)) {
         alert("Invalid number");
         return;
       }
@@ -123,7 +121,8 @@ function JsonNode(
             type="text"
             value={editValue.value}
             onInput={(e) =>
-              editValue.value = (e.target as HTMLInputElement).value}
+              (editValue.value = (e.target as HTMLInputElement).value)
+            }
             class="px-2 py-1 border border-dinkum-primary rounded text-sm font-mono"
             autoFocus
           />
@@ -195,7 +194,7 @@ function JsonNode(
       <div class="flex items-center gap-2">
         <button
           type="button"
-          onClick={() => isExpanded.value = !isExpanded.value}
+          onClick={() => (isExpanded.value = !isExpanded.value)}
           class="hover:text-dinkum-orange transition-colors"
         >
           {isExpanded.value ? "▼" : "▶"}
@@ -212,19 +211,19 @@ function JsonNode(
           {keys.map((key) => {
             const childPath = `${path}.${key}`;
             const childValue = (data as Record<string, unknown>)[key];
-            const isMatching = searchQuery.length > 0 && (
-              key.toLowerCase().includes(searchQuery.toLowerCase()) ||
-              (typeof childValue !== "object" &&
-                childValue !== null &&
-                String(childValue).toLowerCase().includes(
-                  searchQuery.toLowerCase(),
-                ))
-            );
+            const isMatching =
+              searchQuery.length > 0 &&
+              (key.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                (typeof childValue !== "object" &&
+                  childValue !== null &&
+                  String(childValue)
+                    .toLowerCase()
+                    .includes(searchQuery.toLowerCase())));
 
             // Check if this node or any of its descendants have matches
-            const hasDescendantMatch = searchQuery.length > 0 && (
-              isMatching || hasMatchInSubtree(childValue, searchQuery)
-            );
+            const hasDescendantMatch =
+              searchQuery.length > 0 &&
+              (isMatching || hasMatchInSubtree(childValue, searchQuery));
 
             return (
               <JsonNode
@@ -265,7 +264,7 @@ export default function ContainerAdvancedEditor() {
 
     // Navigate to the path and update the value
     const parts = path.split(".").slice(1); // Remove "root"
-    // deno-lint-ignore no-explicit-any
+    // biome-ignore lint/suspicious/noExplicitAny: JSON path traversal needs any
     let current: any = newData;
 
     for (let i = 0; i < parts.length - 1; i++) {
@@ -298,17 +297,18 @@ export default function ContainerAdvancedEditor() {
 
   const handleNextMatch = () => {
     if (searchResult.value.matches.length > 0) {
-      currentMatchIndex.value = (currentMatchIndex.value + 1) %
-        searchResult.value.matches.length;
+      currentMatchIndex.value =
+        (currentMatchIndex.value + 1) % searchResult.value.matches.length;
       scrollToMatch(currentMatchIndex.value);
     }
   };
 
   const handlePreviousMatch = () => {
     if (searchResult.value.matches.length > 0) {
-      currentMatchIndex.value = currentMatchIndex.value === 0
-        ? searchResult.value.matches.length - 1
-        : currentMatchIndex.value - 1;
+      currentMatchIndex.value =
+        currentMatchIndex.value === 0
+          ? searchResult.value.matches.length - 1
+          : currentMatchIndex.value - 1;
       scrollToMatch(currentMatchIndex.value);
     }
   };
@@ -320,9 +320,9 @@ export default function ContainerAdvancedEditor() {
       const highlights = document.querySelectorAll("mark.bg-yellow-300");
       if (highlights[index]) {
         // Remove previous active highlight
-        highlights.forEach((h) =>
-          h.classList.remove("ring-2", "ring-blue-500")
-        );
+        highlights.forEach((h) => {
+          h.classList.remove("ring-2", "ring-blue-500");
+        });
         // Add active highlight to current match
         highlights[index].classList.add("ring-2", "ring-blue-500");
         // Scroll into view
@@ -363,7 +363,7 @@ export default function ContainerAdvancedEditor() {
         class={`flex items-center justify-between cursor-pointer rounded-lg -m-2 p-2 hover:bg-dinkum-beige/80 transition-colors ${
           sectionExpanded.value ? "mb-4" : ""
         }`}
-        onClick={() => sectionExpanded.value = !sectionExpanded.value}
+        onClick={() => (sectionExpanded.value = !sectionExpanded.value)}
       >
         <div class="flex items-center gap-3">
           <h2 class="text-2xl font-bold text-dinkum-tertiary font-mclaren">
@@ -388,9 +388,7 @@ export default function ContainerAdvancedEditor() {
             </span>
           </div>
         </div>
-        <span class="text-sm">
-          {sectionExpanded.value ? "▼" : "▶"}
-        </span>
+        <span class="text-sm">{sectionExpanded.value ? "▼" : "▶"}</span>
       </div>
 
       {sectionExpanded.value && (
@@ -423,7 +421,8 @@ export default function ContainerAdvancedEditor() {
                 placeholder="Search fields and values... (Enter: next, Shift+Enter: previous)"
                 value={searchQuery.value}
                 onInput={(e) =>
-                  searchQuery.value = (e.target as HTMLInputElement).value}
+                  (searchQuery.value = (e.target as HTMLInputElement).value)
+                }
                 onKeyDown={handleKeyDown}
                 class="w-full px-4 py-2 border-2 border-dinkum-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-dinkum-secondary font-mclaren pr-20"
               />
@@ -455,10 +454,10 @@ export default function ContainerAdvancedEditor() {
                   )}
                   {searchResult.value.matches.length === 0 &&
                     debouncedSearchQuery.value && (
-                    <span class="text-xs text-red-600 font-mclaren">
-                      No matches
-                    </span>
-                  )}
+                      <span class="text-xs text-red-600 font-mclaren">
+                        No matches
+                      </span>
+                    )}
                   <button
                     type="button"
                     onClick={handleClearSearch}

@@ -12,31 +12,29 @@ export interface SlotEditState {
   slotIndex: number;
 }
 
-export function ItemGrid(
-  {
-    itemIds,
-    stacks,
-    gridIndex,
-    onSlotClick,
-    editingSlot,
-    onSave,
-    onClear,
-    onCancel,
-    columns = 6,
-    slotOffset = 0,
-  }: {
-    itemIds: number[];
-    stacks: number[];
-    gridIndex: number;
-    onSlotClick: (gridIndex: number, slotIndex: number) => void;
-    editingSlot: SlotEditState | null;
-    onSave: (itemId: number, stack: number) => void;
-    onClear: () => void;
-    onCancel: () => void;
-    columns?: number;
-    slotOffset?: number;
-  },
-) {
+export function ItemGrid({
+  itemIds,
+  stacks,
+  gridIndex,
+  onSlotClick,
+  editingSlot,
+  onSave,
+  onClear,
+  onCancel,
+  columns = 6,
+  slotOffset = 0,
+}: {
+  itemIds: number[];
+  stacks: number[];
+  gridIndex: number;
+  onSlotClick: (gridIndex: number, slotIndex: number) => void;
+  editingSlot: SlotEditState | null;
+  onSave: (itemId: number, stack: number) => void;
+  onClear: () => void;
+  onCancel: () => void;
+  columns?: number;
+  slotOffset?: number;
+}) {
   const cols = columns;
   const rows: number[][] = [];
   for (let i = 0; i < itemIds.length; i += cols) {
@@ -58,7 +56,8 @@ export function ItemGrid(
             const itemId = itemIds[localIndex];
             const stack = stacks[localIndex];
             const isEmpty = itemId === -1;
-            const isEditing = editingSlot?.gridIndex === gridIndex &&
+            const isEditing =
+              editingSlot?.gridIndex === gridIndex &&
               editingSlot?.slotIndex === realIndex;
 
             return (
@@ -69,33 +68,29 @@ export function ItemGrid(
                     e.stopPropagation();
                     onSlotClick(gridIndex, realIndex);
                   }}
-                  title={isEmpty
-                    ? `Slot ${realIndex + 1}: Empty`
-                    : `Slot ${realIndex + 1}: ${getItemName(itemId)} x${stack}`}
+                  title={
+                    isEmpty
+                      ? `Slot ${realIndex + 1}: Empty`
+                      : `Slot ${realIndex + 1}: ${getItemName(itemId)} x${stack}`
+                  }
                   class={`w-full aspect-square rounded border-2 text-xs font-mclaren flex flex-col items-center justify-center p-0.5 transition-colors ${
                     isEditing
                       ? "border-dinkum-secondary ring-2 ring-dinkum-secondary"
                       : isEmpty
-                      ? "bg-dinkum-beige/50 text-dinkum-accent/40 hover:bg-dinkum-beige"
-                      : "border-dinkum-primary bg-white text-dinkum-tertiary hover:bg-dinkum-secondary/10"
+                        ? "bg-dinkum-beige/50 text-dinkum-accent/40 hover:bg-dinkum-beige"
+                        : "border-dinkum-primary bg-white text-dinkum-tertiary hover:bg-dinkum-secondary/10"
                   }`}
                 >
-                  {isEmpty
-                    ? (
-                      <span class="text-[10px] leading-tight select-none">
-                        +
+                  {isEmpty ? (
+                    <span class="text-[10px] leading-tight select-none">+</span>
+                  ) : (
+                    <>
+                      <span class="text-[10px] leading-tight text-center truncate w-full">
+                        {getItemName(itemId)}
                       </span>
-                    )
-                    : (
-                      <>
-                        <span class="text-[10px] leading-tight text-center truncate w-full">
-                          {getItemName(itemId)}
-                        </span>
-                        <span class="text-[9px]">
-                          x{stack}
-                        </span>
-                      </>
-                    )}
+                      <span class="text-[9px]">x{stack}</span>
+                    </>
+                  )}
                 </button>
                 {isEditing && (
                   <SlotEditor
@@ -115,15 +110,19 @@ export function ItemGrid(
   );
 }
 
-export function SlotEditor(
-  { itemId, stack, onSave, onClear, onCancel }: {
-    itemId: number;
-    stack: number;
-    onSave: (itemId: number, stack: number) => void;
-    onClear: () => void;
-    onCancel: () => void;
-  },
-) {
+export function SlotEditor({
+  itemId,
+  stack,
+  onSave,
+  onClear,
+  onCancel,
+}: {
+  itemId: number;
+  stack: number;
+  onSave: (itemId: number, stack: number) => void;
+  onClear: () => void;
+  onCancel: () => void;
+}) {
   const searchQuery = useSignal("");
   const selectedItemId = useSignal(itemId === -1 ? 0 : itemId);
   const selectedStack = useSignal(stack || 100);
@@ -174,16 +173,18 @@ export function SlotEditor(
 
     if (e.key === "ArrowDown") {
       e.preventDefault();
-      const next = highlightedIndex.value < items.length - 1
-        ? highlightedIndex.value + 1
-        : 0;
+      const next =
+        highlightedIndex.value < items.length - 1
+          ? highlightedIndex.value + 1
+          : 0;
       highlightedIndex.value = next;
       requestAnimationFrame(() => applyHighlight(next));
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
-      const next = highlightedIndex.value > 0
-        ? highlightedIndex.value - 1
-        : items.length - 1;
+      const next =
+        highlightedIndex.value > 0
+          ? highlightedIndex.value - 1
+          : items.length - 1;
       highlightedIndex.value = next;
       requestAnimationFrame(() => applyHighlight(next));
     } else if (e.key === "Enter") {
@@ -211,9 +212,11 @@ export function SlotEditor(
           <div class="relative">
             <input
               type="text"
-              value={showDropdown.value
-                ? searchQuery.value
-                : getItemName(selectedItemId.value)}
+              value={
+                showDropdown.value
+                  ? searchQuery.value
+                  : getItemName(selectedItemId.value)
+              }
               onFocus={() => {
                 showDropdown.value = true;
                 searchQuery.value = "";
@@ -233,13 +236,12 @@ export function SlotEditor(
                 ref={dropdownRef}
                 class="absolute z-10 w-full mt-1 bg-white border-2 border-dinkum-primary rounded-lg shadow-lg max-h-40 overflow-y-auto"
               >
-                {filteredItems.value.length === 0
-                  ? (
-                    <div class="px-2 py-1 text-xs font-mclaren">
-                      No items found
-                    </div>
-                  )
-                  : filteredItems.value.map((item) => (
+                {filteredItems.value.length === 0 ? (
+                  <div class="px-2 py-1 text-xs font-mclaren">
+                    No items found
+                  </div>
+                ) : (
+                  filteredItems.value.map((item) => (
                     <button
                       key={item.id}
                       type="button"
@@ -253,7 +255,8 @@ export function SlotEditor(
                       <span>{item.name}</span>
                       <span class="ml-1">#{item.id}</span>
                     </button>
-                  ))}
+                  ))
+                )}
               </div>
             )}
           </div>
@@ -272,7 +275,7 @@ export function SlotEditor(
             onInput={(e) => {
               selectedStack.value = Math.max(
                 1,
-                parseInt((e.target as HTMLInputElement).value) || 1,
+                parseInt((e.target as HTMLInputElement).value, 10) || 1,
               );
             }}
             class="w-full px-2 py-1 text-xs border-2 border-dinkum-primary rounded bg-dinkum-beige text-dinkum-tertiary font-mclaren focus:outline-none focus:border-dinkum-secondary"

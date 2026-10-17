@@ -20,42 +20,50 @@ export default function SaveFileLocation() {
     const x = rect.left + rect.width / 2;
     const y = rect.top + rect.height / 2;
 
-    navigator.clipboard.writeText(text).then(() => {
-      // Add this button to the copied set
-      setCopiedButtons((prev) => new Set(prev).add(platform));
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        // Add this button to the copied set
+        setCopiedButtons((prev) => new Set(prev).add(platform));
 
-      // Add new click effect with unique ID
-      const effectId = `${platform}-${Date.now()}`;
-      setClickEffects((prev) => [...prev, { id: effectId, x, y }]);
+        // Add new click effect with unique ID
+        const effectId = `${platform}-${Date.now()}`;
+        setClickEffects((prev) => [...prev, { id: effectId, x, y }]);
 
-      // Remove this specific effect after animation completes
-      setTimeout(() => {
-        setClickEffects((prev) => prev.filter((e) => e.id !== effectId));
-      }, 1000);
+        // Remove this specific effect after animation completes
+        setTimeout(() => {
+          setClickEffects((prev) => prev.filter((e) => e.id !== effectId));
+        }, 1000);
 
-      // Reset this specific button's copied state
-      setTimeout(() => {
-        setCopiedButtons((prev) => {
-          const newSet = new Set(prev);
-          newSet.delete(platform);
-          return newSet;
-        });
-      }, 1500);
-    }).catch((err) => {
-      console.error("Failed to copy:", err);
-    });
+        // Reset this specific button's copied state
+        setTimeout(() => {
+          setCopiedButtons((prev) => {
+            const newSet = new Set(prev);
+            newSet.delete(platform);
+            return newSet;
+          });
+        }, 1500);
+      })
+      .catch((err) => {
+        console.error("Failed to copy:", err);
+      });
   };
 
-  const CopyButton = (
-    { text, platform }: { text: string; platform: string },
-  ) => {
+  const CopyButton = ({
+    text,
+    platform,
+  }: {
+    text: string;
+    platform: string;
+  }) => {
     const isCopied = copiedButtons.has(platform);
 
     return (
       <button
         type="button"
         onClick={(e) =>
-          copyToClipboard(text, platform, e as unknown as MouseEvent)}
+          copyToClipboard(text, platform, e as unknown as MouseEvent)
+        }
         class={`shrink-0 px-3 py-1 rounded text-xs font-mclaren transition-all duration-300 ${
           isCopied
             ? "bg-green-500 text-white scale-105"
@@ -102,8 +110,7 @@ export default function SaveFileLocation() {
               class="absolute w-2 h-2 rounded-full left-0 top-0"
               style={{
                 backgroundColor: "#C38D9E",
-                transform:
-                  `translate(-50%, -50%) rotate(${angle}deg) translateX(0px)`,
+                transform: `translate(-50%, -50%) rotate(${angle}deg) translateX(0px)`,
                 animation: `sparkle 0.8s ease-out forwards`,
                 animationDelay: `${i * 0.03}s`,
                 "--angle": `${angle}deg`,
@@ -121,11 +128,7 @@ export default function SaveFileLocation() {
         {/* Windows Section */}
         <div class="mb-6">
           <div class="flex items-center gap-2 mb-3">
-            <svg
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
             </svg>
             <h3 class="text-xl font-bold text-dinkum-tertiary font-mclaren">
@@ -147,18 +150,12 @@ export default function SaveFileLocation() {
                 </kbd>{" "}
                 on your keyboard
               </li>
-              <li>
-                Copy the path below and paste it into the "Run" dialog
-              </li>
+              <li>Copy the path below and paste it into the "Run" dialog</li>
               <li>Press Enter or click OK</li>
               <li>
                 Look for folders named{" "}
-                <code class="px-1 rounded text-xs font-mono">
-                  Slot0
-                </code>,{" "}
-                <code class="px-1 rounded text-xs font-mono">
-                  Slot1
-                </code>, etc.
+                <code class="px-1 rounded text-xs font-mono">Slot0</code>,{" "}
+                <code class="px-1 rounded text-xs font-mono">Slot1</code>, etc.
               </li>
             </ol>
 
@@ -234,20 +231,13 @@ export default function SaveFileLocation() {
           </h4>
           <p class="text-sm text-dinkum-tertiary font-mclaren">
             Inside the Dinkum folder, you'll find folders named{" "}
-            <code class="px-1 rounded text-xs font-mono">
-              Slot0
-            </code>,{" "}
-            <code class="px-1 rounded text-xs font-mono">
-              Slot1
-            </code>,{" "}
-            <code class="px-1 rounded text-xs font-mono">
-              Slot2
-            </code>, etc. Each folder contains the save files for one game save
-            slot. The main save file is{" "}
-            <code class="px-1 rounded text-xs font-mono">
-              Player.es3
-            </code>. To back up a save, copy the whole slot folder somewhere
-            safe.
+            <code class="px-1 rounded text-xs font-mono">Slot0</code>,{" "}
+            <code class="px-1 rounded text-xs font-mono">Slot1</code>,{" "}
+            <code class="px-1 rounded text-xs font-mono">Slot2</code>, etc. Each
+            folder contains the save files for one game save slot. The main save
+            file is{" "}
+            <code class="px-1 rounded text-xs font-mono">Player.es3</code>. To
+            back up a save, copy the whole slot folder somewhere safe.
           </p>
         </div>
       </div>

@@ -1,14 +1,14 @@
 import { useSignal } from "@preact/signals";
-import { saveData } from "../routes/index.tsx";
-import type { ChestSave, DinkumSaveData } from "../utils/types.ts";
 import { ItemGrid, type SlotEditState } from "../components/ItemGrid.tsx";
+import { saveData } from "../utils/state.ts";
+import type { ChestSave, DinkumSaveData } from "../utils/types.ts";
 
 function getStashKeys(data: DinkumSaveData): string[] {
   return Object.keys(data)
     .filter((key) => key.startsWith("stash_"))
     .sort((a, b) => {
-      const numA = parseInt(a.split("_")[1]);
-      const numB = parseInt(b.split("_")[1]);
+      const numA = parseInt(a.split("_")[1], 10);
+      const numB = parseInt(b.split("_")[1], 10);
       return numA - numB;
     });
 }
@@ -102,14 +102,14 @@ export default function PlayerInventoryEditor() {
     const updated = JSON.parse(JSON.stringify(saveData.value));
 
     if (gridIndex === 0) {
-      updated.playerInfo.value.itemsInInvSlots = updated.playerInfo.value
-        .itemsInInvSlots.map(() => -1);
-      updated.playerInfo.value.stacksInSlots = updated.playerInfo.value
-        .stacksInSlots.map(() => 0);
+      updated.playerInfo.value.itemsInInvSlots =
+        updated.playerInfo.value.itemsInInvSlots.map(() => -1);
+      updated.playerInfo.value.stacksInSlots =
+        updated.playerInfo.value.stacksInSlots.map(() => 0);
     } else {
       const stashKey = stashKeys[gridIndex - 1];
-      updated[stashKey].value.itemId = updated[stashKey].value.itemId.map(() =>
-        -1
+      updated[stashKey].value.itemId = updated[stashKey].value.itemId.map(
+        () => -1,
       );
       updated[stashKey].value.itemStack = updated[stashKey].value.itemStack.map(
         () => 0,
@@ -168,9 +168,7 @@ export default function PlayerInventoryEditor() {
           <div class="p-3 pt-0">
             <div class="border-t border-dinkum-primary pt-3">
               <div class="flex items-center justify-between mb-2">
-                <p class="text-xs font-mclaren">
-                  Click a slot to edit
-                </p>
+                <p class="text-xs font-mclaren">Click a slot to edit</p>
                 {getItemCount(playerInfo.itemsInInvSlots) > 0 && (
                   <button
                     type="button"
@@ -243,9 +241,9 @@ export default function PlayerInventoryEditor() {
           {stashesExpanded.value && (
             <div class="space-y-3">
               {stashKeys.map((key, index) => {
-                const stash = (
-                  saveData.value as DinkumSaveData
-                )[key as `stash_${number}`].value as ChestSave;
+                const stash = (saveData.value as DinkumSaveData)[
+                  key as `stash_${number}`
+                ].value as ChestSave;
                 const gridIndex = index + 1;
 
                 return (
@@ -271,29 +269,27 @@ export default function PlayerInventoryEditor() {
   );
 }
 
-function StashSection(
-  {
-    stash,
-    stashIndex,
-    gridIndex,
-    editingSlot,
-    onSlotClick,
-    onSave,
-    onClear,
-    onCancel,
-    onClearAll,
-  }: {
-    stash: ChestSave;
-    stashIndex: number;
-    gridIndex: number;
-    editingSlot: SlotEditState | null;
-    onSlotClick: (gridIndex: number, slotIndex: number) => void;
-    onSave: (itemId: number, stack: number) => void;
-    onClear: () => void;
-    onCancel: () => void;
-    onClearAll: () => void;
-  },
-) {
+function StashSection({
+  stash,
+  stashIndex,
+  gridIndex,
+  editingSlot,
+  onSlotClick,
+  onSave,
+  onClear,
+  onCancel,
+  onClearAll,
+}: {
+  stash: ChestSave;
+  stashIndex: number;
+  gridIndex: number;
+  editingSlot: SlotEditState | null;
+  onSlotClick: (gridIndex: number, slotIndex: number) => void;
+  onSave: (itemId: number, stack: number) => void;
+  onClear: () => void;
+  onCancel: () => void;
+  onClearAll: () => void;
+}) {
   const isExpanded = useSignal(false);
 
   return (
@@ -323,24 +319,19 @@ function StashSection(
               Stash #{stashIndex + 1}
             </p>
             <p class="text-xs font-mclaren">
-              {getItemCount(stash.itemId)} items &bull; {stash.itemId.length}
-              {" "}
+              {getItemCount(stash.itemId)} items &bull; {stash.itemId.length}{" "}
               slots
             </p>
           </div>
         </div>
-        <span class="text-sm">
-          {isExpanded.value ? "\u25BC" : "\u25B6"}
-        </span>
+        <span class="text-sm">{isExpanded.value ? "\u25BC" : "\u25B6"}</span>
       </div>
 
       {isExpanded.value && (
         <div class="p-3 pt-0">
           <div class="border-t border-dinkum-primary pt-3">
             <div class="flex items-center justify-between mb-2">
-              <p class="text-xs font-mclaren">
-                Click a slot to edit
-              </p>
+              <p class="text-xs font-mclaren">Click a slot to edit</p>
               {getItemCount(stash.itemId) > 0 && (
                 <button
                   type="button"

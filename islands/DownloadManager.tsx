@@ -4,7 +4,7 @@ import {
   containerFilename,
   filename,
   saveData,
-} from "../routes/index.tsx";
+} from "../utils/state.ts";
 
 export default function DownloadManager() {
   const isEncrypting = useSignal(false);
@@ -120,7 +120,8 @@ export default function DownloadManager() {
               <button
                 type="button"
                 onClick={() =>
-                  downloadEncrypted(saveData.value, filename.value!)}
+                  downloadEncrypted(saveData.value, filename.value!)
+                }
                 disabled={isEncrypting.value}
                 class={`w-full px-4 py-2 rounded-lg font-medium font-mclaren transition-all flex items-center justify-center gap-2 border-2 text-sm ${
                   isEncrypting.value
@@ -128,32 +129,29 @@ export default function DownloadManager() {
                     : "bg-dinkum-tertiary border-dinkum-primary hover:bg-dinkum-accent hover:scale-101 shadow-md hover:shadow-lg"
                 }`}
               >
-                {isEncrypting.value
-                  ? (
-                    <>
-                      <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-dinkum-tertiary">
-                      </div>
-                      Encrypting...
-                    </>
-                  )
-                  : (
-                    <>
-                      <svg
-                        class="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                        />
-                      </svg>
-                      Download Encrypted .es3
-                    </>
-                  )}
+                {isEncrypting.value ? (
+                  <>
+                    <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-dinkum-tertiary"></div>
+                    Encrypting...
+                  </>
+                ) : (
+                  <>
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                      />
+                    </svg>
+                    Download Encrypted .es3
+                  </>
+                )}
               </button>
             </div>
           </div>
@@ -169,7 +167,8 @@ export default function DownloadManager() {
               <button
                 type="button"
                 onClick={() =>
-                  downloadJSON(containerData.value, containerFilename.value!)}
+                  downloadJSON(containerData.value, containerFilename.value!)
+                }
                 class="w-full px-4 py-2 bg-dinkum-tertiary rounded-lg font-medium font-mclaren hover:bg-dinkum-accent hover:scale-101 transition-all flex items-center justify-center gap-2 border-2 border-dinkum-primary shadow-md hover:shadow-lg text-sm"
               >
                 <svg
@@ -194,7 +193,8 @@ export default function DownloadManager() {
                   downloadEncrypted(
                     containerData.value,
                     containerFilename.value!,
-                  )}
+                  )
+                }
                 disabled={isEncrypting.value}
                 class={`w-full px-4 py-2 rounded-lg font-medium font-mclaren transition-all flex items-center justify-center gap-2 border-2 text-sm ${
                   isEncrypting.value
@@ -202,32 +202,29 @@ export default function DownloadManager() {
                     : "bg-dinkum-tertiary border-dinkum-primary hover:bg-dinkum-accent hover:scale-101 shadow-md hover:shadow-lg"
                 }`}
               >
-                {isEncrypting.value
-                  ? (
-                    <>
-                      <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-dinkum-tertiary">
-                      </div>
-                      Encrypting...
-                    </>
-                  )
-                  : (
-                    <>
-                      <svg
-                        class="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                        />
-                      </svg>
-                      Download Encrypted .es3
-                    </>
-                  )}
+                {isEncrypting.value ? (
+                  <>
+                    <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-dinkum-tertiary"></div>
+                    Encrypting...
+                  </>
+                ) : (
+                  <>
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                      />
+                    </svg>
+                    Download Encrypted .es3
+                  </>
+                )}
               </button>
             </div>
           </div>
@@ -264,9 +261,8 @@ export default function DownloadManager() {
 
         <div class="mt-4 p-4 bg-dinkum-orange/30 border-2 border-dinkum-accent rounded-lg">
           <p class="text-sm text-dinkum-tertiary font-mclaren">
-            <strong>⚠️ Important:</strong>{" "}
-            Back up your saves before replacing them: copy the whole Slot folder
-            somewhere safe.
+            <strong>⚠️ Important:</strong> Back up your saves before replacing
+            them: copy the whole Slot folder somewhere safe.
           </p>
         </div>
       </div>

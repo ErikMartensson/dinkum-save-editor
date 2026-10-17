@@ -24,9 +24,7 @@ export function Footer() {
                   Dinkum save files use AES encryption with the password:
                 </p>
                 <div class="border border-dinkum-tertiary rounded px-3 py-2 mb-2">
-                  <code class="text-base font-mono font-bold">
-                    jamesbendon
-                  </code>
+                  <code class="text-base font-mono font-bold">jamesbendon</code>
                 </div>
                 <p class="text-xs text-dinkum-tertiary font-mclaren italic">
                   Named after James Bendon, the creator of Dinkum.
@@ -85,9 +83,7 @@ export function Footer() {
                       kieransouth/dinkum-save-editor
                     </a>
                   </div>
-                  <span class="text-xs ml-4">
-                    (MIT License)
-                  </span>
+                  <span class="text-xs ml-4">(MIT License)</span>
                 </li>
                 <li class="flex flex-col gap-1">
                   <div class="flex items-center gap-2">
@@ -110,9 +106,7 @@ export function Footer() {
                       alextusinean/es3-editor
                     </a>
                   </div>
-                  <span class="text-xs ml-4">
-                    (GPL-3.0 License)
-                  </span>
+                  <span class="text-xs ml-4">(GPL-3.0 License)</span>
                 </li>
                 <li class="flex flex-col gap-1">
                   <div class="flex items-center gap-2">
@@ -126,9 +120,7 @@ export function Footer() {
                       Google Fonts
                     </a>
                   </div>
-                  <span class="text-xs ml-4">
-                    (OFL License)
-                  </span>
+                  <span class="text-xs ml-4">(OFL License)</span>
                 </li>
               </ul>
             </div>

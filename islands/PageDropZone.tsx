@@ -1,6 +1,6 @@
 import { useSignal } from "@preact/signals";
+import type { ComponentChildren } from "preact";
 import { useEffect, useRef } from "preact/hooks";
-import { ComponentChildren } from "preact";
 import {
   containerData,
   containerFilename,
@@ -9,7 +9,7 @@ import {
   filename,
   fileSize,
   saveData,
-} from "../routes/index.tsx";
+} from "../utils/state.ts";
 
 interface PageDropZoneProps {
   children: ComponentChildren;
@@ -124,7 +124,8 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
 
     // Show warnings if any files were skipped
     if (warnings.length > 0) {
-      error.value = warnings.join("\n") +
+      error.value =
+        warnings.join("\n") +
         "\n\nOnly one Player save and one Container save can be loaded at a time.";
     }
   };
@@ -162,7 +163,8 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
     const relatedTarget = e.relatedTarget as HTMLElement;
 
     if (
-      !relatedTarget || target === document.documentElement ||
+      !relatedTarget ||
+      target === document.documentElement ||
       target === document.body
     ) {
       isDragging.value = false;
@@ -211,8 +213,7 @@ export default function PageDropZone({ children }: PageDropZoneProps) {
       {isProcessing.value && (
         <div class="fixed inset-0 z-50 bg-dinkum-tertiary/60 backdrop-blur-sm flex items-center justify-center">
           <div class="bg-dinkum-beige border-4 border-dinkum-primary rounded-2xl p-12 shadow-2xl">
-            <div class="animate-spin rounded-full h-16 w-16 border-b-4 border-dinkum-secondary mx-auto mb-4">
-            </div>
+            <div class="animate-spin rounded-full h-16 w-16 border-b-4 border-dinkum-secondary mx-auto mb-4"></div>
             <p class="text-2xl font-bold text-dinkum-tertiary font-mclaren text-center">
               Processing save file...
             </p>

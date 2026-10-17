@@ -6,7 +6,7 @@ import {
   filename,
   fileSize,
   saveData,
-} from "../routes/index.tsx";
+} from "../utils/state.ts";
 
 /**
  * Development-only component that automatically loads save files
