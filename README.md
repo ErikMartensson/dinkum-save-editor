@@ -4,7 +4,7 @@ A web-based save file editor for the game
 [Dinkum](https://store.steampowered.com/app/1062520/Dinkum/). Edit your player
 data, inventory, and more - all in your browser with no server uploads required.
 
-Try it out here: https://dinkum-save-editor.acidworks.deno.net/
+Try it out here: https://dinkum-save-editor.pages.dev/
 
 ## Features
 
@@ -104,15 +104,14 @@ Made with 💛 for the Dinkum community
 
 This project is built with:
 
-- **[Deno](https://deno.com/)** - Modern JavaScript/TypeScript runtime
-- **[Fresh](https://fresh.deno.dev/)** - Next-gen web framework for Deno
 - **[Preact](https://preactjs.com/)** - Fast 3kB alternative to React
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
 - **[Vite](https://vitejs.dev/)** - Fast build tool and dev server
+- **[Biome](https://biomejs.dev/)** - Formatter and linter
 
 ### Prerequisites
 
-- [Deno](https://deno.com/) 2.0 or higher
+- [Node.js](https://nodejs.org/) 22 or higher
 
 ### Getting Started
 
@@ -122,14 +121,14 @@ This project is built with:
    cd dinkum-save-editor
    ```
 
-2. **Install dependencies** (Deno handles this automatically)
+2. **Install dependencies**
    ```bash
-   deno install
+   npm install
    ```
 
 3. **Start the development server**
    ```bash
-   deno task dev
+   npm run dev
    ```
 
 4. **Open your browser**
@@ -138,11 +137,11 @@ This project is built with:
 
 ### Available Commands
 
-- `deno task dev` - Start development server with hot reload
-- `deno task build` - Build for production
-- `deno task start` - Start production server
-- `deno task check` - Run formatting, linting, and type checking
-- `deno task update` - Update Fresh framework
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run preview` - Preview the production build locally
+- `npm run check` - Run formatting check, linting, and type checking
+- `npm run fmt` - Apply formatting and lint fixes
 
 ### Development Auto-Load Feature
 
@@ -158,12 +157,14 @@ This feature is **development-only** and disabled in production.
 
 ```
 dinkum-save-editor/
-├── routes/              # Fresh routes (pages)
-├── islands/             # Interactive Preact components
-├── components/          # Static Preact components
-├── hooks/               # Custom Preact hooks
-├── utils/               # Utility functions (crypto, types)
-├── static/              # Static assets (fonts, icons)
+├── index.html            # App shell (head, meta tags, entry point)
+├── main.tsx              # Client entry, mounts the app
+├── App.tsx               # Root component, assembles the page
+├── islands/              # Interactive components
+├── components/           # Presentational components
+├── hooks/                # Custom Preact hooks
+├── utils/                # Utility functions (crypto, items, types, state)
+├── static/               # Static assets (fonts, icons, service worker)
 ├── finding-the-password/ # Python script to find encryption password
-└── assets/              # CSS and other assets
+└── assets/               # CSS and images
 ```
