@@ -1,10 +1,10 @@
 {
   "meta": {
-    "extractedAt": "2026-07-11T21:12:53.796828+00:00",
-    "totalItems": 2136,
+    "extractedAt": "2026-10-17T15:21:36.644426+00:00",
+    "totalItems": 2174,
     "totalItemsWithDurability": 94,
     "scriptVersion": "1.3.0",
-    "gameVersion": "1.0.8"
+    "gameVersion": "1.0.9"
   },
   "items": {
     "0": {
@@ -6508,6 +6508,120 @@
     "2135": {
       "name": "Medkit",
       "maxDurability": 15
+    },
+    "2136": {
+      "name": "Ghoul Drop"
+    },
+    "2137": {
+      "name": "Jack o'Lantern"
+    },
+    "2138": {
+      "name": "Cauldron"
+    },
+    "2139": {
+      "name": "Spooky Seed"
+    },
+    "2140": {
+      "name": "Flying Broomstick"
+    },
+    "2141": {
+      "name": "Spooky Path"
+    },
+    "2142": {
+      "name": "Spooky Scarecrow"
+    },
+    "2143": {
+      "name": "Pet Bat"
+    },
+    "2144": {
+      "name": "Spooky Bed"
+    },
+    "2145": {
+      "name": "Spooky Jackaroo"
+    },
+    "2146": {
+      "name": "Spooky Lamp"
+    },
+    "2147": {
+      "name": "Spooky Ghost"
+    },
+    "2148": {
+      "name": "Jack o'lantern Stack"
+    },
+    "2149": {
+      "name": "Spooky Cabinet"
+    },
+    "2150": {
+      "name": "Spooky Fence"
+    },
+    "2151": {
+      "name": "Spooky Sign"
+    },
+    "2152": {
+      "name": "Bat Cage"
+    },
+    "2153": {
+      "name": "Spooky Pergola"
+    },
+    "2154": {
+      "name": "Spooky Yobbolin"
+    },
+    "2155": {
+      "name": "Spooky Boombox"
+    },
+    "2156": {
+      "name": "Fog Machine"
+    },
+    "2157": {
+      "name": "Vampire Cape"
+    },
+    "2158": {
+      "name": "Ghoul Drop Lantern"
+    },
+    "2159": {
+      "name": "Spooky Pack"
+    },
+    "2160": {
+      "name": "Vampire Coat"
+    },
+    "2161": {
+      "name": "Vampire Pants"
+    },
+    "2162": {
+      "name": "Vampire Shoes"
+    },
+    "2163": {
+      "name": "Vampire Dress"
+    },
+    "2164": {
+      "name": "Animal Bell"
+    },
+    "2165": {
+      "name": "Alien Mask"
+    },
+    "2166": {
+      "name": "Alien Pants"
+    },
+    "2167": {
+      "name": "Alien Shirt"
+    },
+    "2168": {
+      "name": "Alien Shoes"
+    },
+    "2169": {
+      "name": "Alien Cape"
+    },
+    "2170": {
+      "name": "Plague Doctor Shoes"
+    },
+    "2171": {
+      "name": "Plague Doctor Mask"
+    },
+    "2172": {
+      "name": "Plague Doctor Pants"
+    },
+    "2173": {
+      "name": "Plague Doctor Robes"
     }
   }
 }
